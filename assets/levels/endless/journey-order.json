@@ -1,0 +1,506 @@
+[
+  {
+    "section": 1,
+    "designLevel": 1,
+    "world": "Crossings",
+    "variant": 1
+  },
+  {
+    "section": 2,
+    "designLevel": 2,
+    "world": "Crossings",
+    "variant": 2
+  },
+  {
+    "section": 3,
+    "designLevel": 3,
+    "world": "Crossings",
+    "variant": 3
+  },
+  {
+    "section": 4,
+    "designLevel": 4,
+    "world": "Crossings",
+    "variant": 4
+  },
+  {
+    "section": 5,
+    "designLevel": 5,
+    "world": "Star fork",
+    "variant": 1
+  },
+  {
+    "section": 6,
+    "designLevel": 6,
+    "world": "Star fork",
+    "variant": 2
+  },
+  {
+    "section": 7,
+    "designLevel": 7,
+    "world": "Star fork",
+    "variant": 3
+  },
+  {
+    "section": 8,
+    "designLevel": 8,
+    "world": "Star fork",
+    "variant": 4
+  },
+  {
+    "section": 9,
+    "designLevel": 21,
+    "world": "Open stretch",
+    "variant": 1
+  },
+  {
+    "section": 10,
+    "designLevel": 65,
+    "world": "Organic curves",
+    "variant": 1
+  },
+  {
+    "section": 11,
+    "designLevel": 66,
+    "world": "Organic curves",
+    "variant": 2
+  },
+  {
+    "section": 12,
+    "designLevel": 67,
+    "world": "Organic curves",
+    "variant": 3
+  },
+  {
+    "section": 13,
+    "designLevel": 68,
+    "world": "Organic curves",
+    "variant": 4
+  },
+  {
+    "section": 14,
+    "designLevel": 9,
+    "world": "Moving targets",
+    "variant": 1
+  },
+  {
+    "section": 15,
+    "designLevel": 10,
+    "world": "Moving targets",
+    "variant": 2
+  },
+  {
+    "section": 16,
+    "designLevel": 11,
+    "world": "Moving targets",
+    "variant": 3
+  },
+  {
+    "section": 17,
+    "designLevel": 12,
+    "world": "Moving targets",
+    "variant": 4
+  },
+  {
+    "section": 18,
+    "designLevel": 13,
+    "world": "Crumble chain",
+    "variant": 1
+  },
+  {
+    "section": 19,
+    "designLevel": 14,
+    "world": "Crumble chain",
+    "variant": 2
+  },
+  {
+    "section": 20,
+    "designLevel": 15,
+    "world": "Crumble chain",
+    "variant": 3
+  },
+  {
+    "section": 21,
+    "designLevel": 16,
+    "world": "Crumble chain",
+    "variant": 4
+  },
+  {
+    "section": 22,
+    "designLevel": 49,
+    "world": "Lobed crossroads",
+    "variant": 1
+  },
+  {
+    "section": 23,
+    "designLevel": 50,
+    "world": "Lobed crossroads",
+    "variant": 2
+  },
+  {
+    "section": 24,
+    "designLevel": 51,
+    "world": "Lobed crossroads",
+    "variant": 3
+  },
+  {
+    "section": 25,
+    "designLevel": 52,
+    "world": "Lobed crossroads",
+    "variant": 4
+  },
+  {
+    "section": 26,
+    "designLevel": 22,
+    "world": "Open stretch",
+    "variant": 2
+  },
+  {
+    "section": 27,
+    "designLevel": 69,
+    "world": "Star chimes",
+    "variant": 1
+  },
+  {
+    "section": 28,
+    "designLevel": 70,
+    "world": "Star chimes",
+    "variant": 2
+  },
+  {
+    "section": 29,
+    "designLevel": 71,
+    "world": "Star chimes",
+    "variant": 3
+  },
+  {
+    "section": 30,
+    "designLevel": 72,
+    "world": "Star chimes",
+    "variant": 4
+  },
+  {
+    "section": 31,
+    "designLevel": 33,
+    "world": "Honeycomb passage",
+    "variant": 1
+  },
+  {
+    "section": 32,
+    "designLevel": 34,
+    "world": "Honeycomb passage",
+    "variant": 2
+  },
+  {
+    "section": 33,
+    "designLevel": 35,
+    "world": "Honeycomb passage",
+    "variant": 3
+  },
+  {
+    "section": 34,
+    "designLevel": 36,
+    "world": "Honeycomb passage",
+    "variant": 4
+  },
+  {
+    "section": 35,
+    "designLevel": 37,
+    "world": "Rain of shapes",
+    "variant": 1
+  },
+  {
+    "section": 36,
+    "designLevel": 38,
+    "world": "Rain of shapes",
+    "variant": 2
+  },
+  {
+    "section": 37,
+    "designLevel": 39,
+    "world": "Rain of shapes",
+    "variant": 3
+  },
+  {
+    "section": 38,
+    "designLevel": 40,
+    "world": "Rain of shapes",
+    "variant": 4
+  },
+  {
+    "section": 39,
+    "designLevel": 73,
+    "world": "Counterflow",
+    "variant": 1
+  },
+  {
+    "section": 40,
+    "designLevel": 74,
+    "world": "Counterflow",
+    "variant": 2
+  },
+  {
+    "section": 41,
+    "designLevel": 75,
+    "world": "Counterflow",
+    "variant": 3
+  },
+  {
+    "section": 42,
+    "designLevel": 76,
+    "world": "Counterflow",
+    "variant": 4
+  },
+  {
+    "section": 43,
+    "designLevel": 23,
+    "world": "Open stretch",
+    "variant": 3
+  },
+  {
+    "section": 44,
+    "designLevel": 57,
+    "world": "Hollow passages",
+    "variant": 1
+  },
+  {
+    "section": 45,
+    "designLevel": 58,
+    "world": "Hollow passages",
+    "variant": 2
+  },
+  {
+    "section": 46,
+    "designLevel": 59,
+    "world": "Hollow passages",
+    "variant": 3
+  },
+  {
+    "section": 47,
+    "designLevel": 60,
+    "world": "Hollow passages",
+    "variant": 4
+  },
+  {
+    "section": 48,
+    "designLevel": 45,
+    "world": "Wedge springs",
+    "variant": 1
+  },
+  {
+    "section": 49,
+    "designLevel": 46,
+    "world": "Wedge springs",
+    "variant": 2
+  },
+  {
+    "section": 50,
+    "designLevel": 47,
+    "world": "Wedge springs",
+    "variant": 3
+  },
+  {
+    "section": 51,
+    "designLevel": 48,
+    "world": "Wedge springs",
+    "variant": 4
+  },
+  {
+    "section": 52,
+    "designLevel": 17,
+    "world": "Gates",
+    "variant": 1
+  },
+  {
+    "section": 53,
+    "designLevel": 18,
+    "world": "Gates",
+    "variant": 2
+  },
+  {
+    "section": 54,
+    "designLevel": 19,
+    "world": "Gates",
+    "variant": 3
+  },
+  {
+    "section": 55,
+    "designLevel": 20,
+    "world": "Gates",
+    "variant": 4
+  },
+  {
+    "section": 56,
+    "designLevel": 61,
+    "world": "Connected hexagons",
+    "variant": 1
+  },
+  {
+    "section": 57,
+    "designLevel": 62,
+    "world": "Connected hexagons",
+    "variant": 2
+  },
+  {
+    "section": 58,
+    "designLevel": 63,
+    "world": "Connected hexagons",
+    "variant": 3
+  },
+  {
+    "section": 59,
+    "designLevel": 64,
+    "world": "Connected hexagons",
+    "variant": 4
+  },
+  {
+    "section": 60,
+    "designLevel": 53,
+    "world": "Long leaps",
+    "variant": 1
+  },
+  {
+    "section": 61,
+    "designLevel": 54,
+    "world": "Long leaps",
+    "variant": 2
+  },
+  {
+    "section": 62,
+    "designLevel": 55,
+    "world": "Long leaps",
+    "variant": 3
+  },
+  {
+    "section": 63,
+    "designLevel": 56,
+    "world": "Long leaps",
+    "variant": 4
+  },
+  {
+    "section": 64,
+    "designLevel": 24,
+    "world": "Open stretch",
+    "variant": 4
+  },
+  {
+    "section": 65,
+    "designLevel": 29,
+    "world": "Spike canyon",
+    "variant": 1
+  },
+  {
+    "section": 66,
+    "designLevel": 30,
+    "world": "Spike canyon",
+    "variant": 2
+  },
+  {
+    "section": 67,
+    "designLevel": 31,
+    "world": "Spike canyon",
+    "variant": 3
+  },
+  {
+    "section": 68,
+    "designLevel": 32,
+    "world": "Spike canyon",
+    "variant": 4
+  },
+  {
+    "section": 69,
+    "designLevel": 41,
+    "world": "Black-hole crossing",
+    "variant": 1
+  },
+  {
+    "section": 70,
+    "designLevel": 42,
+    "world": "Black-hole crossing",
+    "variant": 2
+  },
+  {
+    "section": 71,
+    "designLevel": 43,
+    "world": "Black-hole crossing",
+    "variant": 3
+  },
+  {
+    "section": 72,
+    "designLevel": 44,
+    "world": "Black-hole crossing",
+    "variant": 4
+  },
+  {
+    "section": 73,
+    "designLevel": 77,
+    "world": "Zigzag lanes",
+    "variant": 1
+  },
+  {
+    "section": 74,
+    "designLevel": 78,
+    "world": "Zigzag lanes",
+    "variant": 2
+  },
+  {
+    "section": 75,
+    "designLevel": 79,
+    "world": "Zigzag lanes",
+    "variant": 3
+  },
+  {
+    "section": 76,
+    "designLevel": 80,
+    "world": "Zigzag lanes",
+    "variant": 4
+  },
+  {
+    "section": 77,
+    "designLevel": 81,
+    "world": "Giant curves",
+    "variant": 1
+  },
+  {
+    "section": 78,
+    "designLevel": 82,
+    "world": "Giant curves",
+    "variant": 2
+  },
+  {
+    "section": 79,
+    "designLevel": 83,
+    "world": "Giant curves",
+    "variant": 3
+  },
+  {
+    "section": 80,
+    "designLevel": 84,
+    "world": "Giant curves",
+    "variant": 4
+  },
+  {
+    "section": 81,
+    "designLevel": 25,
+    "world": "Pressure passage",
+    "variant": 1
+  },
+  {
+    "section": 82,
+    "designLevel": 26,
+    "world": "Pressure passage",
+    "variant": 2
+  },
+  {
+    "section": 83,
+    "designLevel": 27,
+    "world": "Pressure passage",
+    "variant": 3
+  },
+  {
+    "section": 84,
+    "designLevel": 28,
+    "world": "Pressure passage",
+    "variant": 4
+  }
+]

@@ -1,0 +1,2 @@
+PASS: 222 platform instances, all 29 original SVG objects, unchanged curve commands and dimensions; translation only.
+20 levels at 390 x 3264 units.

@@ -1,0 +1,56 @@
+{
+  "name": "mektra",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "ios:simulator": "node scripts/run-ios-simulator.mjs",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "node --import tsx --test __tests__/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "level:import": "node scripts/import-authored-level.mjs",
+    "level:check-jumps": "node --import tsx scripts/balance-stars.ts --plans-only && npm test",
+    "player:design": "node --import tsx scripts/create-player-design.mjs",
+    "ios:pods": "cd ios && pod install",
+    "format": "prettier --write App.tsx \"src/**/*.ts\" \"src/**/*.tsx\" \"__tests__/*.mjs\" \"scripts/*.ts\" \"scripts/*.mjs\"",
+    "audio:generate": "python3 scripts/create-sounds.py",
+    "ios:performance": "node scripts/run-ios-simulator.mjs --release",
+    "test:native-ui": "node scripts/check-native-ui.mjs",
+    "level:import-unity": "node scripts/import-unity-level.mjs",
+    "unity:build": "node scripts/build-unity-game.mjs"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@shopify/react-native-skia": "2.14.0",
+    "react": "19.2.0",
+    "react-native": "0.83.0",
+    "react-native-reanimated": "4.2.2",
+    "react-native-safe-area-context": "^5.5.2",
+    "react-native-worklets": "0.7.4",
+    "react-native-sound": "0.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/runtime": "^7.25.0",
+    "@react-native-community/cli": "20.0.0",
+    "@react-native-community/cli-platform-android": "20.0.0",
+    "@react-native-community/cli-platform-ios": "20.0.0",
+    "@react-native/babel-preset": "0.83.0",
+    "@react-native/eslint-config": "0.83.0",
+    "@react-native/metro-config": "0.83.0",
+    "@react-native/typescript-config": "0.83.0",
+    "@types/react": "^19.2.0",
+    "eslint": "^8.19.0",
+    "prettier": "2.8.8",
+    "svg-path-properties": "1.3.0",
+    "svgpath": "2.6.0",
+    "tsx": "4.20.6",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

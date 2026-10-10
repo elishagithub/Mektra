@@ -1,0 +1,410 @@
+[
+  {
+    "level": 1,
+    "reviewed": 20,
+    "changed": 19,
+    "preserved": 1
+  },
+  {
+    "level": 2,
+    "reviewed": 20,
+    "changed": 18,
+    "preserved": 2
+  },
+  {
+    "level": 3,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 4,
+    "reviewed": 20,
+    "changed": 19,
+    "preserved": 1
+  },
+  {
+    "level": 5,
+    "reviewed": 30,
+    "changed": 18,
+    "preserved": 12
+  },
+  {
+    "level": 6,
+    "reviewed": 30,
+    "changed": 27,
+    "preserved": 3
+  },
+  {
+    "level": 7,
+    "reviewed": 30,
+    "changed": 29,
+    "preserved": 0
+  },
+  {
+    "level": 8,
+    "reviewed": 30,
+    "changed": 30,
+    "preserved": 0
+  },
+  {
+    "level": 9,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 10,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 11,
+    "reviewed": 20,
+    "changed": 19,
+    "preserved": 1
+  },
+  {
+    "level": 12,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 13,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 14,
+    "reviewed": 20,
+    "changed": 17,
+    "preserved": 3
+  },
+  {
+    "level": 15,
+    "reviewed": 20,
+    "changed": 11,
+    "preserved": 9
+  },
+  {
+    "level": 16,
+    "reviewed": 20,
+    "changed": 16,
+    "preserved": 4
+  },
+  {
+    "level": 17,
+    "reviewed": 20,
+    "changed": 11,
+    "preserved": 9
+  },
+  {
+    "level": 18,
+    "reviewed": 20,
+    "changed": 16,
+    "preserved": 4
+  },
+  {
+    "level": 19,
+    "reviewed": 20,
+    "changed": 16,
+    "preserved": 4
+  },
+  {
+    "level": 20,
+    "reviewed": 20,
+    "changed": 16,
+    "preserved": 4
+  },
+  {
+    "level": 21,
+    "reviewed": 15,
+    "changed": 15,
+    "preserved": 0
+  },
+  {
+    "level": 22,
+    "reviewed": 15,
+    "changed": 14,
+    "preserved": 1
+  },
+  {
+    "level": 23,
+    "reviewed": 15,
+    "changed": 15,
+    "preserved": 0
+  },
+  {
+    "level": 24,
+    "reviewed": 15,
+    "changed": 15,
+    "preserved": 0
+  },
+  {
+    "level": 25,
+    "reviewed": 20,
+    "changed": 16,
+    "preserved": 4
+  },
+  {
+    "level": 26,
+    "reviewed": 20,
+    "changed": 16,
+    "preserved": 4
+  },
+  {
+    "level": 27,
+    "reviewed": 20,
+    "changed": 14,
+    "preserved": 6
+  },
+  {
+    "level": 28,
+    "reviewed": 20,
+    "changed": 16,
+    "preserved": 4
+  },
+  {
+    "level": 29,
+    "reviewed": 20,
+    "changed": 18,
+    "preserved": 2
+  },
+  {
+    "level": 30,
+    "reviewed": 20,
+    "changed": 19,
+    "preserved": 1
+  },
+  {
+    "level": 31,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 32,
+    "reviewed": 20,
+    "changed": 19,
+    "preserved": 1
+  },
+  {
+    "level": 33,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 34,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 35,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 36,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 37,
+    "reviewed": 40,
+    "changed": 5,
+    "preserved": 35
+  },
+  {
+    "level": 38,
+    "reviewed": 40,
+    "changed": 5,
+    "preserved": 35
+  },
+  {
+    "level": 39,
+    "reviewed": 40,
+    "changed": 5,
+    "preserved": 35
+  },
+  {
+    "level": 40,
+    "reviewed": 40,
+    "changed": 5,
+    "preserved": 35
+  },
+  {
+    "level": 41,
+    "reviewed": 20,
+    "changed": 19,
+    "preserved": 1
+  },
+  {
+    "level": 42,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 43,
+    "reviewed": 20,
+    "changed": 19,
+    "preserved": 1
+  },
+  {
+    "level": 44,
+    "reviewed": 20,
+    "changed": 20,
+    "preserved": 0
+  },
+  {
+    "level": 49,
+    "reviewed": 25,
+    "changed": 25,
+    "preserved": 0
+  },
+  {
+    "level": 50,
+    "reviewed": 25,
+    "changed": 25,
+    "preserved": 0
+  },
+  {
+    "level": 51,
+    "reviewed": 25,
+    "changed": 23,
+    "preserved": 2
+  },
+  {
+    "level": 52,
+    "reviewed": 25,
+    "changed": 25,
+    "preserved": 0
+  },
+  {
+    "level": 53,
+    "reviewed": 45,
+    "changed": 45,
+    "preserved": 0
+  },
+  {
+    "level": 54,
+    "reviewed": 45,
+    "changed": 45,
+    "preserved": 0
+  },
+  {
+    "level": 55,
+    "reviewed": 45,
+    "changed": 44,
+    "preserved": 1
+  },
+  {
+    "level": 56,
+    "reviewed": 45,
+    "changed": 43,
+    "preserved": 0
+  },
+  {
+    "level": 57,
+    "reviewed": 25,
+    "changed": 20,
+    "preserved": 5
+  },
+  {
+    "level": 58,
+    "reviewed": 25,
+    "changed": 19,
+    "preserved": 6
+  },
+  {
+    "level": 59,
+    "reviewed": 25,
+    "changed": 25,
+    "preserved": 0
+  },
+  {
+    "level": 60,
+    "reviewed": 25,
+    "changed": 15,
+    "preserved": 10
+  },
+  {
+    "level": 61,
+    "reviewed": 50,
+    "changed": 50,
+    "preserved": 0
+  },
+  {
+    "level": 62,
+    "reviewed": 50,
+    "changed": 50,
+    "preserved": 0
+  },
+  {
+    "level": 63,
+    "reviewed": 50,
+    "changed": 50,
+    "preserved": 0
+  },
+  {
+    "level": 64,
+    "reviewed": 50,
+    "changed": 50,
+    "preserved": 0
+  },
+  {
+    "level": 45,
+    "reviewed": 20,
+    "changed": 0,
+    "preserved": 20
+  },
+  {
+    "level": 46,
+    "reviewed": 20,
+    "changed": 0,
+    "preserved": 20
+  },
+  {
+    "level": 47,
+    "reviewed": 20,
+    "changed": 0,
+    "preserved": 20
+  },
+  {
+    "level": 48,
+    "reviewed": 20,
+    "changed": 0,
+    "preserved": 20
+  },
+  {
+    "level": 65,
+    "reviewed": 50,
+    "changed": 17,
+    "preserved": 33
+  },
+  {
+    "level": 66,
+    "reviewed": 50,
+    "changed": 22,
+    "preserved": 28
+  },
+  {
+    "level": 67,
+    "reviewed": 50,
+    "changed": 18,
+    "preserved": 32
+  },
+  {
+    "level": 68,
+    "reviewed": 50,
+    "changed": 17,
+    "preserved": 33
+  }
+]

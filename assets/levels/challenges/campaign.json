@@ -1,0 +1,165 @@
+{
+    "method": "Continuous fixed-step runs with real lava, motion, moving gates and first-contact crumble clocks; both fork policies; no teleporting between jumps.",
+    "runs": [
+        {
+            "character": "mektra",
+            "route": "safe",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 39,
+            "forkStars": 6,
+            "seconds": 108.62500000003252,
+            "minimumCrumbleRemaining": 0.2817460317454602
+        },
+        {
+            "character": "mektra",
+            "route": "bonus",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 49,
+            "forkStars": 14,
+            "seconds": 98.19166666669088,
+            "minimumCrumbleRemaining": 0.2817460317454602
+        },
+        {
+            "character": "tide",
+            "route": "safe",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 39,
+            "forkStars": 5,
+            "seconds": 102.73333333336116,
+            "minimumCrumbleRemaining": 0.3333333333328028
+        },
+        {
+            "character": "tide",
+            "route": "bonus",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 49,
+            "forkStars": 14,
+            "seconds": 98.05833333335744,
+            "minimumCrumbleRemaining": 0.2976190476184887
+        },
+        {
+            "character": "ember",
+            "route": "safe",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 34,
+            "forkStars": 5,
+            "seconds": 99.51666666669193,
+            "minimumCrumbleRemaining": 0.3095238095232601
+        },
+        {
+            "character": "ember",
+            "route": "bonus",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 45,
+            "forkStars": 15,
+            "seconds": 105.6416666666968,
+            "minimumCrumbleRemaining": 0.32936507936454575
+        },
+        {
+            "character": "volt",
+            "route": "safe",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 35,
+            "forkStars": 6,
+            "seconds": 108.73333333336594,
+            "minimumCrumbleRemaining": 0.3293650793646641
+        },
+        {
+            "character": "volt",
+            "route": "bonus",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 46,
+            "forkStars": 14,
+            "seconds": 98.16666666669086,
+            "minimumCrumbleRemaining": 0.3095238095232601
+        },
+        {
+            "character": "nova",
+            "route": "safe",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 38,
+            "forkStars": 4,
+            "seconds": 103.13333333336148,
+            "minimumCrumbleRemaining": 0.3452380952375742
+        },
+        {
+            "character": "nova",
+            "route": "bonus",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 46,
+            "forkStars": 14,
+            "seconds": 105.35000000002991,
+            "minimumCrumbleRemaining": 0.3095238095232601
+        },
+        {
+            "character": "frost",
+            "route": "safe",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 38,
+            "forkStars": 5,
+            "seconds": 105.50000000003003,
+            "minimumCrumbleRemaining": 0.3849206349201455
+        },
+        {
+            "character": "frost",
+            "route": "bonus",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 45,
+            "forkStars": 15,
+            "seconds": 102.39166666669422,
+            "minimumCrumbleRemaining": 0.3293650793649382
+        },
+        {
+            "character": "bloom",
+            "route": "safe",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 36,
+            "forkStars": 5,
+            "seconds": 97.99166666669072,
+            "minimumCrumbleRemaining": 0.2936507936502316
+        },
+        {
+            "character": "bloom",
+            "route": "bonus",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 46,
+            "forkStars": 14,
+            "seconds": 97.85000000002394,
+            "minimumCrumbleRemaining": 0.3809523809522978
+        },
+        {
+            "character": "onyx",
+            "route": "safe",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 44,
+            "forkStars": 6,
+            "seconds": 102.7416666666945,
+            "minimumCrumbleRemaining": 0.3095238095232601
+        },
+        {
+            "character": "onyx",
+            "route": "bonus",
+            "courses": 5,
+            "jumps": 54,
+            "stars": 47,
+            "forkStars": 14,
+            "seconds": 105.78333333336359,
+            "minimumCrumbleRemaining": 0.3333333333328028
+        }
+    ]
+}

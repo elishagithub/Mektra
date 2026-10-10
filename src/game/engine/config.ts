@@ -1,0 +1,23 @@
+// All simulation values use the 390-unit Figma width, independent of device pixels.
+export const GAME = {
+  width: 390,
+  playerScale: 0.75,
+  legCount: 15,
+  legBaseRadius: 13,
+  legHeight: 4 * 1.15,
+  playerRadius: (13 + 4 * 1.15) * 0.75,
+  orbitSpeed: 82,
+  jumpSpeed: 864,
+  trailSamples: 36,
+  trailInterval: 1 / 60,
+  fixedStep: 1 / 120,
+  maxFrameDelta: 0.05,
+  starRadius: 11,
+  collectionRadius: 25,
+  deathDuration: 0.85,
+  cameraAnchor: 0.7,
+  maxVisiblePlatforms: 10,
+  maxVisibleStars: 16,
+  maxParticles: 48,
+  maxFlightSeconds: 7,
+} as const;

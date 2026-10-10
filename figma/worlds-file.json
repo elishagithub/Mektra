@@ -1,0 +1,277 @@
+{
+  "fileKey": "HJLCW0yfd8iYcEcQ2kKz5l",
+  "url": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds",
+  "pages": [
+    "All worlds \u00b7 84 layouts",
+    "Opening library \u00b7 28 layouts",
+    "Rain & wedge revisions"
+  ],
+  "laterBoardNodeId": "4:2",
+  "openingBoardNodeId": "4:586",
+  "method": "Safari SVG vector import; connected MCP account cannot access this personal file",
+  "revisionLevels": [
+    37,
+    38,
+    39,
+    40,
+    45,
+    46,
+    47,
+    48
+  ],
+  "revisionBoardNodeId": "2:313",
+  "revisionUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=2-313",
+  "previousRevisionBoardNodeId": "2:3",
+  "previousLaterBoardNodeId": "1:2",
+  "previousOpeningBoardNodeId": "1:507",
+  "layoutCount": 84,
+  "laterUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=4-2",
+  "openingUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=4-586",
+  "hollowBoardNodeId": "4:958",
+  "hollowConceptLevels": [
+    57,
+    58,
+    59,
+    60
+  ],
+  "hollowUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=4-958",
+  "hexagonBoardNodeId": "7:1028",
+  "hexagonConceptLevels": [
+    61,
+    62,
+    63,
+    64
+  ],
+  "hexagonUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=7-1028",
+  "groupedOverviewNodeId": "7:2417",
+  "groupedOverviewUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=7-2417",
+  "worldGroupCount": 21,
+  "designLayoutCount": 84,
+  "previousGroupedOverviewNodeId": "7:1182",
+  "verticalOverviewNodeId": "8:3652",
+  "verticalOverviewUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=8-3652",
+  "verticalFirstWorldNodeId": "8:3656",
+  "olderCurrentPageBoardsHidden": true,
+  "levelDesignWidth": 390,
+  "levelDesignHeight": 5400,
+  "mobileReferenceHeight": 1080,
+  "screensPerLevel": 5,
+  "fiveScreenFirstLevelNodeId": "10:4895",
+  "fiveScreenFirstLevelUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=10-4895",
+  "fiveScreenFigmaImported": true,
+  "currentOverviewNodeId": "27:10492",
+  "currentOverviewUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=27-10492",
+  "arrangement": "21 world groups side by side; four levels stacked vertically per group",
+  "levelReviews": {
+    "1": {
+      "nodeId": "10:15637",
+      "status": "applied in Figma; visually checked",
+      "mirroredRunNodeIds": [
+        "10:15649",
+        "10:15669"
+      ],
+      "width": 390,
+      "height": 5400,
+      "positionPreserved": true,
+      "liveGameUpdated": false
+    }
+  },
+  "organicColumnNodeId": "20:274",
+  "organicLevelUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=20-274",
+  "organicShapeSource": {
+    "fileKey": "3GMPeJH9DL1N4h7rQpF4TN",
+    "page": "Page 1",
+    "groups": [
+      48,
+      51,
+      54,
+      24,
+      35
+    ]
+  },
+  "previousOrganicColumnHidden": "20:2",
+  "organicLevels": [
+    65,
+    66,
+    67,
+    68
+  ],
+  "wedgeRedesignNodeId": "20:1177",
+  "wedgeRedesignLevels": [
+    45,
+    46,
+    47,
+    48
+  ],
+  "wedgeRedesignUrl": "https://www.figma.com/design/HJLCW0yfd8iYcEcQ2kKz5l/Mektra-Endless-Worlds?node-id=20-1177",
+  "progressionRevision": {
+    "nodeId": "21:1763",
+    "level1NodeId": "21:1771",
+    "source": "Mektra_worlds_progression.svg",
+    "layoutCount": 68,
+    "positionsPreserved": true,
+    "previousHiddenNodes": [
+      "10:15629",
+      "20:274",
+      "20:1177"
+    ],
+    "validation": "Figma import and opening-level visual review; gameplay physics not tested"
+  },
+  "curvedSurfacesRevision": {
+    "nodeId": "22:11466",
+    "level1NodeId": "22:11474",
+    "levelsReviewed": 68,
+    "circlesReviewed": 745,
+    "replaced": 421,
+    "levelsChanged": 56,
+    "previousHiddenNode": "21:1763",
+    "source": "Mektra_worlds_curved_surfaces.svg",
+    "gameImplemented": false
+  },
+  "capsuleRainRevision": {
+    "nodeId": "23:21169",
+    "rainWorldNodeId": "23:25240",
+    "level37NodeId": "23:25244",
+    "source": "Mektra_worlds_capsule_rain.svg",
+    "previousHiddenNode": "22:11466",
+    "figmaCloudSync": "pending connection",
+    "capsules": {
+      "width": 74,
+      "height": 40,
+      "endRadius": 20,
+      "rotationDegrees": -15
+    },
+    "rowPeriodsSeconds": [
+      24,
+      20,
+      27,
+      22
+    ],
+    "loopSpan": 520,
+    "downwardDrift": 52,
+    "gameBuild": "Unity/Builds/Mektra.app",
+    "validation": "Passed experience, endless, core and Mac build"
+  },
+  "starJumpRevision": {
+    "nodeId": "23:29888",
+    "level1NodeId": "23:29896",
+    "source": "Mektra_worlds_star_jumps.svg",
+    "levelsReviewed": 68,
+    "starsReviewed": 1840,
+    "starsRepositioned": 1385,
+    "previousHiddenNode": "23:21169",
+    "positionsPreserved": true,
+    "gameLayoutsReviewed": 56,
+    "validatedRewardRoutes": 320,
+    "validatedCharacters": 8,
+    "longFlightsOver240Units": 48,
+    "cloudSync": "warning observed during import; not independently confirmed"
+  },
+  "smoothSineRevision": {
+    "nodeId": "23:38675",
+    "smoothedOutlines": 400,
+    "source": "Mektra_worlds_smooth_sine.svg",
+    "previousHiddenNode": "23:29888",
+    "positionsPreserved": true,
+    "gameImplemented": false,
+    "cloudSync": "pending connection"
+  },
+  "journeyExpansion": {
+    "source": "Mektra_worlds_expanded_journey.svg",
+    "nodeId": "25:2",
+    "previousHiddenNode": "23:38675",
+    "liveLevels": 80,
+    "newFamilies": {
+      "hollow": [
+        57,
+        60
+      ],
+      "connectedHexagon": [
+        61,
+        64
+      ],
+      "originalOrganic": [
+        65,
+        68
+      ],
+      "starChimes": [
+        69,
+        72
+      ],
+      "counterflow": [
+        73,
+        76
+      ],
+      "zigzag": [
+        77,
+        80
+      ]
+    },
+    "bounceFirstLevelNodeId": "25:8007",
+    "positionsPreserved": true,
+    "rainStarsPerLayout": 4,
+    "rainCapsulesPerRow": 4,
+    "validation": "4896 connection checks; 16 continuous 128-section runs; all eight characters; four full bounce trails and catcher landings",
+    "geometryNote": "Revised rain and levels 57\u201380 use gameplay paths, repeated five times in each 390\u00d75400 design preview. Earlier smooth-sine edits in levels 1\u201356 remain design-only; exact runtime courses are in assets/levels/endless/figma-editable."
+  },
+  "authoredJourney": {
+    "orderFile": "assets/levels/endless/journey-order.json",
+    "fixedOrder": true,
+    "testingCheckpoint": true,
+    "retrySameLayout": true,
+    "retryFullHealth": true,
+    "validation": "16 continuous 128-section runs across eight characters; all 84 layouts visited; checkpoint checks passed"
+  },
+  "giantCurves": {
+    "nodeId": "26:10020",
+    "source": "Mektra_giant_lobes_no_four_81_84.svg",
+    "levels": [
+      81,
+      82,
+      83,
+      84
+    ],
+    "position": {
+      "x": 16048,
+      "y": 200
+    },
+    "variants": "Existing joined 2-, 3-, 5-, 6- and 7-lobe surfaces; four-lobe surfaces removed from levels 81\u201384",
+    "starsPerLayout": 15,
+    "wallContact": "lethal",
+    "middle": "open alternating crossing lane",
+    "figmaImported": true,
+    "validation": "16 continuous 128-section runs; all 15 stars reachable in four variants with all eight characters; both screen edges lethal; Mac build passed",
+    "previousHiddenNode": "26:9548",
+    "shapeExtent": 300,
+    "ordinaryPlatformExtent": [
+      76,
+      96
+    ],
+    "shapeSources": {
+      "2": "custom-shape-05",
+      "3": "custom-shape-06",
+      "5": "custom-shape-24",
+      "6": "joined-custom-shape-22",
+      "7": "joined-custom-shape-22"
+    }
+  },
+  "layoutVarietyRevision": {
+    "nodeId": "27:10492",
+    "bounceWorldNodeId": "27:15516",
+    "source": "Mektra_worlds_varied_journey.svg",
+    "layoutsReviewed": 84,
+    "layoutsRedesigned": 80,
+    "positionsPreserved": true,
+    "frameWidth": 390,
+    "frameHeight": 5400,
+    "frameMeaning": "Five consecutive actual journey screens, climbing bottom to top; no repeated-course tiling",
+    "runtimeSectionHeight": 1080,
+    "previousHiddenNodes": [
+      "25:2",
+      "26:10020"
+    ],
+    "validation": "16 continuous 128-section runs across eight characters and safe/bonus policies; 264 reward routes, bounce trails, core, energy, lava and magnet checks; Mac build passed",
+    "buildSizeBytes": 204269727,
+    "firstBounceFrameNodeId": "27:15520"
+  }
+}

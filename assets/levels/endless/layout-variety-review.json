@@ -1,0 +1,1622 @@
+{
+  "layouts": 84,
+  "families": 21,
+  "worlds": [
+    {
+      "world": "Crossings",
+      "kind": 0,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 1,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            177,
+            219,
+            194,
+            286
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 2,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            177,
+            131,
+            299,
+            303
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 3,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            225,
+            246,
+            151,
+            270
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 4,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            182,
+            281,
+            166,
+            321
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Star fork",
+      "kind": 1,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 5,
+          "platforms": 4,
+          "jumps": 4,
+          "stars": 7,
+          "routeGaps": [
+            411,
+            417,
+            450,
+            449
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 6,
+          "platforms": 4,
+          "jumps": 4,
+          "stars": 7,
+          "routeGaps": [
+            329,
+            487,
+            526,
+            370
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 7,
+          "platforms": 4,
+          "jumps": 4,
+          "stars": 8,
+          "routeGaps": [
+            482,
+            355,
+            386,
+            509
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 8,
+          "platforms": 4,
+          "jumps": 4,
+          "stars": 7,
+          "routeGaps": [
+            356,
+            456,
+            495,
+            397
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Moving targets",
+      "kind": 2,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 9,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            196,
+            218,
+            232,
+            271
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 2
+        },
+        {
+          "level": 10,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            198,
+            117,
+            301,
+            291
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 2
+        },
+        {
+          "level": 11,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            230,
+            212,
+            176,
+            258
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 2
+        },
+        {
+          "level": 12,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            202,
+            281,
+            212,
+            306
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 2
+        }
+      ]
+    },
+    {
+      "world": "Crumble chain",
+      "kind": 3,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 13,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            174,
+            231,
+            157,
+            297
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 14,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 5,
+          "routeGaps": [
+            166,
+            152,
+            243,
+            316
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 15,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            215,
+            257,
+            113,
+            279
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 16,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            174,
+            278,
+            117,
+            335
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Gates",
+      "kind": 4,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 17,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            170,
+            202,
+            195,
+            279
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 18,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            161,
+            147,
+            304,
+            312
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 19,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            210,
+            228,
+            157,
+            266
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 20,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            166,
+            243,
+            153,
+            321
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Open stretch",
+      "kind": 5,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 21,
+          "platforms": 4,
+          "jumps": 3,
+          "stars": 3,
+          "routeGaps": [
+            172,
+            206,
+            471
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 22,
+          "platforms": 4,
+          "jumps": 3,
+          "stars": 3,
+          "routeGaps": [
+            159,
+            137,
+            554
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 23,
+          "platforms": 4,
+          "jumps": 3,
+          "stars": 3,
+          "routeGaps": [
+            213,
+            227,
+            417
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 24,
+          "platforms": 4,
+          "jumps": 3,
+          "stars": 3,
+          "routeGaps": [
+            170,
+            249,
+            442
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Pressure passage",
+      "kind": 6,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 25,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            212,
+            260,
+            238,
+            194
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 1
+        },
+        {
+          "level": 26,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            216,
+            252,
+            232,
+            208
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 1
+        },
+        {
+          "level": 27,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            186,
+            284,
+            190,
+            215
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 1
+        },
+        {
+          "level": 28,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 5,
+          "routeGaps": [
+            200,
+            332,
+            220,
+            228
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 1
+        }
+      ]
+    },
+    {
+      "world": "Spike canyon",
+      "kind": 7,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 29,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            181,
+            187,
+            210,
+            277
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 30,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            177,
+            108,
+            328,
+            306
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 31,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            232,
+            250,
+            179,
+            259
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 32,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            184,
+            245,
+            166,
+            313
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Honeycomb passage",
+      "kind": 8,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 33,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            171,
+            255,
+            184,
+            297
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 34,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            173,
+            161,
+            257,
+            317
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 35,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            207,
+            260,
+            126,
+            281
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 36,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            178,
+            317,
+            173,
+            334
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Rain of shapes",
+      "kind": 9,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 37,
+          "platforms": 18,
+          "jumps": 56,
+          "stars": 4,
+          "routeGaps": [
+            228,
+            174,
+            184,
+            250,
+            175,
+            217,
+            299,
+            395,
+            198,
+            175,
+            217,
+            299,
+            271,
+            198,
+            175,
+            217,
+            365,
+            271,
+            198,
+            175,
+            175,
+            217,
+            299,
+            395,
+            198,
+            175,
+            217,
+            299,
+            271,
+            198,
+            175,
+            217,
+            365,
+            271,
+            198,
+            175,
+            175,
+            217,
+            299,
+            395,
+            198,
+            175,
+            217,
+            299,
+            271,
+            198,
+            175,
+            217,
+            365,
+            271,
+            198,
+            175,
+            234,
+            161,
+            150,
+            211
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 16
+        },
+        {
+          "level": 38,
+          "platforms": 18,
+          "jumps": 56,
+          "stars": 4,
+          "routeGaps": [
+            218,
+            160,
+            170,
+            240,
+            180,
+            222,
+            302,
+            398,
+            203,
+            180,
+            222,
+            302,
+            274,
+            203,
+            180,
+            222,
+            367,
+            274,
+            203,
+            180,
+            170,
+            213,
+            295,
+            393,
+            194,
+            170,
+            213,
+            295,
+            268,
+            194,
+            170,
+            213,
+            363,
+            268,
+            194,
+            170,
+            185,
+            226,
+            305,
+            401,
+            207,
+            185,
+            226,
+            305,
+            277,
+            207,
+            185,
+            226,
+            369,
+            277,
+            207,
+            185,
+            238,
+            166,
+            155,
+            214
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 16
+        },
+        {
+          "level": 39,
+          "platforms": 18,
+          "jumps": 56,
+          "stars": 4,
+          "routeGaps": [
+            225,
+            169,
+            179,
+            247,
+            180,
+            222,
+            302,
+            398,
+            203,
+            180,
+            222,
+            302,
+            274,
+            203,
+            180,
+            222,
+            367,
+            274,
+            203,
+            180,
+            180,
+            222,
+            302,
+            398,
+            203,
+            180,
+            222,
+            302,
+            274,
+            203,
+            180,
+            222,
+            367,
+            274,
+            203,
+            180,
+            185,
+            226,
+            305,
+            401,
+            207,
+            185,
+            226,
+            305,
+            277,
+            207,
+            185,
+            226,
+            369,
+            277,
+            207,
+            185,
+            224,
+            147,
+            136,
+            202
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 16
+        },
+        {
+          "level": 40,
+          "platforms": 18,
+          "jumps": 56,
+          "stars": 4,
+          "routeGaps": [
+            218,
+            160,
+            170,
+            240,
+            170,
+            213,
+            295,
+            393,
+            194,
+            170,
+            213,
+            295,
+            268,
+            194,
+            170,
+            213,
+            363,
+            268,
+            194,
+            170,
+            190,
+            230,
+            309,
+            404,
+            211,
+            190,
+            230,
+            309,
+            280,
+            211,
+            190,
+            230,
+            371,
+            280,
+            211,
+            190,
+            180,
+            222,
+            302,
+            398,
+            203,
+            180,
+            222,
+            302,
+            274,
+            203,
+            180,
+            222,
+            367,
+            274,
+            203,
+            180,
+            234,
+            161,
+            150,
+            211
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 16
+        }
+      ]
+    },
+    {
+      "world": "Black-hole crossing",
+      "kind": 10,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 41,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            186,
+            201,
+            225,
+            276
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 42,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            182,
+            111,
+            297,
+            293
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 43,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            235,
+            234,
+            171,
+            263
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 44,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            189,
+            263,
+            203,
+            314
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Wedge springs",
+      "kind": 11,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 45,
+          "platforms": 5,
+          "jumps": 2,
+          "stars": 2,
+          "routeGaps": [
+            723,
+            117
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 46,
+          "platforms": 5,
+          "jumps": 2,
+          "stars": 2,
+          "routeGaps": [
+            723,
+            117
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 47,
+          "platforms": 5,
+          "jumps": 2,
+          "stars": 3,
+          "routeGaps": [
+            723,
+            118
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 48,
+          "platforms": 5,
+          "jumps": 2,
+          "stars": 3,
+          "routeGaps": [
+            723,
+            117
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Lobed crossroads",
+      "kind": 12,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 49,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            254,
+            199,
+            282,
+            225,
+            182
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 50,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            194,
+            234,
+            208,
+            181,
+            184
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 51,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            191,
+            261,
+            145,
+            302,
+            176
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 52,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            208,
+            199,
+            243,
+            234,
+            172
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Long leaps",
+      "kind": 13,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 53,
+          "platforms": 4,
+          "jumps": 3,
+          "stars": 4,
+          "routeGaps": [
+            432,
+            160,
+            423
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 54,
+          "platforms": 4,
+          "jumps": 3,
+          "stars": 3,
+          "routeGaps": [
+            326,
+            292,
+            284
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 55,
+          "platforms": 4,
+          "jumps": 3,
+          "stars": 3,
+          "routeGaps": [
+            369,
+            227,
+            318
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 56,
+          "platforms": 4,
+          "jumps": 3,
+          "stars": 3,
+          "routeGaps": [
+            397,
+            234,
+            280
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Hollow passages",
+      "kind": 14,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 57,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            194,
+            215,
+            223,
+            272
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 58,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            194,
+            116,
+            300,
+            155,
+            143
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 59,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            232,
+            221,
+            170,
+            189,
+            149
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 60,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            200,
+            278,
+            196,
+            202,
+            163
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Connected hexagons",
+      "kind": 15,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 61,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            158,
+            228,
+            168,
+            300
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 62,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            154,
+            151,
+            293,
+            204,
+            125
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 63,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            213,
+            284,
+            138,
+            186,
+            127
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 64,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            160,
+            283,
+            131,
+            212,
+            144
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Organic curves",
+      "kind": 16,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 65,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            170,
+            260,
+            189,
+            303
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 66,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            175,
+            164,
+            253,
+            200,
+            132
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 67,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            200,
+            256,
+            127,
+            230,
+            139
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 68,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 6,
+          "routeGaps": [
+            179,
+            323,
+            182,
+            248,
+            153
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Star chimes",
+      "kind": 17,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 69,
+          "platforms": 4,
+          "jumps": 1,
+          "stars": 12,
+          "routeGaps": [
+            840
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 70,
+          "platforms": 4,
+          "jumps": 1,
+          "stars": 13,
+          "routeGaps": [
+            841
+          ],
+          "receivingShape": "rain-capsule",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 71,
+          "platforms": 4,
+          "jumps": 1,
+          "stars": 12,
+          "routeGaps": [
+            840
+          ],
+          "receivingShape": "original-organic",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 72,
+          "platforms": 4,
+          "jumps": 1,
+          "stars": 11,
+          "routeGaps": [
+            841
+          ],
+          "receivingShape": "rounded-square",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Counterflow",
+      "kind": 18,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 73,
+          "platforms": 14,
+          "jumps": 27,
+          "stars": 4,
+          "routeGaps": [
+            205,
+            170,
+            205,
+            175,
+            209,
+            209,
+            175,
+            209,
+            209,
+            175,
+            175,
+            209,
+            209,
+            175,
+            209,
+            209,
+            175,
+            175,
+            209,
+            209,
+            175,
+            209,
+            209,
+            175,
+            185,
+            145,
+            185
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 12
+        },
+        {
+          "level": 74,
+          "platforms": 14,
+          "jumps": 27,
+          "stars": 4,
+          "routeGaps": [
+            193,
+            155,
+            193,
+            180,
+            214,
+            214,
+            180,
+            214,
+            214,
+            180,
+            165,
+            201,
+            201,
+            165,
+            201,
+            201,
+            165,
+            190,
+            222,
+            222,
+            190,
+            222,
+            222,
+            190,
+            189,
+            150,
+            189
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 12
+        },
+        {
+          "level": 75,
+          "platforms": 14,
+          "jumps": 27,
+          "stars": 4,
+          "routeGaps": [
+            205,
+            170,
+            205,
+            180,
+            214,
+            214,
+            180,
+            214,
+            214,
+            180,
+            175,
+            209,
+            209,
+            175,
+            209,
+            209,
+            175,
+            175,
+            209,
+            209,
+            175,
+            209,
+            209,
+            175,
+            181,
+            140,
+            181
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 12
+        },
+        {
+          "level": 76,
+          "platforms": 14,
+          "jumps": 27,
+          "stars": 4,
+          "routeGaps": [
+            193,
+            155,
+            193,
+            170,
+            205,
+            205,
+            170,
+            205,
+            205,
+            170,
+            190,
+            222,
+            222,
+            190,
+            222,
+            222,
+            190,
+            180,
+            214,
+            214,
+            180,
+            214,
+            214,
+            180,
+            185,
+            145,
+            185
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 12
+        }
+      ]
+    },
+    {
+      "world": "Zigzag lanes",
+      "kind": 19,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 77,
+          "platforms": 5,
+          "jumps": 4,
+          "stars": 4,
+          "routeGaps": [
+            190,
+            211,
+            218,
+            276
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 78,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            193,
+            111,
+            325,
+            159,
+            145
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 79,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            233,
+            250,
+            171,
+            187,
+            152
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 80,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 5,
+          "routeGaps": [
+            198,
+            282,
+            195,
+            199,
+            166
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        }
+      ]
+    },
+    {
+      "world": "Giant curves",
+      "kind": 20,
+      "distinctPlayfields": 4,
+      "variants": [
+        {
+          "level": 81,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 15,
+          "routeGaps": [
+            269,
+            441,
+            441,
+            441,
+            262
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 82,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 15,
+          "routeGaps": [
+            269,
+            441,
+            441,
+            441,
+            262
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 0
+        },
+        {
+          "level": 83,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 15,
+          "routeGaps": [
+            269,
+            441,
+            441,
+            441,
+            262
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 4
+        },
+        {
+          "level": 84,
+          "platforms": 6,
+          "jumps": 5,
+          "stars": 15,
+          "routeGaps": [
+            269,
+            441,
+            441,
+            441,
+            262
+          ],
+          "receivingShape": "circle",
+          "movingSurfaces": 4
+        }
+      ]
+    }
+  ],
+  "note": "Structural differences are reviewed alongside physical jump, collection and continuous-run checks. Distinct geometry alone does not measure enjoyment."
+}

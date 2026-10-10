@@ -1,0 +1,4298 @@
+{
+    "routes": [
+        {
+            "level": 1,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 254.20190944834588,
+            "flightLength": 63.62350412689486,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 167.68542066212829,
+                    "y": 875.9339886210518
+                }
+            ]
+        },
+        {
+            "level": 1,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 319.9703151058553,
+            "flightLength": 112.94831391988947,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 194.6286119608737,
+                    "y": 691.536291035204
+                }
+            ]
+        },
+        {
+            "level": 1,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 208.3006417075507,
+            "flightLength": 96.58453334512274,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 208.0882480698938,
+                    "y": 506.71551779268909
+                }
+            ]
+        },
+        {
+            "level": 1,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 256.3676201939379,
+            "flightLength": 170.94877194986686,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 182.75466132348863,
+                    "y": 274.62475585764266
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 244.11453208928459,
+            "flightLength": 72.20054953664409,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 153.57238352736938,
+                    "y": 882.08573545184
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 237.41482856799258,
+            "flightLength": 31.235492451240984,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 115.32340051152004,
+                    "y": 740.7133917707564
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 213.28042706020939,
+            "flightLength": 199.7043545717845,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 188.8369205615623,
+                    "y": 553.4503454232638
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 237.23877598417648,
+            "flightLength": 197.75008001279807,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 236.39259578845214,
+                    "y": 278.2313647477031
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 290.5164679409668,
+            "flightLength": 121.12218207938324,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 229.8131016926626,
+                    "y": 852.855805435228
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 220.40597221013639,
+            "flightLength": 167.98603932814758,
+            "shiftSeconds": 0.0146398568076237,
+            "stars": [
+                {
+                    "x": 188.57976668678874,
+                    "y": 614.345378042303
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 213.56347381306655,
+            "flightLength": 60.16956853594447,
+            "shiftSeconds": 0.07732588925519157,
+            "stars": [
+                {
+                    "x": 120.90738058941605,
+                    "y": 445.16990208139148
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 257.62244191920618,
+            "flightLength": 169.72107524160706,
+            "shiftSeconds": 0.08190579010749546,
+            "stars": [
+                {
+                    "x": 202.95068785817939,
+                    "y": 208.79840269117273
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 246.13200756109689,
+            "flightLength": 70.87711337661769,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 156.29520621460757,
+                    "y": 880.6432787387234
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 262.5891808500088,
+            "flightLength": 201.5555465053021,
+            "shiftSeconds": 0.05789861238123376,
+            "stars": [
+                {
+                    "x": 242.89797701669554,
+                    "y": 633.2767075531635
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 145.6385925328243,
+            "flightLength": 78.95287833470518,
+            "shiftSeconds": 0.22203207658444464,
+            "stars": [
+                {
+                    "x": 189.75773465548964,
+                    "y": 500.27775552296978
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 254.32478244818948,
+            "flightLength": 217.14107941285006,
+            "shiftSeconds": 0.04073084675222558,
+            "stars": [
+                {
+                    "x": 164.95575395852686,
+                    "y": 244.76992089469895
+                }
+            ]
+        },
+        {
+            "level": 5,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 258.2368603919705,
+            "flightLength": 294.42370018634576,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 148.45315464378019,
+                    "y": 773.3113287672851
+                }
+            ]
+        },
+        {
+            "level": 5,
+            "from": 0,
+            "to": 2,
+            "points": 3,
+            "style": "edge / risky",
+            "launchDistance": 290.45594367681238,
+            "flightLength": 333.3867555059888,
+            "shiftSeconds": 0.04254933921899621,
+            "stars": [
+                {
+                    "x": 254.2078367581618,
+                    "y": 777.1248073339344
+                },
+                {
+                    "x": 271.17355870135256,
+                    "y": 724.7227970772051
+                },
+                {
+                    "x": 288.13928064454327,
+                    "y": 672.3207868204757
+                }
+            ]
+        },
+        {
+            "level": 5,
+            "from": 1,
+            "to": 3,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 248.73867074778873,
+            "flightLength": 348.4419595169999,
+            "shiftSeconds": 0.04901424760421955,
+            "stars": [
+                {
+                    "x": 122.0370634084156,
+                    "y": 367.0172650735025
+                },
+                {
+                    "x": 137.79640057601066,
+                    "y": 245.636033855336
+                }
+            ]
+        },
+        {
+            "level": 5,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 165.13986494517804,
+            "flightLength": 366.443442054349,
+            "shiftSeconds": 0.015487889195492697,
+            "stars": [
+                {
+                    "x": 220.86358222067958,
+                    "y": 302.29124469749987
+                }
+            ]
+        },
+        {
+            "level": 6,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 259.24559812787666,
+            "flightLength": 217.33848724185149,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 159.9809686870197,
+                    "y": 808.3149908268348
+                }
+            ]
+        },
+        {
+            "level": 6,
+            "from": 0,
+            "to": 2,
+            "points": 3,
+            "style": "edge / risky",
+            "launchDistance": 280.3282168083148,
+            "flightLength": 402.4701226087285,
+            "shiftSeconds": 0.030392385156425864,
+            "stars": [
+                {
+                    "x": 224.81257963278339,
+                    "y": 745.1503200305766
+                },
+                {
+                    "x": 234.06526209246153,
+                    "y": 678.4692112567984
+                },
+                {
+                    "x": 243.31794455213967,
+                    "y": 611.7881024830202
+                }
+            ]
+        },
+        {
+            "level": 6,
+            "from": 1,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 275.4548941009877,
+            "flightLength": 414.4702190249488,
+            "shiftSeconds": 0.01580228207147767,
+            "stars": [
+                {
+                    "x": 177.79559319783216,
+                    "y": 323.4569689976164
+                }
+            ]
+        },
+        {
+            "level": 6,
+            "from": 2,
+            "to": 3,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 160.49407329054803,
+            "flightLength": 286.9786663626766,
+            "shiftSeconds": 0.04165635965120039,
+            "stars": [
+                {
+                    "x": 232.95336001254069,
+                    "y": 338.20713109462437
+                },
+                {
+                    "x": 199.12881076881937,
+                    "y": 246.31465986624193
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 259.24559812787666,
+            "flightLength": 372.7939520472467,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 143.46065837490478,
+                    "y": 736.7572313091456
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "from": 0,
+            "to": 2,
+            "points": 3,
+            "style": "medium / long",
+            "launchDistance": 290.2743708843493,
+            "flightLength": 262.4220877116868,
+            "shiftSeconds": 0.025471713273956917,
+            "stars": [
+                {
+                    "x": 244.30197171052004,
+                    "y": 806.0726746491794
+                },
+                {
+                    "x": 257.369437447903,
+                    "y": 765.2743053287966
+                },
+                {
+                    "x": 270.4369031852858,
+                    "y": 724.4759360084138
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "from": 1,
+            "to": 3,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 260.0611412262734,
+            "flightLength": 280.5684553299005,
+            "shiftSeconds": 0.2829520764974904,
+            "stars": [
+                {
+                    "x": 114.33453744360013,
+                    "y": 330.30968495407168
+                },
+                {
+                    "x": 141.06705833506855,
+                    "y": 236.10937324127935
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "from": 2,
+            "to": 3,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 164.14207402731976,
+            "flightLength": 433.85741551388068,
+            "shiftSeconds": 0.03460781691176434,
+            "stars": [
+                {
+                    "x": 236.2201807305193,
+                    "y": 419.0225144026365
+                },
+                {
+                    "x": 195.13305805605996,
+                    "y": 278.0062644513134
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 261.26307359968896,
+            "flightLength": 238.9894381018393,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 162.96809919289249,
+                    "y": 795.2095712649962
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "from": 0,
+            "to": 2,
+            "points": 3,
+            "style": "edge / risky",
+            "launchDistance": 278.048469525167,
+            "flightLength": 367.2115534019585,
+            "shiftSeconds": 0.048627816250281379,
+            "stars": [
+                {
+                    "x": 215.11426192218145,
+                    "y": 756.3204493010253
+                },
+                {
+                    "x": 221.1287772916423,
+                    "y": 695.4167088176152
+                },
+                {
+                    "x": 227.14329266110318,
+                    "y": 634.5129683342052
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "from": 1,
+            "to": 3,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 294.95397541534,
+            "flightLength": 396.40125394883327,
+            "shiftSeconds": 0.06917681449156123,
+            "stars": [
+                {
+                    "x": 175.81574348877494,
+                    "y": 396.4342883314166
+                },
+                {
+                    "x": 205.2323389348941,
+                    "y": 265.04709903063556
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 179.82329539984444,
+            "flightLength": 309.18538811710519,
+            "shiftSeconds": 0.029413573396100204,
+            "stars": [
+                {
+                    "x": 238.0244867833897,
+                    "y": 277.7622313178539
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 256.2193849201582,
+            "flightLength": 90.40443339037948,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 168.9518273668095,
+                    "y": 869.1589986350833
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 235.89940057463179,
+            "flightLength": 115.14173479091724,
+            "shiftSeconds": 0.08428907941136846,
+            "stars": [
+                {
+                    "x": 250.06635159100973,
+                    "y": 673.6527574605202
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 237.89667893984166,
+            "flightLength": 177.2129598916248,
+            "shiftSeconds": 0.19630984127820576,
+            "stars": [
+                {
+                    "x": 186.01166243768308,
+                    "y": 429.44508973331429
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 198.84818277072385,
+            "flightLength": 188.10938229001284,
+            "shiftSeconds": 0.036321835818819449,
+            "stars": [
+                {
+                    "x": 151.67691373773236,
+                    "y": 231.35607003764953
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 244.11453208928459,
+            "flightLength": 90.06743167049153,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 150.69922474596729,
+                    "y": 876.6820923643618
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 229.82578060327138,
+            "flightLength": 24.389407437151364,
+            "shiftSeconds": 0.14556719759929732,
+            "stars": [
+                {
+                    "x": 169.10798378854694,
+                    "y": 737.9200391142184
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 283.15195053582939,
+            "flightLength": 201.72353504079997,
+            "shiftSeconds": 0.024590354360652414,
+            "stars": [
+                {
+                    "x": 210.28410156784828,
+                    "y": 512.7756954757414
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 189.06578112862798,
+            "flightLength": 207.8991761155435,
+            "shiftSeconds": 0.07942144740587236,
+            "stars": [
+                {
+                    "x": 166.20377019892937,
+                    "y": 209.8771832811545
+                }
+            ]
+        },
+        {
+            "level": 11,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 285.47277926143615,
+            "flightLength": 129.52588552356665,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 221.75083270024238,
+                    "y": 844.1287108355292
+                }
+            ]
+        },
+        {
+            "level": 11,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 202.58439743484559,
+            "flightLength": 145.15867348011006,
+            "shiftSeconds": 0.02962588148954237,
+            "stars": [
+                {
+                    "x": 215.107110387584,
+                    "y": 607.3191804404348
+                }
+            ]
+        },
+        {
+            "level": 11,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 237.32949895565248,
+            "flightLength": 128.63144602541386,
+            "shiftSeconds": 0.09528808627436877,
+            "stars": [
+                {
+                    "x": 129.43720241294163,
+                    "y": 399.0287060843053
+                }
+            ]
+        },
+        {
+            "level": 11,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 185.99056342660075,
+            "flightLength": 220.2303254160567,
+            "shiftSeconds": 0.03241025390945592,
+            "stars": [
+                {
+                    "x": 125.48942302124597,
+                    "y": 169.56373404173304
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 245.12326982519074,
+            "flightLength": 119.28982354373261,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 143.81174368079614,
+                    "y": 859.5377205200678
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 220.74240499049905,
+            "flightLength": 218.93017557346119,
+            "shiftSeconds": 0.11103131006963975,
+            "stars": [
+                {
+                    "x": 226.11876482766957,
+                    "y": 601.7582805102743
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 182.92609861215164,
+            "flightLength": 170.91018971844199,
+            "shiftSeconds": 0.04686567396294107,
+            "stars": [
+                {
+                    "x": 171.67747915021358,
+                    "y": 442.281792436706
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 188.98793237250613,
+            "flightLength": 238.69111858379007,
+            "shiftSeconds": 0.018770251144639189,
+            "stars": [
+                {
+                    "x": 135.14565717042133,
+                    "y": 248.288808159793
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 260.2543358637828,
+            "flightLength": 77.42363510525944,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 176.63327666400867,
+                    "y": 873.5919251636141
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 187.15547494515293,
+            "flightLength": 165.15742010607139,
+            "shiftSeconds": 0.05656608578166649,
+            "stars": [
+                {
+                    "x": 185.48709099819443,
+                    "y": 631.2346173001382
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 159.58859529954555,
+            "flightLength": 90.3292083593449,
+            "shiftSeconds": 0.08643718219492036,
+            "stars": [
+                {
+                    "x": 178.39761171476293,
+                    "y": 473.38636926732269
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 184.68459401624794,
+            "flightLength": 205.5553319796024,
+            "shiftSeconds": 0.03914654766319712,
+            "stars": [
+                {
+                    "x": 175.257290448843,
+                    "y": 249.19803654595354
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 251.17569624062754,
+            "flightLength": 72.32844436079594,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 163.32951536289188,
+                    "y": 877.4954028839628
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 160.8238254835611,
+            "flightLength": 90.97675121573029,
+            "shiftSeconds": 0.1410728488055083,
+            "stars": [
+                {
+                    "x": 129.08266352152979,
+                    "y": 703.9424008369384
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 167.97765193229638,
+            "flightLength": 175.07023939572268,
+            "shiftSeconds": 0.01680099471776983,
+            "stars": [
+                {
+                    "x": 201.75242676575778,
+                    "y": 520.3570914388865
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "from": 3,
+            "to": 4,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 148.90002412948389,
+            "flightLength": 243.85299767240597,
+            "shiftSeconds": 0.049045122426324399,
+            "stars": [
+                {
+                    "x": 208.33041450651326,
+                    "y": 302.70208522866559
+                },
+                {
+                    "x": 182.9474501150875,
+                    "y": 227.29983911687138
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 284.46404152553,
+            "flightLength": 120.9821299565297,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 218.45643279014906,
+                    "y": 849.6468813272735
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 142.2563157290317,
+            "flightLength": 193.7633931329724,
+            "shiftSeconds": 0.016098879278053883,
+            "stars": [
+                {
+                    "x": 177.89419481816527,
+                    "y": 604.9424897477393
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 160.57708561096644,
+            "flightLength": 61.12419414439188,
+            "shiftSeconds": 0.06660596627672022,
+            "stars": [
+                {
+                    "x": 141.02424801140016,
+                    "y": 435.1114092742523
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 173.81469107567589,
+            "flightLength": 207.06345467263533,
+            "shiftSeconds": 0.03896491460627599,
+            "stars": [
+                {
+                    "x": 152.33167502701745,
+                    "y": 200.39511808491256
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 254.20190944834588,
+            "flightLength": 82.49304464869506,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 165.7942443934715,
+                    "y": 870.113520227454
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 177.08998290337474,
+            "flightLength": 219.7543212173907,
+            "shiftSeconds": 0.019062401569790344,
+            "stars": [
+                {
+                    "x": 204.03064804198608,
+                    "y": 604.3364563406104
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 122.78975445043597,
+            "flightLength": 59.46355423667466,
+            "shiftSeconds": 0.08001905923292081,
+            "stars": [
+                {
+                    "x": 189.6119613992307,
+                    "y": 492.9087064630892
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 179.8966429193778,
+            "flightLength": 243.4508885946198,
+            "shiftSeconds": 0.0903426151976384,
+            "stars": [
+                {
+                    "x": 188.53635204516946,
+                    "y": 267.70654912051369
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 272.3591886946564,
+            "flightLength": 53.74136776382284,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 195.0000000000001,
+                    "y": 877.7726909034955
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 266.73350689879205,
+            "flightLength": 103.47095736595539,
+            "shiftSeconds": 0.04048005314991904,
+            "stars": [
+                {
+                    "x": 226.85013758505913,
+                    "y": 657.8418112457191
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 179.5258619230916,
+            "flightLength": 110.10017225366645,
+            "shiftSeconds": 0.0904435855965963,
+            "stars": [
+                {
+                    "x": 177.41524451945365,
+                    "y": 474.5764832841754
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 241.63406437349455,
+            "flightLength": 180.5047042803251,
+            "shiftSeconds": 0.033117239108722138,
+            "stars": [
+                {
+                    "x": 176.57927761376735,
+                    "y": 234.81402648131707
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 272.3591886946564,
+            "flightLength": 56.195031736260379,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 195.0000000000001,
+                    "y": 877.7726909034955
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 236.2278732486419,
+            "flightLength": 69.69963528702579,
+            "shiftSeconds": 0.09196227433827267,
+            "stars": [
+                {
+                    "x": 157.89269819915377,
+                    "y": 702.8995176317629
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 240.32982589378498,
+            "flightLength": 231.7835830726066,
+            "shiftSeconds": 0.03799040132944348,
+            "stars": [
+                {
+                    "x": 205.4656559612632,
+                    "y": 520.3195509185479
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 216.46618873646316,
+            "flightLength": 213.72379015846284,
+            "shiftSeconds": 0.06714594017471662,
+            "stars": [
+                {
+                    "x": 198.77375891259573,
+                    "y": 223.7216348662829
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 272.3591886946564,
+            "flightLength": 92.78916207531779,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 195.0000000000001,
+                    "y": 859.4126909034954
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 237.87586596593139,
+            "flightLength": 132.24257148004004,
+            "shiftSeconds": 0.037852943717112948,
+            "stars": [
+                {
+                    "x": 157.9771968851094,
+                    "y": 610.6173884958769
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 225.3561643460905,
+            "flightLength": 71.87513440572431,
+            "shiftSeconds": 0.22601591556629117,
+            "stars": [
+                {
+                    "x": 159.0815022360922,
+                    "y": 448.6395162688006
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 247.90795479896929,
+            "flightLength": 162.11824994849528,
+            "shiftSeconds": 0.04252134657455478,
+            "stars": [
+                {
+                    "x": 193.32231698930006,
+                    "y": 215.19715103538696
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 271.35045095875025,
+            "flightLength": 56.12097846781377,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 193.56555860200613,
+                    "y": 877.8177768844798
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 264.5957269706329,
+            "flightLength": 157.5760737385991,
+            "shiftSeconds": 0.06785675430482165,
+            "stars": [
+                {
+                    "x": 223.62012682619449,
+                    "y": 619.2331451206945
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 155.29952886832144,
+            "flightLength": 78.7809708928601,
+            "shiftSeconds": 0.1607021618165262,
+            "stars": [
+                {
+                    "x": 176.674692817264,
+                    "y": 500.6525265688857
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 264.4535643216072,
+            "flightLength": 224.2070805888279,
+            "shiftSeconds": 0.12495765459916662,
+            "stars": [
+                {
+                    "x": 161.87478496300435,
+                    "y": 247.50210344836155
+                }
+            ]
+        },
+        {
+            "level": 21,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 263.2805490715011,
+            "flightLength": 48.99421582085387,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 183.10668673410053,
+                    "y": 884.9088983926957
+                }
+            ]
+        },
+        {
+            "level": 21,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 310.6610074979025,
+            "flightLength": 74.97056803621601,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 184.08792413970785,
+                    "y": 695.0333475237686
+                }
+            ]
+        },
+        {
+            "level": 21,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 287.1578219536165,
+            "flightLength": 343.5977664330945,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 206.52497997496023,
+                    "y": 361.9534010852652
+                }
+            ]
+        },
+        {
+            "level": 22,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 255.21064718425203,
+            "flightLength": 48.545424133494389,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 172.73559187384579,
+                    "y": 887.1767485988413
+                }
+            ]
+        },
+        {
+            "level": 22,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 288.92963057329157,
+            "flightLength": 20.2077378504671,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 151.80256494808035,
+                    "y": 745.506014561061
+                }
+            ]
+        },
+        {
+            "level": 22,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 286.62825417947399,
+            "flightLength": 436.9385773176275,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 173.5432299533639,
+                    "y": 411.8211812889451
+                }
+            ]
+        },
+        {
+            "level": 23,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 281.4378283178115,
+            "flightLength": 91.63514366532266,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 209.78223714931765,
+                    "y": 866.6690293153821
+                }
+            ]
+        },
+        {
+            "level": 23,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 278.3622960180068,
+            "flightLength": 100.34766215995313,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 194.2786719283728,
+                    "y": 649.7958496656842
+                }
+            ]
+        },
+        {
+            "level": 23,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 329.33153660753796,
+            "flightLength": 302.68757546814018,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 169.70670243998249,
+                    "y": 332.510923122845
+                }
+            ]
+        },
+        {
+            "level": 24,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 257.22812265606435,
+            "flightLength": 51.10480154343423,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 173.7075865891826,
+                    "y": 880.5356313350677
+                }
+            ]
+        },
+        {
+            "level": 24,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 309.6567715524968,
+            "flightLength": 142.34975009107979,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 193.19583012862788,
+                    "y": 678.1033507759572
+                }
+            ]
+        },
+        {
+            "level": 24,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 247.76664309350816,
+            "flightLength": 328.78966361829699,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 215.93036110795397,
+                    "y": 358.238619235516
+                }
+            ]
+        },
+        {
+            "level": 25,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 253.19317171243984,
+            "flightLength": 95.71546799212855,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 162.23921721608057,
+                    "y": 864.8559837198629
+                }
+            ]
+        },
+        {
+            "level": 25,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 287.9934322013025,
+            "flightLength": 157.83408384296889,
+            "shiftSeconds": 0.07711825450345462,
+            "stars": [
+                {
+                    "x": 192.47848470513379,
+                    "y": 591.5549975698456
+                }
+            ]
+        },
+        {
+            "level": 25,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 193.92184844685608,
+            "flightLength": 169.71396634338215,
+            "shiftSeconds": 0.1183730321251075,
+            "stars": [
+                {
+                    "x": 151.32278471058604,
+                    "y": 394.5316543892405
+                }
+            ]
+        },
+        {
+            "level": 25,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 283.3546446458564,
+            "flightLength": 90.64493063215503,
+            "shiftSeconds": 0.13771741021782719,
+            "stars": [
+                {
+                    "x": 160.00240197205413,
+                    "y": 200.65694587558319
+                }
+            ]
+        },
+        {
+            "level": 26,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 242.09705661747229,
+            "flightLength": 100.39847945675314,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 144.78658768260429,
+                    "y": 873.0278186448652
+                }
+            ]
+        },
+        {
+            "level": 26,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 302.0071269131568,
+            "flightLength": 151.23599913025977,
+            "shiftSeconds": 0.109373242734513,
+            "stars": [
+                {
+                    "x": 107.69937442543722,
+                    "y": 598.0621615170131
+                }
+            ]
+        },
+        {
+            "level": 26,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 217.47365234602797,
+            "flightLength": 156.3561428353582,
+            "shiftSeconds": 0.09461481275195585,
+            "stars": [
+                {
+                    "x": 199.0681817057594,
+                    "y": 409.9154425497358
+                }
+            ]
+        },
+        {
+            "level": 26,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 213.4415151306158,
+            "flightLength": 121.31616958465605,
+            "shiftSeconds": 0.09735105965607602,
+            "stars": [
+                {
+                    "x": 189.21589576316635,
+                    "y": 195.95126371376069
+                }
+            ]
+        },
+        {
+            "level": 27,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 286.4815169973423,
+            "flightLength": 76.5934493371235,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 216.35992453204686,
+                    "y": 874.3302645323951
+                }
+            ]
+        },
+        {
+            "level": 27,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 237.68561758473033,
+            "flightLength": 181.2944998744437,
+            "shiftSeconds": 0.023105241774281295,
+            "stars": [
+                {
+                    "x": 188.6879094107286,
+                    "y": 619.3321226349718
+                }
+            ]
+        },
+        {
+            "level": 27,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 175.89932455130944,
+            "flightLength": 120.87526116943529,
+            "shiftSeconds": 0.08654914597620328,
+            "stars": [
+                {
+                    "x": 105.66944056385971,
+                    "y": 394.44738169692308
+                }
+            ]
+        },
+        {
+            "level": 27,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 236.05607772273107,
+            "flightLength": 127.83869233030186,
+            "shiftSeconds": 0.08548877290286418,
+            "stars": [
+                {
+                    "x": 143.6967366388988,
+                    "y": 181.4338974398434
+                }
+            ]
+        },
+        {
+            "level": 28,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 241.08831888156613,
+            "flightLength": 90.7596184432201,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 146.41768540674597,
+                    "y": 879.1453288811168
+                }
+            ]
+        },
+        {
+            "level": 28,
+            "from": 1,
+            "to": 2,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 265.26036325723455,
+            "flightLength": 256.4438915729581,
+            "shiftSeconds": 0.032457273295860938,
+            "stars": [
+                {
+                    "x": 163.78426002439614,
+                    "y": 653.4803386503079
+                },
+                {
+                    "x": 209.65748529815247,
+                    "y": 573.96375419786
+                }
+            ]
+        },
+        {
+            "level": 28,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 150.32263417649998,
+            "flightLength": 159.1751273243959,
+            "shiftSeconds": 0.06310853797223654,
+            "stars": [
+                {
+                    "x": 194.64386485415793,
+                    "y": 391.2235448814398
+                }
+            ]
+        },
+        {
+            "level": 28,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 237.08936328702652,
+            "flightLength": 120.03641579657719,
+            "shiftSeconds": 0.054110281459478579,
+            "stars": [
+                {
+                    "x": 154.924041776449,
+                    "y": 212.94113764015584
+                }
+            ]
+        },
+        {
+            "level": 29,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 261.26307359968896,
+            "flightLength": 77.90845609133261,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 178.14881095383178,
+                    "y": 873.3078400705924
+                }
+            ]
+        },
+        {
+            "level": 29,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 222.81700467974515,
+            "flightLength": 108.8366484073317,
+            "shiftSeconds": 0.1059636889191818,
+            "stars": [
+                {
+                    "x": 179.0885766233343,
+                    "y": 658.1233516455053
+                }
+            ]
+        },
+        {
+            "level": 29,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 201.90692847648,
+            "flightLength": 133.4652156560567,
+            "shiftSeconds": 0.0963306262901652,
+            "stars": [
+                {
+                    "x": 177.02215249589089,
+                    "y": 467.85775690004257
+                }
+            ]
+        },
+        {
+            "level": 29,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 213.0973362305209,
+            "flightLength": 176.97734992385277,
+            "shiftSeconds": 0.05045889948532463,
+            "stars": [
+                {
+                    "x": 180.75905834899729,
+                    "y": 241.45491021947155
+                }
+            ]
+        },
+        {
+            "level": 30,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 249.15822076881524,
+            "flightLength": 74.00382307793545,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 160.47709734809943,
+                    "y": 878.6688375305438
+                }
+            ]
+        },
+        {
+            "level": 30,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 196.32771089625124,
+            "flightLength": 24.217223516822675,
+            "shiftSeconds": 0.18784472126582225,
+            "stars": [
+                {
+                    "x": 98.54354120434341,
+                    "y": 738.6231055002229
+                }
+            ]
+        },
+        {
+            "level": 30,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 239.1070411102703,
+            "flightLength": 241.460615000167,
+            "shiftSeconds": 0.03279828466546103,
+            "stars": [
+                {
+                    "x": 206.8000476467441,
+                    "y": 516.3704003895284
+                }
+            ]
+        },
+        {
+            "level": 30,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 195.3845193855534,
+            "flightLength": 220.23289160216377,
+            "shiftSeconds": 0.08669756366114867,
+            "stars": [
+                {
+                    "x": 193.98536377656945,
+                    "y": 221.69631733135439
+                }
+            ]
+        },
+        {
+            "level": 31,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 292.5339434127791,
+            "flightLength": 128.80778154613959,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 235.64981254582035,
+                    "y": 848.3155579252975
+                }
+            ]
+        },
+        {
+            "level": 31,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 180.85297560209177,
+            "flightLength": 162.30359043783893,
+            "shiftSeconds": 0.04289006456252593,
+            "stars": [
+                {
+                    "x": 171.41254790260869,
+                    "y": 633.7533149416483
+                }
+            ]
+        },
+        {
+            "level": 31,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 218.94832085620528,
+            "flightLength": 102.76468208440348,
+            "shiftSeconds": 0.1155967515481983,
+            "stars": [
+                {
+                    "x": 123.56900723637883,
+                    "y": 424.9494041215702
+                }
+            ]
+        },
+        {
+            "level": 31,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 229.25948228671423,
+            "flightLength": 170.59354150153255,
+            "shiftSeconds": 0.10114715760467348,
+            "stars": [
+                {
+                    "x": 210.38985056355694,
+                    "y": 210.3118240539576
+                }
+            ]
+        },
+        {
+            "level": 32,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 252.18443397653369,
+            "flightLength": 80.41158669433347,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 162.6739560654807,
+                    "y": 871.1849242296086
+                }
+            ]
+        },
+        {
+            "level": 32,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 245.5015598268651,
+            "flightLength": 164.1873900819033,
+            "shiftSeconds": 0.08188103234664047,
+            "stars": [
+                {
+                    "x": 234.50484919105819,
+                    "y": 652.9814456489225
+                }
+            ]
+        },
+        {
+            "level": 32,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 182.64344084273825,
+            "flightLength": 84.97240869235918,
+            "shiftSeconds": 0.1204132828627065,
+            "stars": [
+                {
+                    "x": 184.10611944551187,
+                    "y": 494.86915210642317
+                }
+            ]
+        },
+        {
+            "level": 32,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 215.8469792786566,
+            "flightLength": 214.18800126055158,
+            "shiftSeconds": 0.04541300953679216,
+            "stars": [
+                {
+                    "x": 170.1258960474838,
+                    "y": 251.61270852591697
+                }
+            ]
+        },
+        {
+            "level": 33,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 250.16695850472139,
+            "flightLength": 64.77127982878899,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 161.89653521391504,
+                    "y": 878.066363073141
+                }
+            ]
+        },
+        {
+            "level": 33,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 247.82809610876206,
+            "flightLength": 161.8786544530486,
+            "shiftSeconds": 0.2124279841174226,
+            "stars": [
+                {
+                    "x": 198.79025394368197,
+                    "y": 642.0459174628414
+                }
+            ]
+        },
+        {
+            "level": 33,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 195.56294951268309,
+            "flightLength": 95.79085409286692,
+            "shiftSeconds": 0.22831579904032998,
+            "stars": [
+                {
+                    "x": 179.11469938907519,
+                    "y": 479.71655035286127
+                }
+            ]
+        },
+        {
+            "level": 33,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 254.57507554647089,
+            "flightLength": 192.54551289181749,
+            "shiftSeconds": 0.11398868513114012,
+            "stars": [
+                {
+                    "x": 190.26190158048537,
+                    "y": 247.25506177523347
+                }
+            ]
+        },
+        {
+            "level": 34,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 238.06210567384779,
+            "flightLength": 68.39066919536866,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 145.62746031939055,
+                    "y": 886.8023047029736
+                }
+            ]
+        },
+        {
+            "level": 34,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 271.97133202766448,
+            "flightLength": 72.13323225103886,
+            "shiftSeconds": 0.23874497861030734,
+            "stars": [
+                {
+                    "x": 148.78642326191014,
+                    "y": 723.1695200520958
+                }
+            ]
+        },
+        {
+            "level": 34,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 253.79900467715658,
+            "flightLength": 163.3248922351638,
+            "shiftSeconds": 0.111184905725588,
+            "stars": [
+                {
+                    "x": 205.2619916735934,
+                    "y": 521.2380036930368
+                }
+            ]
+        },
+        {
+            "level": 34,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 208.6307480773554,
+            "flightLength": 216.728155932365,
+            "shiftSeconds": 0.2176875883607252,
+            "stars": [
+                {
+                    "x": 198.66833474676029,
+                    "y": 226.03701330169992
+                }
+            ]
+        },
+        {
+            "level": 35,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 288.4989924691546,
+            "flightLength": 99.67856113528394,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 222.6956733150342,
+                    "y": 863.4134665474571
+                }
+            ]
+        },
+        {
+            "level": 35,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 208.5326281047619,
+            "flightLength": 167.25498648637029,
+            "shiftSeconds": 0.11146641086219907,
+            "stars": [
+                {
+                    "x": 184.35534639405169,
+                    "y": 623.7163358758665
+                }
+            ]
+        },
+        {
+            "level": 35,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 245.60283315636748,
+            "flightLength": 36.43829923081329,
+            "shiftSeconds": 0.24954475538090566,
+            "stars": [
+                {
+                    "x": 161.88694852653365,
+                    "y": 446.82501972585069
+                }
+            ]
+        },
+        {
+            "level": 35,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 236.84644128634586,
+            "flightLength": 181.96553296845674,
+            "shiftSeconds": 0.2233648768069071,
+            "stars": [
+                {
+                    "x": 154.60669185978316,
+                    "y": 207.20003336897472
+                }
+            ]
+        },
+        {
+            "level": 36,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 243.10579435337844,
+            "flightLength": 73.1238230395192,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 152.23599652681919,
+                    "y": 882.8518164636829
+                }
+            ]
+        },
+        {
+            "level": 36,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 254.0713869117057,
+            "flightLength": 225.15290964445817,
+            "shiftSeconds": 0.20759543331841882,
+            "stars": [
+                {
+                    "x": 221.599038554978,
+                    "y": 617.9734197742691
+                }
+            ]
+        },
+        {
+            "level": 36,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 173.12622395256148,
+            "flightLength": 81.90858480942195,
+            "shiftSeconds": 0.23357442590335376,
+            "stars": [
+                {
+                    "x": 188.497432219506,
+                    "y": 502.74919847324079
+                }
+            ]
+        },
+        {
+            "level": 36,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 241.42726453461018,
+            "flightLength": 229.7430719026787,
+            "shiftSeconds": 0.11116517532702776,
+            "stars": [
+                {
+                    "x": 166.00629271264655,
+                    "y": 257.05974098685649
+                }
+            ]
+        },
+        {
+            "level": 41,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 260.2543358637828,
+            "flightLength": 82.43280552443314,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 175.3608491589009,
+                    "y": 867.6056635385057
+                }
+            ]
+        },
+        {
+            "level": 41,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 229.88294786158236,
+            "flightLength": 121.30255724607707,
+            "shiftSeconds": 0.09633062629016524,
+            "stars": [
+                {
+                    "x": 198.54530010615737,
+                    "y": 647.0323978505932
+                }
+            ]
+        },
+        {
+            "level": 41,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 203.0099829550926,
+            "flightLength": 145.696028339952,
+            "shiftSeconds": 0.09151409497565692,
+            "stars": [
+                {
+                    "x": 203.96360655388549,
+                    "y": 448.11139922526606
+                }
+            ]
+        },
+        {
+            "level": 41,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 218.6925401075414,
+            "flightLength": 176.3743175334418,
+            "shiftSeconds": 0.05045889948532464,
+            "stars": [
+                {
+                    "x": 164.7915941393616,
+                    "y": 237.36605097406147
+                }
+            ]
+        },
+        {
+            "level": 42,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 248.1494830329092,
+            "flightLength": 78.93339455225939,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 159.07122959043327,
+                    "y": 879.3028047749881
+                }
+            ]
+        },
+        {
+            "level": 42,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 208.6531457224877,
+            "flightLength": 29.51208357557564,
+            "shiftSeconds": 0.18302818995131399,
+            "stars": [
+                {
+                    "x": 112.0278260882928,
+                    "y": 729.7526577182407
+                }
+            ]
+        },
+        {
+            "level": 42,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 230.9380434498205,
+            "flightLength": 210.76671021744569,
+            "shiftSeconds": 0.03532122963972727,
+            "stars": [
+                {
+                    "x": 195.44494195481739,
+                    "y": 512.4907924109667
+                }
+            ]
+        },
+        {
+            "level": 42,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 200.64401102995255,
+            "flightLength": 206.79552669182528,
+            "shiftSeconds": 0.09151409497565692,
+            "stars": [
+                {
+                    "x": 183.35565802268514,
+                    "y": 214.2314662148699
+                }
+            ]
+        },
+        {
+            "level": 43,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 291.52520567687295,
+            "flightLength": 131.57505717987596,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 233.68008625603833,
+                    "y": 847.6651153076858
+                }
+            ]
+        },
+        {
+            "level": 43,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 185.47301537483146,
+            "flightLength": 145.86326277617378,
+            "shiftSeconds": 0.04541300953679216,
+            "stars": [
+                {
+                    "x": 187.3792351640161,
+                    "y": 629.5340684176197
+                }
+            ]
+        },
+        {
+            "level": 43,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 202.96202406471833,
+            "flightLength": 90.41102269477256,
+            "shiftSeconds": 0.1155967515481983,
+            "stars": [
+                {
+                    "x": 110.67236638651706,
+                    "y": 434.320309778211
+                }
+            ]
+        },
+        {
+            "level": 43,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 220.41906016102196,
+            "flightLength": 176.96000616554145,
+            "shiftSeconds": 0.10596368891918173,
+            "stars": [
+                {
+                    "x": 143.10822759958709,
+                    "y": 193.4792861542108
+                }
+            ]
+        },
+        {
+            "level": 44,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 251.17569624062754,
+            "flightLength": 85.22872117923417,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 161.1363073093957,
+                    "y": 871.7818892159928
+                }
+            ]
+        },
+        {
+            "level": 44,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 238.4196303482364,
+            "flightLength": 183.22038249589665,
+            "shiftSeconds": 0.0770645010321322,
+            "stars": [
+                {
+                    "x": 218.38231674239217,
+                    "y": 618.7184325388065
+                }
+            ]
+        },
+        {
+            "level": 44,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 171.5329645726548,
+            "flightLength": 122.14439425991147,
+            "shiftSeconds": 0.09633062629016516,
+            "stars": [
+                {
+                    "x": 168.87820618394356,
+                    "y": 489.9622903239223
+                }
+            ]
+        },
+        {
+            "level": 44,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 221.61803242038349,
+            "flightLength": 213.63194186279154,
+            "shiftSeconds": 0.042890064562525937,
+            "stars": [
+                {
+                    "x": 157.80210511360066,
+                    "y": 249.01173810464759
+                }
+            ]
+        },
+        {
+            "level": 49,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 246.13200756109689,
+            "flightLength": 152.75873868166696,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 140.19823964179268,
+                    "y": 847.6395506591007
+                }
+            ]
+        },
+        {
+            "level": 49,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 9.394733073654038,
+            "flightLength": 138.71670884331025,
+            "shiftSeconds": 0.06686340600777278,
+            "stars": [
+                {
+                    "x": 231.74370153701498,
+                    "y": 716.0894645751297
+                }
+            ]
+        },
+        {
+            "level": 49,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 202.2781480956275,
+            "flightLength": 201.04040996030316,
+            "shiftSeconds": 0.023164057668054358,
+            "stars": [
+                {
+                    "x": 242.30009438788555,
+                    "y": 542.1321185515443
+                }
+            ]
+        },
+        {
+            "level": 49,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 169.1612490658467,
+            "flightLength": 146.5498294165204,
+            "shiftSeconds": 0.02866603324613786,
+            "stars": [
+                {
+                    "x": 130.76172730467486,
+                    "y": 352.906198676967
+                }
+            ]
+        },
+        {
+            "level": 49,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 223.4023140349226,
+            "flightLength": 86.56234888606928,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 129.90095935802268,
+                    "y": 205.59076796507015
+                }
+            ]
+        },
+        {
+            "level": 50,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 247.14074529700305,
+            "flightLength": 96.55035005780928,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 152.49814996816583,
+                    "y": 868.8544884722718
+                }
+            ]
+        },
+        {
+            "level": 50,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 224.02055033106786,
+            "flightLength": 181.72532074086556,
+            "shiftSeconds": 0.050960926869719608,
+            "stars": [
+                {
+                    "x": 222.45291440540925,
+                    "y": 642.4149612099809
+                }
+            ]
+        },
+        {
+            "level": 50,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 176.53856297571446,
+            "flightLength": 127.63828463518999,
+            "shiftSeconds": 0.03307619220708219,
+            "stars": [
+                {
+                    "x": 234.3129989869595,
+                    "y": 503.87640871727288
+                }
+            ]
+        },
+        {
+            "level": 50,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 187.15491871137568,
+            "flightLength": 109.71248058501964,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 148.96041856305738,
+                    "y": 327.40623134839327
+                }
+            ]
+        },
+        {
+            "level": 50,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 220.65309199332973,
+            "flightLength": 84.11443218336314,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 138.31222610599296,
+                    "y": 208.2860548294476
+                }
+            ]
+        },
+        {
+            "level": 51,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 292.5339434127791,
+            "flightLength": 89.65810468012616,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 227.27715943720779,
+                    "y": 871.3192332821363
+                }
+            ]
+        },
+        {
+            "level": 51,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 165.9755907865858,
+            "flightLength": 183.3093236416258,
+            "shiftSeconds": 0.02425587428519359,
+            "stars": [
+                {
+                    "x": 159.2424903982366,
+                    "y": 658.4533010407525
+                }
+            ]
+        },
+        {
+            "level": 51,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 19.83990086892925,
+            "flightLength": 83.17704311339009,
+            "shiftSeconds": 0.09360876841088194,
+            "stars": [
+                {
+                    "x": 208.06485612849108,
+                    "y": 599.0401143248046
+                }
+            ]
+        },
+        {
+            "level": 51,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 201.50932199112118,
+            "flightLength": 225.77850568529528,
+            "shiftSeconds": 0.023164057668054365,
+            "stars": [
+                {
+                    "x": 193.66064228132238,
+                    "y": 366.32073081034096
+                }
+            ]
+        },
+        {
+            "level": 51,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 197.0078146385099,
+            "flightLength": 73.11530192091307,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 166.90148696803773,
+                    "y": 216.24120727482396
+                }
+            ]
+        },
+        {
+            "level": 52,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 243.10579435337844,
+            "flightLength": 108.0938565121695,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 143.33488122547747,
+                    "y": 866.7938045570919
+                }
+            ]
+        },
+        {
+            "level": 52,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 237.67934933582996,
+            "flightLength": 131.52973647674433,
+            "shiftSeconds": 0.06686340600777278,
+            "stars": [
+                {
+                    "x": 211.02324030843003,
+                    "y": 704.906167719595
+                }
+            ]
+        },
+        {
+            "level": 52,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 170.52562997951419,
+            "flightLength": 175.92873822009197,
+            "shiftSeconds": 0.05294641752698141,
+            "stars": [
+                {
+                    "x": 169.72029865203576,
+                    "y": 505.8255256770319
+                }
+            ]
+        },
+        {
+            "level": 52,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 214.37524113465654,
+            "flightLength": 152.49667717523293,
+            "shiftSeconds": 0.028666033246137869,
+            "stars": [
+                {
+                    "x": 221.8540189413615,
+                    "y": 346.0228617285893
+                }
+            ]
+        },
+        {
+            "level": 52,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 191.5933752816058,
+            "flightLength": 76.27629227200925,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 249.1884734551836,
+                    "y": 208.07128214212583
+                }
+            ]
+        },
+        {
+            "level": 53,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 261.26307359968896,
+            "flightLength": 317.44039350522936,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 157.12936390022353,
+                    "y": 765.171775570536
+                }
+            ]
+        },
+        {
+            "level": 53,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 366.2721609816217,
+            "flightLength": 51.858814807749428,
+            "shiftSeconds": 0.3603148003028482,
+            "stars": [
+                {
+                    "x": 207.29618925431874,
+                    "y": 505.1117437888886
+                }
+            ]
+        },
+        {
+            "level": 53,
+            "from": 2,
+            "to": 3,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 274.47037625829679,
+            "flightLength": 323.249505453182,
+            "shiftSeconds": 0.08516531643521867,
+            "stars": [
+                {
+                    "x": 249.021163066796,
+                    "y": 350.2990988136199
+                },
+                {
+                    "x": 243.08804196890598,
+                    "y": 240.29899120440954
+                }
+            ]
+        },
+        {
+            "level": 54,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 253.19317171243984,
+            "flightLength": 210.80838286107375,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 144.30688865202985,
+                    "y": 812.7768324952993
+                }
+            ]
+        },
+        {
+            "level": 54,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 339.24477623242879,
+            "flightLength": 187.64035882043326,
+            "shiftSeconds": 0.07861413824789419,
+            "stars": [
+                {
+                    "x": 226.6589123235264,
+                    "y": 491.38342802585427
+                }
+            ]
+        },
+        {
+            "level": 54,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 283.080870514677,
+            "flightLength": 181.9490581723332,
+            "shiftSeconds": 0.09951551627411998,
+            "stars": [
+                {
+                    "x": 233.4662537134129,
+                    "y": 227.0195239186792
+                }
+            ]
+        },
+        {
+            "level": 55,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 285.47277926143615,
+            "flightLength": 253.8429770486925,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 234.14106543432883,
+                    "y": 790.4603911972623
+                }
+            ]
+        },
+        {
+            "level": 55,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 243.20297539800777,
+            "flightLength": 103.407100790061,
+            "shiftSeconds": 0.05147354290040691,
+            "stars": [
+                {
+                    "x": 182.24279508873347,
+                    "y": 513.5474715027749
+                }
+            ]
+        },
+        {
+            "level": 55,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 310.7823091071724,
+            "flightLength": 219.57509944276127,
+            "shiftSeconds": 0.11137002918451672,
+            "stars": [
+                {
+                    "x": 147.75744657465058,
+                    "y": 208.280604188319
+                }
+            ]
+        },
+        {
+            "level": 56,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 261.26307359968896,
+            "flightLength": 282.73248252316196,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 159.4648580172911,
+                    "y": 777.1868938483201
+                }
+            ]
+        },
+        {
+            "level": 56,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 346.05054568254737,
+            "flightLength": 133.41569437360944,
+            "shiftSeconds": 0.09826767280986772,
+            "stars": [
+                {
+                    "x": 246.19865313058907,
+                    "y": 466.2402623236598
+                }
+            ]
+        },
+        {
+            "level": 56,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 257.0536946942553,
+            "flightLength": 182.39596097583738,
+            "shiftSeconds": 0.11792120737184124,
+            "stars": [
+                {
+                    "x": 181.89220062201103,
+                    "y": 206.07303652164956
+                }
+            ]
+        },
+        {
+            "level": 57,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 253.19317171243984,
+            "flightLength": 80.95954973517174,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 164.23169816764176,
+                    "y": 870.6425560781478
+                }
+            ]
+        },
+        {
+            "level": 57,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 255.91454881924779,
+            "flightLength": 127.55095444489501,
+            "shiftSeconds": 0.1072389622364116,
+            "stars": [
+                {
+                    "x": 191.6496833876516,
+                    "y": 632.4726552879972
+                }
+            ]
+        },
+        {
+            "level": 57,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 215.8005312370678,
+            "flightLength": 134.06763719267836,
+            "shiftSeconds": 0.09816629806753416,
+            "stars": [
+                {
+                    "x": 170.08683954698797,
+                    "y": 466.23775103170558
+                }
+            ]
+        },
+        {
+            "level": 57,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 239.0238481993648,
+            "flightLength": 164.3304090083748,
+            "shiftSeconds": 0.02786008754752921,
+            "stars": [
+                {
+                    "x": 168.97025062199573,
+                    "y": 232.3565310391486
+                }
+            ]
+        },
+        {
+            "level": 58,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 243.10579435337844,
+            "flightLength": 94.99874333215984,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 146.30191965925804,
+                    "y": 872.1464751926222
+                }
+            ]
+        },
+        {
+            "level": 58,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 209.58070835537877,
+            "flightLength": 47.14870694573935,
+            "shiftSeconds": 0.18133042453399607,
+            "stars": [
+                {
+                    "x": 105.50045612869941,
+                    "y": 709.6062013903833
+                }
+            ]
+        },
+        {
+            "level": 58,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 218.40251332210284,
+            "flightLength": 212.09742102641014,
+            "shiftSeconds": 0.04279390798847272,
+            "stars": [
+                {
+                    "x": 225.07390101491098,
+                    "y": 525.410087981835
+                }
+            ]
+        },
+        {
+            "level": 58,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 303.63001750535059,
+            "flightLength": 60.40553221687623,
+            "shiftSeconds": 0.25091508627329436,
+            "stars": [
+                {
+                    "x": 276.43868804083356,
+                    "y": 306.5496455218909
+                }
+            ]
+        },
+        {
+            "level": 58,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 188.26672764780768,
+            "flightLength": 39.059480330693919,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 229.9187993844983,
+                    "y": 190.08022802342448
+                }
+            ]
+        },
+        {
+            "level": 59,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 285.47277926143615,
+            "flightLength": 131.68715694137493,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 221.75083270024238,
+                    "y": 844.1287108355292
+                }
+            ]
+        },
+        {
+            "level": 59,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 181.7359581126948,
+            "flightLength": 144.5226297383653,
+            "shiftSeconds": 0.06181342265001617,
+            "stars": [
+                {
+                    "x": 175.2178005343699,
+                    "y": 625.3748439953786
+                }
+            ]
+        },
+        {
+            "level": 59,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 248.28469732049315,
+            "flightLength": 77.9604616449594,
+            "shiftSeconds": 0.23140215692609135,
+            "stars": [
+                {
+                    "x": 159.41824317167926,
+                    "y": 433.18806166947118
+                }
+            ]
+        },
+        {
+            "level": 59,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 278.7610687100949,
+            "flightLength": 108.74208715082098,
+            "shiftSeconds": 0.11673530195277476,
+            "stars": [
+                {
+                    "x": 215.9350599870368,
+                    "y": 263.65247496793736
+                }
+            ]
+        },
+        {
+            "level": 59,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 183.6396752395999,
+            "flightLength": 45.04612978966664,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 240.98494956392296,
+                    "y": 190.7826852126193
+                }
+            ]
+        },
+        {
+            "level": 60,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 245.12326982519074,
+            "flightLength": 94.62547045196479,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 149.36860189441323,
+                    "y": 870.44363298963
+                }
+            ]
+        },
+        {
+            "level": 60,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 269.73730509656778,
+            "flightLength": 200.71898604928487,
+            "shiftSeconds": 0.036813979510969079,
+            "stars": [
+                {
+                    "x": 224.12865274907078,
+                    "y": 611.0154740209209
+                }
+            ]
+        },
+        {
+            "level": 60,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 167.07153798681254,
+            "flightLength": 120.88258634638791,
+            "shiftSeconds": 0.11893556867647405,
+            "stars": [
+                {
+                    "x": 175.0967899858419,
+                    "y": 490.0142184072299
+                }
+            ]
+        },
+        {
+            "level": 60,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 285.4285583607167,
+            "flightLength": 114.38885698841456,
+            "shiftSeconds": 0.0651640259593922,
+            "stars": [
+                {
+                    "x": 213.41010281919683,
+                    "y": 320.76369349817676
+                }
+            ]
+        },
+        {
+            "level": 60,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 184.5379216578674,
+            "flightLength": 64.93618306135235,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 235.41637252524593,
+                    "y": 201.8194627534015
+                }
+            ]
+        },
+        {
+            "level": 61,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 260.2543358637828,
+            "flightLength": 48.94374719142402,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 179.1781316742242,
+                    "y": 885.5644484138307
+                }
+            ]
+        },
+        {
+            "level": 61,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 254.74119313625136,
+            "flightLength": 152.61505124980668,
+            "shiftSeconds": 0.06508023633379848,
+            "stars": [
+                {
+                    "x": 233.873777632543,
+                    "y": 655.178495476861
+                }
+            ]
+        },
+        {
+            "level": 61,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 229.00066839170365,
+            "flightLength": 91.40690768962338,
+            "shiftSeconds": 0.0976203545006977,
+            "stars": [
+                {
+                    "x": 178.74912439252473,
+                    "y": 478.8986036713984
+                }
+            ]
+        },
+        {
+            "level": 61,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 241.22291755362529,
+            "flightLength": 193.48309382468217,
+            "shiftSeconds": 0.02556723570256368,
+            "stars": [
+                {
+                    "x": 183.09888099849884,
+                    "y": 244.97626091326226
+                }
+            ]
+        },
+        {
+            "level": 62,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 246.13200756109689,
+            "flightLength": 55.67573619113376,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 158.97803397674339,
+                    "y": 886.1439000853272
+                }
+            ]
+        },
+        {
+            "level": 62,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 199.5283838479233,
+            "flightLength": 79.21242711498286,
+            "shiftSeconds": 0.0647106090658626,
+            "stars": [
+                {
+                    "x": 99.44435721503354,
+                    "y": 720.4071588813007
+                }
+            ]
+        },
+        {
+            "level": 62,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 226.60570181590613,
+            "flightLength": 219.5635661141111,
+            "shiftSeconds": 0.09442466424916686,
+            "stars": [
+                {
+                    "x": 202.82648205174807,
+                    "y": 510.85377529563609
+                }
+            ]
+        },
+        {
+            "level": 62,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 234.51179877572577,
+            "flightLength": 128.51916883728084,
+            "shiftSeconds": 0.08997943657728537,
+            "stars": [
+                {
+                    "x": 225.44488900746945,
+                    "y": 302.13272242386548
+                }
+            ]
+        },
+        {
+            "level": 62,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 189.46451949268443,
+            "flightLength": 28.884441707088859,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 208.14820170588224,
+                    "y": 191.41269547048243
+                }
+            ]
+        },
+        {
+            "level": 63,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 296.5688943564036,
+            "flightLength": 113.67182816529483,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 238.39646687904495,
+                    "y": 862.5301138921926
+                }
+            ]
+        },
+        {
+            "level": 63,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 189.14235310326365,
+            "flightLength": 207.66035892210989,
+            "shiftSeconds": 0.09442466424916687,
+            "stars": [
+                {
+                    "x": 199.72919742839839,
+                    "y": 615.8723447131382
+                }
+            ]
+        },
+        {
+            "level": 63,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 241.42535572926097,
+            "flightLength": 60.879914626415118,
+            "shiftSeconds": 0.21724275900682445,
+            "stars": [
+                {
+                    "x": 171.70067881600668,
+                    "y": 463.0648097908857
+                }
+            ]
+        },
+        {
+            "level": 63,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 295.11827844977736,
+            "flightLength": 97.70741683552144,
+            "shiftSeconds": 0.23057230622929399,
+            "stars": [
+                {
+                    "x": 239.64864852685964,
+                    "y": 300.9799898063968
+                }
+            ]
+        },
+        {
+            "level": 63,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 185.6292053329134,
+            "flightLength": 29.28785211362169,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 224.8267222120263,
+                    "y": 188.3303525503679
+                }
+            ]
+        },
+        {
+            "level": 64,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 251.17569624062754,
+            "flightLength": 61.263103807928427,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 165.52272341638804,
+                    "y": 883.2089165519328
+                }
+            ]
+        },
+        {
+            "level": 64,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 240.05998388838254,
+            "flightLength": 214.14131839418287,
+            "shiftSeconds": 0.1756430817501985,
+            "stars": [
+                {
+                    "x": 246.65823211619279,
+                    "y": 641.6806899183919
+                }
+            ]
+        },
+        {
+            "level": 64,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 196.04591859085128,
+            "flightLength": 54.3349191800802,
+            "shiftSeconds": 0.22648713173051913,
+            "stars": [
+                {
+                    "x": 231.60786051733877,
+                    "y": 481.92169403675589
+                }
+            ]
+        },
+        {
+            "level": 64,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 270.4986459613037,
+            "flightLength": 128.4888128695306,
+            "shiftSeconds": 0.06480661801102106,
+            "stars": [
+                {
+                    "x": 231.38742136000455,
+                    "y": 338.3700980909994
+                }
+            ]
+        },
+        {
+            "level": 64,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 187.93039382877596,
+            "flightLength": 47.404537659790808,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 218.75960990833983,
+                    "y": 201.87968283127587
+                }
+            ]
+        },
+        {
+            "level": 65,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 246.13200756109689,
+            "flightLength": 120.27537385205281,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 145.5638951660643,
+                    "y": 858.6407933523083
+                }
+            ]
+        },
+        {
+            "level": 65,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 19.866538861777657,
+            "flightLength": 232.03730016054574,
+            "shiftSeconds": 0.05429128608807171,
+            "stars": [
+                {
+                    "x": 206.7891565131571,
+                    "y": 604.0875909534872
+                }
+            ]
+        },
+        {
+            "level": 65,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 283.63683068799448,
+            "flightLength": 102.88473949971194,
+            "shiftSeconds": 0.07118898765767569,
+            "stars": [
+                {
+                    "x": 174.74386299783604,
+                    "y": 486.1754490217096
+                }
+            ]
+        },
+        {
+            "level": 65,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 256.41353546911497,
+            "flightLength": 195.49509782640079,
+            "shiftSeconds": 0.053355240199915787,
+            "stars": [
+                {
+                    "x": 164.27596505601239,
+                    "y": 244.05755206827008
+                }
+            ]
+        },
+        {
+            "level": 66,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 234.0271547302233,
+            "flightLength": 84.35936472023228,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 136.82727957146927,
+                    "y": 885.5421092580159
+                }
+            ]
+        },
+        {
+            "level": 66,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 3.155406353468493,
+            "flightLength": 85.66177878775396,
+            "shiftSeconds": 0.0646104294354259,
+            "stars": [
+                {
+                    "x": 102.81983152610305,
+                    "y": 714.0357954894662
+                }
+            ]
+        },
+        {
+            "level": 66,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 231.5238236743408,
+            "flightLength": 156.1411782513434,
+            "shiftSeconds": 0.05046810839703207,
+            "stars": [
+                {
+                    "x": 193.1591574958442,
+                    "y": 529.7492101204654
+                }
+            ]
+        },
+        {
+            "level": 66,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 273.5174068571601,
+            "flightLength": 134.58689929339557,
+            "shiftSeconds": 0.12325165011628438,
+            "stars": [
+                {
+                    "x": 278.77495553617907,
+                    "y": 284.02920941807386
+                }
+            ]
+        },
+        {
+            "level": 66,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 261.5149227438635,
+            "flightLength": 44.58030594792916,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 247.80772615742118,
+                    "y": 185.05658555864265
+                }
+            ]
+        },
+        {
+            "level": 67,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 285.47277926143615,
+            "flightLength": 96.7909791405276,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 217.62075512221356,
+                    "y": 862.0181507149515
+                }
+            ]
+        },
+        {
+            "level": 67,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 196.25161683555656,
+            "flightLength": 168.72390319403613,
+            "shiftSeconds": 0.040374486717625637,
+            "stars": [
+                {
+                    "x": 177.79654390651897,
+                    "y": 628.7427044843602
+                }
+            ]
+        },
+        {
+            "level": 67,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 219.4309785749844,
+            "flightLength": 66.16487655302024,
+            "shiftSeconds": 0.21196122638606225,
+            "stars": [
+                {
+                    "x": 157.37216954299064,
+                    "y": 430.5294898823739
+                }
+            ]
+        },
+        {
+            "level": 67,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 17.337109405220816,
+            "flightLength": 151.1486504816345,
+            "shiftSeconds": 0.06252308233180296,
+            "stars": [
+                {
+                    "x": 221.54089016283616,
+                    "y": 252.13917042590092
+                }
+            ]
+        },
+        {
+            "level": 67,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 331.495818031816,
+            "flightLength": 26.973067500646225,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 237.33975484884324,
+                    "y": 178.87641304101218
+                }
+            ]
+        },
+        {
+            "level": 68,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 239.07084340975394,
+            "flightLength": 75.16497648277613,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 146.9239782944526,
+                    "y": 885.9692031381771
+                }
+            ]
+        },
+        {
+            "level": 68,
+            "from": 1,
+            "to": 2,
+            "points": 2,
+            "style": "edge / risky",
+            "launchDistance": 247.6512989760953,
+            "flightLength": 244.22623938525858,
+            "shiftSeconds": 0.04335570539714908,
+            "stars": [
+                {
+                    "x": 189.89100946642936,
+                    "y": 699.6872572693431
+                },
+                {
+                    "x": 240.82090532619373,
+                    "y": 638.5649265896844
+                }
+            ]
+        },
+        {
+            "level": 68,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 203.74744727208447,
+            "flightLength": 156.631209935335,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 153.73800533208505,
+                    "y": 471.40024488339636
+                }
+            ]
+        },
+        {
+            "level": 68,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 79.16089091353308,
+            "flightLength": 164.88970951733539,
+            "shiftSeconds": 0.022150905096026124,
+            "stars": [
+                {
+                    "x": 225.80137813338053,
+                    "y": 311.3772257401532
+                }
+            ]
+        },
+        {
+            "level": 68,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 262.695237679535,
+            "flightLength": 53.78674422597315,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 247.9860520217474,
+                    "y": 188.95413857097729
+                }
+            ]
+        },
+        {
+            "level": 77,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 253.19317171243984,
+            "flightLength": 80.83204360089667,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 164.23169816764176,
+                    "y": 870.6425560781478
+                }
+            ]
+        },
+        {
+            "level": 77,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 237.5503425461435,
+            "flightLength": 133.67713331323879,
+            "shiftSeconds": 0.06955475142627105,
+            "stars": [
+                {
+                    "x": 191.71205383123425,
+                    "y": 642.0579733192548
+                }
+            ]
+        },
+        {
+            "level": 77,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 180.54464820507639,
+            "flightLength": 145.13958982142274,
+            "shiftSeconds": 0.0722058937339261,
+            "stars": [
+                {
+                    "x": 213.65580195115809,
+                    "y": 451.57098137004547
+                }
+            ]
+        },
+        {
+            "level": 77,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 220.67912990643107,
+            "flightLength": 174.86643094826514,
+            "shiftSeconds": 0.02581720482647481,
+            "stars": [
+                {
+                    "x": 169.99347403690192,
+                    "y": 235.13119159104816
+                }
+            ]
+        },
+        {
+            "level": 78,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 240.07958114565998,
+            "flightLength": 90.56540175701115,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 144.99496302438846,
+                    "y": 879.9754494048428
+                }
+            ]
+        },
+        {
+            "level": 78,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 220.59644417168364,
+            "flightLength": 36.032038030696039,
+            "shiftSeconds": 0.1667024910295655,
+            "stars": [
+                {
+                    "x": 85.9700584847004,
+                    "y": 722.4005363931046
+                }
+            ]
+        },
+        {
+            "level": 78,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 206.59091989497237,
+            "flightLength": 244.13614591481747,
+            "shiftSeconds": 0.0499828324468325,
+            "stars": [
+                {
+                    "x": 223.13152644088627,
+                    "y": 531.3043867864835
+                }
+            ]
+        },
+        {
+            "level": 78,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 244.7195869717882,
+            "flightLength": 72.87699598053693,
+            "shiftSeconds": 0.11457944027868468,
+            "stars": [
+                {
+                    "x": 272.08608493547566,
+                    "y": 305.2771808757115
+                }
+            ]
+        },
+        {
+            "level": 78,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 174.14280062162835,
+            "flightLength": 44.84933180865753,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 228.20977466790894,
+                    "y": 197.28698819742017
+                }
+            ]
+        },
+        {
+            "level": 79,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 291.52520567687295,
+            "flightLength": 130.90946784446795,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 233.68008625603833,
+                    "y": 847.6651153076858
+                }
+            ]
+        },
+        {
+            "level": 79,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 186.99652586808106,
+            "flightLength": 169.30586799789109,
+            "shiftSeconds": 0.07486989399677695,
+            "stars": [
+                {
+                    "x": 172.8009883821807,
+                    "y": 631.4527955135561
+                }
+            ]
+        },
+        {
+            "level": 79,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 206.01139348006007,
+            "flightLength": 91.05163499079386,
+            "shiftSeconds": 0.19157231446416132,
+            "stars": [
+                {
+                    "x": 107.49183242483136,
+                    "y": 435.99950295825667
+                }
+            ]
+        },
+        {
+            "level": 79,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 249.35695404572955,
+            "flightLength": 114.86942454341376,
+            "shiftSeconds": 0.08942753754806274,
+            "stars": [
+                {
+                    "x": 217.43279505140104,
+                    "y": 269.49368679735076
+                }
+            ]
+        },
+        {
+            "level": 79,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 168.46322683303374,
+            "flightLength": 52.28158876775775,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 238.88666862046004,
+                    "y": 193.39135008017588
+                }
+            ]
+        },
+        {
+            "level": 80,
+            "from": 0,
+            "to": 1,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 243.10579435337844,
+            "flightLength": 88.12746083243832,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 149.2689580930386,
+                    "y": 877.4991458281526
+                }
+            ]
+        },
+        {
+            "level": 80,
+            "from": 1,
+            "to": 2,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 294.23394629381877,
+            "flightLength": 201.95475420511617,
+            "shiftSeconds": 0.03437383208360538,
+            "stars": [
+                {
+                    "x": 223.3830933063214,
+                    "y": 613.454845448217
+                }
+            ]
+        },
+        {
+            "level": 80,
+            "from": 2,
+            "to": 3,
+            "points": 1,
+            "style": "edge / risky",
+            "launchDistance": 154.2586067339158,
+            "flightLength": 126.92161518463931,
+            "shiftSeconds": 0.09615594745865494,
+            "stars": [
+                {
+                    "x": 175.19455299884249,
+                    "y": 489.8376274977171
+                }
+            ]
+        },
+        {
+            "level": 80,
+            "from": 3,
+            "to": 4,
+            "points": 1,
+            "style": "medium / long",
+            "launchDistance": 254.51501273285374,
+            "flightLength": 119.96660089912672,
+            "shiftSeconds": 0.05292142572367159,
+            "stars": [
+                {
+                    "x": 211.61210705560593,
+                    "y": 329.75652699277688
+                }
+            ]
+        },
+        {
+            "level": 80,
+            "from": 4,
+            "to": 5,
+            "points": 1,
+            "style": "light",
+            "launchDistance": 170.05917887775176,
+            "flightLength": 71.61438663989932,
+            "shiftSeconds": 0.0,
+            "stars": [
+                {
+                    "x": 235.6024813621421,
+                    "y": 208.8867572050027
+                }
+            ]
+        }
+    ],
+    "levels": 64,
+    "validatedCharacters": 8
+}

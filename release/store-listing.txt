@@ -1,0 +1,23 @@
+App name: Mektra
+Category: Game / Arcade
+Default language: English (United States)
+Package: com.arkcodesolutions.mektra
+
+Short description:
+Jump between curved shapes, collect stars and climb through changing worlds.
+
+Full description:
+Every jump is a choice. Ride a curved surface, wait for the right angle and launch yourself toward the next shape.
+
+Mektra is a geometric arcade climbing game built around timing, precision and discovery. Travel through a changing journey of smooth curves, multi-lobed shapes, connected hexagons, moving platforms and narrow passages. Some sections give you room to breathe. Others reward a carefully timed long jump or a daring leap from an edge.
+
+Collect stars along the way to replenish your energy and unlock more characters. Watch your health: when it becomes critical, your player slows down. Your distance travelled is your score, so keep climbing and make every jump count.
+
+Discover new ways to move:
+• Orbit smooth curves and jump between different geometric shapes.
+• Time your way through flowing rows of moving capsules.
+• Bounce through narrow passages lined with stars.
+• Navigate wedges, zigzag routes and tight hexagonal spaces.
+• Stay clear of screen edges, rising lava and swirling black holes.
+
+Enjoy atmospheric worlds, glowing effects and music as you find your rhythm. When a run ends, begin again and use what you learned to climb farther.

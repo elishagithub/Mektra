@@ -1,0 +1,722 @@
+[
+  {
+    "level": 1,
+    "world": 1,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 2,
+    "world": 1,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 3,
+    "world": 1,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 4,
+    "world": 1,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 5,
+    "world": 2,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 6,
+    "world": 2,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 7,
+    "world": 2,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 8,
+    "world": 2,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 9,
+    "world": 3,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 10,
+    "world": 3,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 11,
+    "world": 3,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 12,
+    "world": 3,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 13,
+    "world": 4,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 14,
+    "world": 4,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 15,
+    "world": 4,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 16,
+    "world": 4,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 17,
+    "world": 5,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 18,
+    "world": 5,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 19,
+    "world": 5,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 20,
+    "world": 5,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 21,
+    "world": 6,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 22,
+    "world": 6,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 23,
+    "world": 6,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 24,
+    "world": 6,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 25,
+    "world": 7,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 26,
+    "world": 7,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 27,
+    "world": 7,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 28,
+    "world": 7,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 29,
+    "world": 8,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 30,
+    "world": 8,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 31,
+    "world": 8,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 32,
+    "world": 8,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 33,
+    "world": 9,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 34,
+    "world": 9,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 35,
+    "world": 9,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 36,
+    "world": 9,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 37,
+    "world": 10,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 38,
+    "world": 10,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 39,
+    "world": 10,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 40,
+    "world": 10,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 41,
+    "world": 11,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 42,
+    "world": 11,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 43,
+    "world": 11,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 44,
+    "world": 11,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 49,
+    "world": 13,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 50,
+    "world": 13,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 51,
+    "world": 13,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 52,
+    "world": 13,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 53,
+    "world": 14,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 54,
+    "world": 14,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 55,
+    "world": 14,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 56,
+    "world": 14,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 57,
+    "world": 15,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 58,
+    "world": 15,
+    "precisionLandings": 2,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 59,
+    "world": 15,
+    "precisionLandings": 0,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 60,
+    "world": 15,
+    "precisionLandings": 0,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 61,
+    "world": 16,
+    "precisionLandings": 0,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 62,
+    "world": 16,
+    "precisionLandings": 0,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 63,
+    "world": 16,
+    "precisionLandings": 0,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  },
+  {
+    "level": 64,
+    "world": 16,
+    "precisionLandings": 0,
+    "rhythmBottomToTop": [
+      "easy",
+      "medium",
+      "difficult",
+      "recovery",
+      "difficult"
+    ]
+  }
+]

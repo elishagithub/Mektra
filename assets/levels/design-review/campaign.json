@@ -1,0 +1,76 @@
+{
+    "runs": [
+        {
+            "character": "mektra",
+            "completedCourses": 20,
+            "jumps": 222,
+            "stars": 338,
+            "seconds": 659.5499999995645,
+            "minimumLavaClearance": 424.32782312186427,
+            "outcome": "completed"
+        },
+        {
+            "character": "tide",
+            "completedCourses": 20,
+            "jumps": 222,
+            "stars": 338,
+            "seconds": 660.099999999564,
+            "minimumLavaClearance": 419.45963385502599,
+            "outcome": "completed"
+        },
+        {
+            "character": "ember",
+            "completedCourses": 20,
+            "jumps": 222,
+            "stars": 338,
+            "seconds": 659.9083333328975,
+            "minimumLavaClearance": 416.1791192277646,
+            "outcome": "completed"
+        },
+        {
+            "character": "volt",
+            "completedCourses": 20,
+            "jumps": 222,
+            "stars": 338,
+            "seconds": 659.2916666662314,
+            "minimumLavaClearance": 420.1697380438628,
+            "outcome": "completed"
+        },
+        {
+            "character": "nova",
+            "completedCourses": 20,
+            "jumps": 222,
+            "stars": 338,
+            "seconds": 658.9833333328984,
+            "minimumLavaClearance": 419.4977013260644,
+            "outcome": "completed"
+        },
+        {
+            "character": "frost",
+            "completedCourses": 20,
+            "jumps": 222,
+            "stars": 338,
+            "seconds": 660.174999999564,
+            "minimumLavaClearance": 426.0125901031732,
+            "outcome": "completed"
+        },
+        {
+            "character": "bloom",
+            "completedCourses": 20,
+            "jumps": 222,
+            "stars": 338,
+            "seconds": 659.9666666662308,
+            "minimumLavaClearance": 421.9187548559877,
+            "outcome": "completed"
+        },
+        {
+            "character": "onyx",
+            "completedCourses": 20,
+            "jumps": 222,
+            "stars": 338,
+            "seconds": 660.0333333328974,
+            "minimumLavaClearance": 420.8910912526772,
+            "outcome": "completed"
+        }
+    ]
+}
