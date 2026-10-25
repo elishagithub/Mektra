@@ -8,9 +8,8 @@ namespace Mektra
         public static int InitialSeed()=>17;
         public static Simulation Restart(Simulation live)
         {
-            var next=new Simulation(live.level,live.character,live.sequence,live.platform.section,live.endless,live.seed);
+        var next=new Simulation(live.level,live.character,live.sequence,0,live.endless,InitialSeed());
             next.SetViewport(live.viewport);
-            next.startY=live.startY;
             return next;
         }
     }

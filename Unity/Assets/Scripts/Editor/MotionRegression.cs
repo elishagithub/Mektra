@@ -11,7 +11,8 @@ namespace Mektra.Editor
             var sim=new Simulation(courses[0],c,courses,section);
             sim.platform=sim.platforms.Find(p=>p.section==section&&p.index==index);
             sim.time=time;sim.distance=distance;sim.Select(c);sim.SetViewport(816);sim.Start();sim.Jump();
-            for(int i=0;i<240&&sim.flying&&sim.phase==Phase.Playing;i++)sim.Advance(GameConfig.Step);
+            // Spring passages can take several seconds to reach their catcher.
+            for(int i=0;i<720&&sim.flying&&sim.phase==Phase.Playing;i++)sim.Advance(GameConfig.Step);
             return sim;
         }
         public static bool Arrived(Simulation sim,int section,int index)=>sim.phase==Phase.Playing&&!sim.flying&&sim.platform.section==section&&sim.platform.index==index&&sim.score>0;

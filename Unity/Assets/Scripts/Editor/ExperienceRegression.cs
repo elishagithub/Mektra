@@ -33,7 +33,7 @@ namespace Mektra.Editor
             {
                 var live=new Simulation(library[0],characters[0],library,section,true,713);live.time=80;live.SetViewport(816);live.Start();live.score=7;
                 var retry=SectionReplayMode.Restart(live);
-                Check(retry.platform.section==section&&retry.CourseAt(section).id==live.CourseAt(section).id,"section replay changes layout or progress position");
+                Check(retry.platform.section==0&&retry.CourseAt(0).id==library[EndlessJourney.Index(library,0,17)].id,"replay did not return to opening");
                 if(SectionReplayMode.CycleAllLayoutsForTesting)
                 {
                     var seen=new System.Collections.Generic.HashSet<string>();
@@ -43,7 +43,7 @@ namespace Mektra.Editor
                 }
                 Check(retry.phase==Phase.Ready&&!retry.flying&&retry.platform.index==0&&retry.score==0&&retry.time==0&&retry.energy==100&&retry.energyAge==0,"section replay does not create a clean attempt");
                 Check(retry.lava.Front-retry.cameraY>=retry.viewport+LavaHazard.StartBelowScreen-.001&&!retry.lava.Active(retry.time),"section replay exposes lava");
-                Check(retry.startY==live.startY,"section replay loses overall distance origin");
+                Check(retry.Distance==0,"replay retains distance from previous run");
                 foreach(var support in retry.platforms)Check(!support.vanished&&double.IsPositiveInfinity(support.landedAt),"section replay retains used platform state");
             }
             var resized=new Simulation(library[0],characters[0]);resized.SetViewport(950);
@@ -99,7 +99,7 @@ namespace Mektra.Editor
                     Check(riding.reason=="wall","idle rain rider is not swept offscreen");
                 }
             }
-            Debug.Log("MEKTRA_EXPERIENCE_VALIDATION PASS: fixed authored order and same-section full-health retries, black-hole capture/pause/burst, physical wedge reflections preserve speed and reach the catcher for eight characters; landable rain carries riders, varies speed, pauses and recycles offscreen.");
+            Debug.Log("MEKTRA_EXPERIENCE_VALIDATION PASS: fixed authored order and opening full-health retries, black-hole capture/pause/burst, physical wedge reflections preserve speed and reach the catcher for eight characters; landable rain carries riders, varies speed, pauses and recycles offscreen.");
         }
     }
 }

@@ -212,6 +212,70 @@ namespace Mektra.Editor
             foreach(var course in entries)File.WriteAllText("../assets/levels/endless/Mektra_level_"+course.number+".json",JsonUtility.ToJson(course,true));
             AssetDatabase.Refresh();MektraBuild.BuildValidatedOpening(pack);
         }
+        public static void RefreshBounceRoutes()
+        {
+            var pack=LevelPack.Load();var chars=CharacterCatalog.Load();
+            for(int i=0;i<pack.levels.Length;i++)
+                if(pack.levels[i].level.segmentKind==17)
+                    pack.levels[i]=Bounce(pack.levels[i].level.variant,pack.levels[i].number,chars);
+            EndlessRegression.Run(pack);
+            File.WriteAllText("Assets/Resources/endless-pack.json",JsonUtility.ToJson(pack,true));
+            File.WriteAllText("../assets/levels/endless/pack.json",JsonUtility.ToJson(pack,true));
+            foreach(var course in pack.levels)if(course.level.segmentKind==17)
+                File.WriteAllText("../assets/levels/endless/Mektra_level_"+course.number+".json",JsonUtility.ToJson(course,true));
+            AssetDatabase.Refresh();MektraBuild.BuildValidatedOpening(pack);
+        }
+        static void SaveRepair(string path,string content)
+        {
+            string temp=path+".new";
+            File.WriteAllText(temp,content);
+            if(File.Exists(path))File.Replace(temp,path,null);
+            else File.Move(temp,path);
+        }
+        public static void RepairLargerPlayerRoutes()
+        {
+            var pack=LevelPack.Load();var chars=CharacterCatalog.Load();
+            for(int i=0;i<pack.levels.Length;i++)
+            {
+                var course=pack.levels[i];
+                if(course.level.segmentKind!=20)foreach(var platform in course.level.platforms)
+                    if(platform.motion!=null&&(platform.motion.type=="horizontal"||platform.motion.type=="orbit"))
+                        platform.motion.amplitudeX=Math.Min(platform.motion.amplitudeX,Math.Max(0,Math.Min(platform.bounds.minX,390-platform.bounds.maxX)-2*GameConfig.Radius-4));
+                if(course.level.segmentKind==17){pack.levels[i]=Bounce(course.level.variant,course.number,chars);continue;}
+                if(course.level.segmentKind==18)
+                    foreach(var platform in course.level.platforms)
+                        if(platform.motion?.type=="horizontal")platform.motion.amplitudeX=Math.Min(platform.motion.amplitudeX,10);
+                if(course.level.segmentKind==20)
+                    for(int p=1;p<course.level.platforms.Length-1;p++)
+                    {
+                        var shape=course.level.platforms[p];var b=shape.bounds;
+                        double dx=(b.minX+b.maxX)/2<195?8:-8;
+                        var points=new Point[shape.outline.Length];
+                        for(int v=0;v<points.Length;v++)points[v]=shape.outline[v]+new Point(dx,0);
+                        var shifted=WorldPackBuilder.Polygon(shape.id,points,shape.sourceShapeId);
+                        shifted.motion=shape.motion;shifted.orbitDirection=shape.orbitDirection;
+                        course.level.platforms[p]=shifted;
+                    }
+                if(course.level.segmentKind!=15)continue;
+                for(int h=0;h<course.level.hazards.Length;h++)
+                {
+                    var hazard=course.level.hazards[h];var b=hazard.bounds;
+                    var center=new Point((b.minX+b.maxX)/2,(b.minY+b.maxY)/2);
+                    double scale=17/((b.maxX-b.minX)/2);
+                    var points=new Point[hazard.outline.Length];
+                    for(int p=0;p<points.Length;p++)points[p]=center+(hazard.outline[p]-center)*scale;
+                    course.level.hazards[h]=WorldPackBuilder.Polygon(hazard.id,points,hazard.sourceShapeId);
+                }
+            }
+            EndlessRegression.Run(pack);
+            Debug.Log("MEKTRA_REPAIR_EXPORT_BEGIN");
+            SaveRepair("Assets/Resources/endless-pack.json",JsonUtility.ToJson(pack,true));
+            SaveRepair("../assets/levels/endless/pack.json",JsonUtility.ToJson(pack,true));
+            foreach(var course in pack.levels)
+                SaveRepair("../assets/levels/endless/Mektra_level_"+course.number+".json",JsonUtility.ToJson(course,true));
+            AssetDatabase.Refresh();
+            MektraAndroidRelease.BuildApk();
+        }
         public static void Publish()
         {
             var pack=LevelPack.Load();var chars=CharacterCatalog.Load();var entries=new List<AuthoredCourse>(pack.levels);

@@ -1,0 +1,89 @@
+Shape and difficulty validation
+99 stable level IDs and identical connection graphs / checkpoint indices.
+First 33 levels identical to the pre-adjustment build.
+660 new full runs and 1430 checkpoint resumes across ten characters.
+Before shape counts (levels 34-99): {'circle': 596, 'rain-capsule': 280, 'wedge': 35, 'oval': 9, 'two-lobe': 21}
+After shape counts (levels 34-99): {'circle': 289, 'rain-capsule': 280, 'distorted-circle': 135, 'wedge': 35, 'two-lobe': 110, 'three-lobe': 83, 'oval': 9}
+Late ordinary median area-equivalent diameter ratio: 0.77
+Connections lengthened by more than 15 units: 41
+Runtime resource matches the campaign artifact.
+
+MEKTRA_RAIN_STREAM_PASS 64 live row-choice windows across 10 characters; minimum 0.312s; off-screen recycling and original capsule motion
+MEKTRA_DEPTH_CONTINUOUS_PASS all depth and expanded encounters across 10 characters
+MEKTRA_EXPANDED_CHECKPOINT_PASS 90 resumed traversals plus 30 uninterrupted expanded traversals
+MEKTRA_DISCOVERY_PASS PASS: 133 fixed connections plus 240 streaming rain options across 10 characters, 310 later motion samples; minimum shared window 0.233s; authored reward budgets, completion, bounded instances, persistent discovery and real vortex capture.
+MEKTRA_CAMPAIGN_VALIDATED 34 The divided stream
+MEKTRA_CAMPAIGN_VALIDATED 35 The angled return
+MEKTRA_CAMPAIGN_VALIDATED 36 Three travelling circles
+MEKTRA_CAMPAIGN_VALIDATED 37 Alternating doors
+MEKTRA_CAMPAIGN_VALIDATED 38 The patient ferry
+MEKTRA_CAMPAIGN_VALIDATED 39 A visible connection
+MEKTRA_CAMPAIGN_VALIDATED 40 The turning oval
+MEKTRA_CAMPAIGN_VALIDATED 41 A travelling wave
+MEKTRA_CAMPAIGN_VALIDATED 42 The open chamber
+MEKTRA_CAMPAIGN_VALIDATED 43 Around the ring
+MEKTRA_CAMPAIGN_VALIDATED 44 A new current
+MEKTRA_CAMPAIGN_VALIDATED 45 Rain between islands
+MEKTRA_CAMPAIGN_VALIDATED 46 Bank and ferry
+MEKTRA_CAMPAIGN_VALIDATED 47 The stretched orbit
+MEKTRA_CAMPAIGN_VALIDATED 48 The second opening
+MEKTRA_CAMPAIGN_VALIDATED 49 Two elevators
+MEKTRA_CAMPAIGN_VALIDATED 50 Choose the door
+MEKTRA_CAMPAIGN_VALIDATED 51 The turning lobe
+MEKTRA_CAMPAIGN_VALIDATED 52 The crossing loop
+MEKTRA_CAMPAIGN_VALIDATED 53 The side doorway
+MEKTRA_CAMPAIGN_VALIDATED 54 A moving safe route
+MEKTRA_CAMPAIGN_VALIDATED 55 Meet, then commit
+MEKTRA_CAMPAIGN_VALIDATED 56 The reward current
+MEKTRA_CAMPAIGN_VALIDATED 57 The extra rebound
+MEKTRA_CAMPAIGN_VALIDATED 58 Outer orbit, inner reward
+MEKTRA_CAMPAIGN_VALIDATED 59 Wide door, quick door
+MEKTRA_CAMPAIGN_VALIDATED 60 The ferry shortcut
+MEKTRA_CAMPAIGN_VALIDATED 61 Open your route
+MEKTRA_CAMPAIGN_VALIDATED 62 Choose the shoulder
+MEKTRA_CAMPAIGN_VALIDATED 63 Across the wave
+MEKTRA_CAMPAIGN_VALIDATED 64 Two ways through
+MEKTRA_CAMPAIGN_VALIDATED 65 The outside reward
+MEKTRA_CAMPAIGN_VALIDATED 66 Your way across
+MEKTRA_CAMPAIGN_VALIDATED 67 Rain to bank
+MEKTRA_CAMPAIGN_VALIDATED 68 A bank in motion
+MEKTRA_CAMPAIGN_VALIDATED 69 Carousel and doorway
+MEKTRA_CAMPAIGN_VALIDATED 70 Wait, cross, recover
+MEKTRA_CAMPAIGN_VALIDATED 71 The passing meeting
+MEKTRA_CAMPAIGN_VALIDATED 72 The linked passage
+MEKTRA_CAMPAIGN_VALIDATED 73 A rocking plate
+MEKTRA_CAMPAIGN_VALIDATED 74 Wave and window
+MEKTRA_CAMPAIGN_VALIDATED 75 A connected pair
+MEKTRA_CAMPAIGN_VALIDATED 76 Orbit beside a vortex
+MEKTRA_CAMPAIGN_VALIDATED 77 A composed passage
+MEKTRA_CAMPAIGN_VALIDATED 78 The rain archipelago
+MEKTRA_CAMPAIGN_VALIDATED 79 The rebound gallery
+MEKTRA_CAMPAIGN_VALIDATED 80 The carousel passage
+MEKTRA_CAMPAIGN_VALIDATED 81 The breathing corridor
+MEKTRA_CAMPAIGN_VALIDATED 82 A journey by ferry
+MEKTRA_CAMPAIGN_VALIDATED 83 The connected machine
+MEKTRA_CAMPAIGN_VALIDATED 84 The turning garden
+MEKTRA_CAMPAIGN_VALIDATED 85 The wave passage
+MEKTRA_CAMPAIGN_VALIDATED 86 Through the chambers
+MEKTRA_CAMPAIGN_VALIDATED 87 The vortex garden
+MEKTRA_CAMPAIGN_VALIDATED 88 The long crossing
+MEKTRA_CAMPAIGN_VALIDATED 89 Read the rain
+MEKTRA_CAMPAIGN_VALIDATED 90 The quiet ricochet
+MEKTRA_CAMPAIGN_VALIDATED 91 The final rendezvous
+MEKTRA_CAMPAIGN_VALIDATED 92 Doors in sequence
+MEKTRA_CAMPAIGN_VALIDATED 93 The last ferry
+MEKTRA_CAMPAIGN_VALIDATED 94 The complete machine
+MEKTRA_CAMPAIGN_VALIDATED 95 The changing horizon
+MEKTRA_CAMPAIGN_VALIDATED 96 The final wave
+MEKTRA_CAMPAIGN_VALIDATED 97 The open labyrinth
+MEKTRA_CAMPAIGN_VALIDATED 98 Beyond the vortices
+MEKTRA_CAMPAIGN_VALIDATED 99 Mektra: the full journey
+MEKTRA_WAVE_ONE_PASS 652 new fixed routes across 10 characters, 1612 later motion windows, 272 rain choice windows; min base window 0.180s; all new full and checkpoint-resume runs; linked gates, rotation transforms, moving-frame reflection and 99-ID saves
+MEKTRA_PRECISION_LANES_PASS full=6 partial=2; scoring independent of rendering
+MEKTRA_PICKUP_VALIDATION PASS: close contact collects; former generous pickup distance does not.
+MEKTRA_LAVA_VALIDATION PASS: grace, bounded rise, contact death, safe clearance and pause.
+MEKTRA_VALIDATION PASS: 870 authored jump/star routes, 8 characters, classic/mirror/star-rush sections, wall crash, game over, pause/resume, endless section spawning.
+MEKTRA_ORBIT_DIRECTION PASS: both directions, wraparound, ties and arrival stability.
+
+MEKTRA_BUILD_SUCCESS 477047890
+Native Mac visual review: curved shapes and varying circles in level 80, diagonal spacing in level 81.

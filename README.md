@@ -4,7 +4,7 @@ Mektra is a portrait arcade climbing game. The active game and Android release a
 
 ## Gameplay
 
-Tap to jump from the curved surface you are orbiting. Timing determines the straight launch direction. Climb through 21 worlds with four authored courses per world: circles, lobes, smooth curves, hexagonal spaces, moving capsule rows, narrow bouncy routes, wedges, zigzag passages and giant lobes. Distance is the run score. Stars replenish health and buy characters using local game currency. Progression follows the authored journey; death retries begin at the opening.
+Tap to jump from the curved surface you are orbiting. Timing determines the straight launch direction. Climb continuously through 99 authored layouts with organic platforms, moving surfaces, rain streams, narrow bouncy routes and long diagonal jumps. Score is the highest upward distance reached, one point per 10 world units. Collect drifting fireflies to unlock animated characters. There is no health meter or energy drain. Retries begin at the opening.
 
 ## Source and editing
 
@@ -24,7 +24,11 @@ The editor entry point is `Mektra.Editor.MektraAndroidRelease.Build`. It builds 
 
 Signing material lives in `release/signing/`, intentionally excluded from Git. Keep the upload key and password in a secure backup and restore them locally before signing an update. Increase `PlayerSettings.Android.bundleVersionCode` for every Play Store update.
 
-Builds, Unity import caches, node_modules, local gameplay captures and signing secrets are excluded from version control. The current game has no account, ads, analytics or network data uploads; progress is stored locally.
+Builds, Unity import caches, node_modules, raw gameplay captures and signing secrets are excluded from version control. Local progress remains on the device. Optional global rankings use Unity Authentication and Leaderboards; joining publishes a nickname and best score. The project also includes the LevelPlay SDK. See the privacy policy and release setup notes for service configuration.
+
+Locally imported Amplify Color and Camera Play packages are excluded from this repository. Restore those dependencies from your licensed originals before compiling; the selected colour LUT resources are also local. Fonts include their license in `Unity/Assets/Resources/Fonts/`.
+
+Version 1.4.0 (6) was submitted to Google Play review on 25 October 2026 with the restored production leaderboard link, refreshed forest UI and updated listing artwork.
 
 ## Sync changes
 

@@ -6,8 +6,10 @@ namespace Mektra
 {
     [Serializable] public class Progress
     {
-        public int bank,best;
+        public int bank,best,accuracyBest;
         public string selected="mektra";
+        public string nickname="";
+        public string leaderboardPlayerId="";
         public List<string> unlocked=new List<string>
         {
             "mektra"
@@ -21,6 +23,14 @@ namespace Mektra
             get;
             private set;
         }
+        public int Best{
+get{
+#if MEKTRA_INVERT_PREVIEW
+return Data.accuracyBest;
+#else
+return Data.best;
+#endif
+}}
         public string Path=>System.IO.Path.Combine(Application.persistentDataPath,"mektra.progress.v1.json");
         public ProgressStore()
         {
@@ -55,7 +65,11 @@ namespace Mektra
         public void Finish(int stars,int distance)
         {
             Data.bank+=stars;
+            #if MEKTRA_INVERT_PREVIEW
+            Data.accuracyBest=Math.Max(Data.accuracyBest,distance);
+#else
             Data.best=Math.Max(Data.best,distance);
+#endif
             Save();
         }
         public void Save()

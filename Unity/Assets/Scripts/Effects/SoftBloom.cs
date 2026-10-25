@@ -14,12 +14,12 @@ namespace Mektra
             var a=RenderTexture.GetTemporary(width,height,0,RenderTextureFormat.ARGBHalf);
             var b=RenderTexture.GetTemporary(width,height,0,RenderTextureFormat.ARGBHalf);
             Graphics.Blit(source,a,bloom,0);
-            for(int i=0;i<3;i++)
+            for(int i=0;i<2;i++)
             {
                 bloom.SetVector("_Direction",new Vector4(1+i,0,0,0));Graphics.Blit(a,b,bloom,1);
                 bloom.SetVector("_Direction",new Vector4(0,1+i,0,0));Graphics.Blit(b,a,bloom,1);
             }
-            bloom.SetTexture("_BloomTex",a);bloom.SetFloat("_Strength",.8f);Graphics.Blit(source,destination,bloom,2);
+            bloom.SetTexture("_BloomTex",a);bloom.SetFloat("_Strength",.3f);Graphics.Blit(source,destination,bloom,2);
             RenderTexture.ReleaseTemporary(a);RenderTexture.ReleaseTemporary(b);
         }
         void OnDestroy(){if(bloom!=null)Destroy(bloom);}

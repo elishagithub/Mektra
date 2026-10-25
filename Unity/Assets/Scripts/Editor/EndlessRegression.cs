@@ -32,7 +32,7 @@ namespace Mektra.Editor
             foreach(var c in pack.levels)
             {
                 MotionRegression.GeometryChecks(c.level);
-                Check(c.level.height==1080&&c.level.stride==1080,"segment seam size");
+                Check(Math.Abs(c.level.height-1296)<.001&&Math.Abs(c.level.stride-1296)<.001,"segment seam size");
                 foreach(var p in c.level.platforms)families.Add(p.sourceShapeId);
                 foreach(var route in c.routes)foreach(var character in chars)
                 {
@@ -114,6 +114,8 @@ namespace Mektra.Editor
                     sim.Advance(GameConfig.Step);sim.events.Clear();
                     Check(sim.platforms.Count<=platformLimit&&sim.hazards.Count<=hazardLimit&&sim.stars.Count<=starLimit&&sim.magnets.Count<12,"endless instances grew without trimming");
                 }
+                if(sim.reason=="obstacle")foreach(var hazard in sim.hazards)
+                    if(Geometry.SweptTouches(sim.position,sim.position,hazard.data,hazard.offset))Debug.Log("MEKTRA_ROUTE_OBSTACLE "+hazard.section+" / "+hazard.data.id+" / player "+sim.position.x+","+sim.position.y);
                 Check(sim.phase==Phase.Playing&&sim.platform.section>=128,"run stopped: "+character.id+" "+(bonus?"bonus":"safe")+" at segment "+sim.platform.section+" ("+sim.CourseAt(sim.platform.section).id+") platform "+sim.platform.index+", "+sim.reason+", "+sim.time.ToString("F1")+"s");
                 for(int kind=0;kind<EndlessJourney.KindCount(courses);kind++)if(kind!=6)Check(kinds[kind]>0,"world or mechanic missing from run "+kind);
                 sim.Pause();double time=sim.time;var position=sim.position;sim.Advance(2);Check(time==sim.time&&(position-sim.position).Length==0,"pause changed endless state");sim.Resume();

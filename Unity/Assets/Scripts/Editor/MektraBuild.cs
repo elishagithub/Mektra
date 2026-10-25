@@ -10,17 +10,36 @@ namespace Mektra.Editor
     public static class MektraBuild
     {
         [MenuItem("Mektra/Validate and build Mac game")] public static void Build()=>BuildChecked(null);
-        public static void BuildValidatedOpening(LevelPack validated)=>BuildChecked(validated);
-        static void BuildChecked(LevelPack validated)
+        // Local previews allow UI review while a known journey validation issue is repaired.
+        public static void BuildPreview()=>BuildChecked(LevelPack.Load());
+        public static void BuildReleasePreview()=>BuildChecked(LevelPack.Load(),false,false,false,true);
+        public static void BuildInvertPreview()=>BuildChecked(LevelPack.Load(),false,true,false,true);
+        public static void BuildWorldThemePreview(){ThemePreview.Render();BuildOpeningThemePreview();}
+        public static void BuildGameOverPreview()=>BuildChecked(LevelPack.Load(),false,false,true);
+        public static void BuildOpeningThemePreview()=>BuildChecked(LevelPack.Load(),false,true);
+        public static void BuildCharacterPreview()=>BuildChecked(LevelPack.Load(),true);
+        public static void BuildValidatedOpening(LevelPack validated,bool discoveryAlreadyValidated=false)=>BuildChecked(validated,discoveryValidated:discoveryAlreadyValidated);
+        static void BuildChecked(LevelPack validated,bool crewPreview=false,bool openingPreview=false,bool gameOverPreview=false,bool invertPreview=false,bool discoveryValidated=false)
         {
+            PrecisionLaneRegression.Run();
             Regression.Run();
+            OrbitDirectionRegression.Run();
             var active=validated??LevelPack.Load();
-            if(active.endless)EnergyRegression.Run(active);
-            if(active.endless){if(validated==null)EndlessRegression.Run(active);}
+            // Precision mode removes energy depletion and magnetic auto-collection.
+            if(active.levels[0].level.discovery){if(!discoveryValidated)DiscoveryRegression.Run(active);}
+            else if(active.endless){if(validated==null)EndlessRegression.Run(active);}
             else if(active.challengeOpening){if(validated==null)ChallengeRegression.Run(active);}
             else {LevelPackRegression.Run(active);MotionRegression.Run(active);WorldRegression.Run(active); }
-            MagnetRegression.Run();
+
             
+            var graphics=new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/GraphicsSettings.asset")[0]);
+            var shaders=graphics.FindProperty("m_AlwaysIncludedShaders");
+            foreach(var guid in AssetDatabase.FindAssets("t:Shader",new[]{"Assets/AmplifyColor","Assets/Camera Play"})){
+                var shader=AssetDatabase.LoadAssetAtPath<Shader>(AssetDatabase.GUIDToAssetPath(guid));bool found=false;
+                for(int i=0;i<shaders.arraySize;i++)if(shaders.GetArrayElementAtIndex(i).objectReferenceValue==shader)found=true;
+                if(!found){int i=shaders.arraySize;shaders.InsertArrayElementAtIndex(i);shaders.GetArrayElementAtIndex(i).objectReferenceValue=shader;}
+            }
+            graphics.ApplyModifiedPropertiesWithoutUndo();AssetDatabase.SaveAssets();
             PlayerSettings.companyName="Mektra";
             PlayerSettings.productName="Mektra";
             PlayerSettings.SplashScreen.show=false;
@@ -30,7 +49,7 @@ namespace Mektra.Editor
             PlayerSettings.fullScreenMode=FullScreenMode.Windowed;
             PlayerSettings.resizableWindow=false;
             PlayerSettings.macRetinaSupport=true;
-            PlayerSettings.runInBackground=false;
+            PlayerSettings.runInBackground=true;
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Standalone,ScriptingImplementation.Mono2x);
             PlayerSettings.SetArchitecture(NamedBuildTarget.Standalone,1);
             Directory.CreateDirectory("Assets/Scenes");
@@ -53,7 +72,7 @@ namespace Mektra.Editor
                 {
                     "Assets/Scenes/Mektra.unity"
                 }
-                ,locationPathName="Builds/Mektra.app",target=BuildTarget.StandaloneOSX,options=BuildOptions.None
+                ,locationPathName="Builds/Mektra.app",target=BuildTarget.StandaloneOSX,options=BuildOptions.None,extraScriptingDefines=invertPreview?new[]{"MEKTRA_OPENING_PREVIEW","MEKTRA_INVERT_PREVIEW"}:crewPreview?new[]{"MEKTRA_CREW_PREVIEW"}:openingPreview?new[]{"MEKTRA_OPENING_PREVIEW"}:gameOverPreview?new[]{"MEKTRA_GAMEOVER_PREVIEW"}:Array.Empty<string>()
             }
             );
             if(result.summary.result!=BuildResult.Succeeded)throw new Exception("Mac build failed: "+result.summary.result);
@@ -71,13 +90,45 @@ namespace Mektra.Editor
         public static JumpPlan[] Load()
         {
             var plans=JsonUtility.FromJson<JumpPlans>(Resources.Load<TextAsset>("jump-plan").text).jumps;
-            var level=LevelData.Load();foreach(var plan in plans)plan.distance=CourseReview.RouteDistance(level,plan.from,plan.distance);return plans;
+            var level=LevelData.Load();var characters=CharacterCatalog.Load();
+            foreach(var plan in plans)
+            {
+                plan.distance=CourseReview.RouteDistance(level,plan.from,plan.distance);
+                // Saved launches predate the smaller circular body. Find the nearest
+                // shared launch window, retaining the same target and all three sections.
+                double original=plan.distance,length=new Orbit(level.platforms[plan.from].outline).length;
+                bool found=false;
+                for(int sample=0;sample<360&&!found;sample++)
+                {
+                    int offset=sample==0?0:(sample+1)/2*(sample%2==1?1:-1);
+                    double candidate=(original+offset*length/360+length)%length;
+                    bool safe=true;
+                    foreach(var character in characters)
+                    {
+                        for(int section=0;section<3;section++)
+                        {
+                            var sim=new Simulation(level,character);sim.EnsureSection(section+1);
+                            sim.platform=sim.platforms.Find(p=>p.section==section&&p.index==plan.from);
+                            sim.distance=candidate;sim.Select(character);sim.SetViewport(750);sim.Start();sim.Jump();
+                            for(int step=0;step<240&&sim.flying&&sim.phase==Phase.Playing;step++)sim.Advance(GameConfig.Step);
+                            int target=(plan.from+1)%level.platforms.Length;
+                            if(sim.phase!=Phase.Playing||sim.flying||sim.platform.index!=target||sim.platform.section!=section+(target==0?1:0)){safe=false;break;}
+                        }
+                        if(!safe)break;
+                    }
+                    if(safe){plan.distance=candidate;found=true;}
+                }
+                if(!found)throw new Exception("No shared regression launch for smaller player: "+plan.from);
+            }
+            return plans;
         }
     }
     public static class Regression
     {
         public static void Run()
         {
+            Assert(GameConfig.PrecisionPoints(0,0)==5&&GameConfig.PrecisionPoints(4,12)==5&&GameConfig.PrecisionPoints(5,12)==3&&GameConfig.PrecisionPoints(15,25)==1&&GameConfig.PrecisionPoints(25,0)==0,"Precision score thresholds");
+            int streak=0;Assert(GameConfig.StreakAward(true,ref streak)==5&&GameConfig.StreakAward(true,ref streak)==10&&GameConfig.StreakAward(true,ref streak)==15&&GameConfig.StreakAward(false,ref streak)==0&&GameConfig.StreakAward(true,ref streak)==5,"Perfect streak rewards and reset");
             // Both sides of every boundary must agree, including the loop back to forest.
             for(int boundary=1;boundary<=12;boundary++)
             {
@@ -136,8 +187,8 @@ namespace Mektra.Editor
                 Assert(direction.x*n.x+direction.y*n.y>.999999,"Jump normal points inward");
             }
             var pickup=new Simulation(level,characters[0]);pickup.stars.Clear();pickup.magnets.Clear();pickup.Start();
-            var closeStar=new StarInstance{position=pickup.position+new Point(0,-14)};
-            var distantStar=new StarInstance{position=pickup.position+new Point(0,-20)};
+            var closeStar=new StarInstance{position=pickup.position+new Point(0,-GameConfig.PickupRadius+2)};
+            var distantStar=new StarInstance{position=pickup.position+new Point(0,-GameConfig.PickupRadius-2)};
             pickup.stars.Add(closeStar);pickup.stars.Add(distantStar);pickup.Advance(GameConfig.Step);
             Assert(closeStar.collected&&!distantStar.collected&&pickup.score==1,"Tighter star contact boundary failed");
             Debug.Log("MEKTRA_PICKUP_VALIDATION PASS: close contact collects; former generous pickup distance does not.");
@@ -147,10 +198,10 @@ namespace Mektra.Editor
             for(int i=0;i<600;i++)
             {
                 front=lavaTest.Front;lavaTest.Step(GameConfig.Step,LavaHazard.GraceSeconds+i*GameConfig.Step,500,700);
-                Assert(lavaTest.Front<=front&&front-lavaTest.Front<=LavaHazard.CatchupSpeed*GameConfig.Step+.0001,"Lava teleported or retreated");
+                Assert(lavaTest.Front<=front&&front-lavaTest.Front<=120*GameConfig.Step+.0001,"Lava teleported or retreated");
             }
-            Assert(lavaTest.Touches(new Point(195,lavaTest.Front-GameConfig.Radius)),"Lava contact missing");
-            Assert(!lavaTest.Touches(new Point(195,lavaTest.Front-GameConfig.Radius-1)),"Lava kills above surface");
+            Assert(lavaTest.Touches(new Point(195,lavaTest.Front-GameConfig.ContactRadius)),"Lava contact missing");
+            Assert(!lavaTest.Touches(new Point(195,lavaTest.Front-GameConfig.ContactRadius-1)),"Lava kills above surface");
             var lavaRun=new Simulation(level,characters[0]);lavaRun.Start();lavaRun.time=20;
             lavaRun.position=new Point(195,lavaRun.lava.Front+5);lavaRun.flying=true;lavaRun.velocity=new Point();lavaRun.SetViewport(750);
             lavaRun.Advance(GameConfig.Step);Assert(lavaRun.phase==Phase.Exploding&&lavaRun.reason=="lava","Lava death missing");

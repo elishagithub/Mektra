@@ -24,6 +24,7 @@ namespace Mektra
         {
             p.fillColor=color;
             p.BeginPath();
+            p.MoveTo(center+new Vector2(r,0));
             p.Arc(center,r,0,360);
             p.ClosePath();
             p.Fill();
@@ -78,8 +79,9 @@ namespace Mektra
             }
         }
         public static Vector2 Polar(Vector2 center,float r,double a,float scale)=>center+new Vector2((float)Math.Cos(a),(float)Math.Sin(a))*r*scale;
-        public static void Teeth(Painter2D p,Vector2 center,float scale,Character c,double angle)
+        public static void Teeth(Painter2D p,Vector2 center,float scale,Character c,double angle,float rootRadius=13)
         {
+            Vector2 Leg(float radius,double direction)=>Polar(center,rootRadius+(radius-13)*(17.6f-rootRadius)/4.6f,direction,scale);
             var shell=ColorOf(c.color);var stroke=ColorOf(c.shellStroke);
             for(int i=0;i<c.legCount;i++)
             {
@@ -87,22 +89,28 @@ namespace Mektra
                 Vector2[] points;
                 if(c.legStyle=="paddle")points=new[]
                 {
-                    Polar(center,13,a-.1,scale),Polar(center,17.6f,a-.06,scale),Polar(center,17.6f,a+.06,scale),Polar(center,13,a+.1,scale)
+                    Leg(13,a-.1),Leg(17.6f,a-.06),Leg(17.6f,a+.06),Leg(13,a+.1)
                 }
                 ;
+                else if(c.legStyle=="diamond")points=new[]{Leg(12.8f,a),Leg(15.2f,a-.16),Leg(17.6f,a),Leg(15.2f,a+.16)};
+                else if(c.legStyle=="fork")points=new[]{Leg(13,a-.12),Leg(17.6f,a-.045),Leg(15.2f,a),Leg(17.6f,a+.045),Leg(13,a+.12)};
+                else if(c.legStyle=="petal")points=new[]{Leg(13,a-.07),Leg(15.5f,a-.15),Leg(17.6f,a),Leg(15.5f,a+.15),Leg(13,a+.07)};
+                else if(c.legStyle=="hook")points=new[]{Leg(13,a-.1),Leg(16.8f,a-.09),Leg(17.6f,a),Leg(16.4f,a+.14),Leg(14.7f,a+.12),Leg(15.5f,a+.035),Leg(13,a+.05)};
+                else if(c.legStyle=="fin")points=new[]{Leg(13,a-.16),Leg(17.6f,a),Leg(16,a+.12),Leg(13,a+.13)};
+                else if(c.legStyle=="block")points=new[]{Leg(13,a-.08),Leg(17.6f,a-.08),Leg(17.6f,a+.08),Leg(13,a+.08)};
                 else
                 {
                     double width=c.legStyle=="needle"?.04:c.legStyle=="blade"?.13:.095;
                     points=new[]
                     {
-                        Polar(center,13,a-width,scale),Polar(center,17.6f,a+(c.legStyle=="blade"?.045:0),scale),Polar(center,13,a+(c.legStyle=="blade"?.095:width),scale)
+                        Leg(13,a-width),Leg(17.6f,a+(c.legStyle=="blade"?.045:0)),Leg(13,a+(c.legStyle=="blade"?.095:width))
                     }
                     ;
                 }
                 Polygon(p,points,shell);
                 p.strokeColor=stroke;
                 p.lineWidth=.5f*scale;
-                p.Stroke();
+
             }
         }
         public static void Shell(Painter2D p,Vector2 center,float scale,Character c)
@@ -113,16 +121,7 @@ namespace Mektra
             p.Fill();
             p.strokeColor=stroke;
             p.lineWidth=scale;
-            p.Stroke();
-            if(c.shape!="diamond")
-            {
-                p.strokeColor=c.id=="mektra"?ColorOf("#DAE8F8"):new Color(1,1,1,.7f);
-                p.lineWidth=.8f*scale;
-                p.BeginPath();
-                p.MoveTo(center+new Vector2(-8,-10)*scale);
-                p.QuadraticCurveTo(center+new Vector2(0,-14)*scale,center+new Vector2(8,-10)*scale);
-                p.Stroke();
-            }
+
         }
         public static void Face(Painter2D p,Vector2 center,float scale,Character c,string expression,double time)
         {

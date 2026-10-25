@@ -25,7 +25,7 @@ namespace Mektra.Editor
             for(int step=0;step<240&&sim.flying&&sim.phase==Phase.Playing;step++)sim.Advance(GameConfig.Step);
             return sim;
         }
-        static bool Arrived(Simulation sim,int to)=>sim.phase==Phase.Playing&&!sim.flying&&sim.platform.section==0&&sim.platform.index==to;
+        static bool Arrived(Simulation sim,int to)=>(sim.phase==Phase.Playing||sim.phase==Phase.Complete)&&!sim.flying&&sim.platform.section==0&&sim.platform.index==to;
         public static JumpReview Review(LevelData level,int from,Character[] characters,int to=-1)
         {
             if(to<0)to=from+1;

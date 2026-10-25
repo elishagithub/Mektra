@@ -5,7 +5,7 @@ namespace Mektra
 {
     public static class UiStyles
     {
-        public static readonly Color Background=VectorArt.ColorOf("#081222"),Ink=VectorArt.ColorOf("#EAF2FF"),Muted=VectorArt.ColorOf("#899CB8"),Blue=VectorArt.ColorOf("#46B5FF");
+        public static readonly Color Background=VectorArt.ColorOf("#111111"),Ink=VectorArt.ColorOf("#ECECEC"),Muted=VectorArt.ColorOf("#959595"),Blue=VectorArt.ColorOf("#BCEB9A");
         public static void Round(VisualElement e,float radius)
         {
             e.style.borderTopLeftRadius=radius;
@@ -54,7 +54,7 @@ namespace Mektra
             b.style.borderBottomWidth=0;
             b.style.borderLeftWidth=0;
             b.style.borderRightWidth=0;
-            b.style.backgroundColor=secondary?VectorArt.ColorOf("#1B3151"):Ink;
+            b.style.backgroundColor=secondary?new Color(0.1872f,0.1872f,0.1872f,.78f):new Color(0.8893f,0.8893f,0.8893f,1);
             b.style.color=secondary?Ink:Background;
             b.style.fontSize=14;
             b.style.unityFontStyleAndWeight=FontStyle.Bold;

@@ -5,6 +5,13 @@
     "com.unity.modules.uielements": "1.0.0",
     "com.unity.modules.ui": "1.0.0",
     "com.unity.modules.imgui": "1.0.0",
-    "com.unity.modules.particlesystem": "1.0.0"
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.services.levelplay": "9.3.2",
+    "com.unity.services.leaderboards": "2.3.4",
+    "com.unity.services.authentication": "3.8.0",
+    "com.unity.modules.physics2d": "1.0.0",
+    "com.unity.modules.xr": "1.0.0",
+    "com.unity.modules.vr": "1.0.0",
+    "com.unity.modules.screencapture": "1.0.0"
   }
 }

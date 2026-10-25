@@ -44,9 +44,16 @@ namespace Mektra
                 return new Point(-amplitudeX*shift,amplitudeY*shift);
             }
             double angle=2*Math.PI*(time/periodSeconds+phase);
+            if(type=="figure-eight")return new Point(amplitudeX*Math.Sin(angle),amplitudeY*Math.Sin(2*angle));
             return new Point(type=="vertical"?0:amplitudeX*Math.Sin(angle),
                 type=="horizontal"?0:amplitudeY*(type=="orbit"?Math.Cos(angle):Math.Sin(angle)));
         }
+    }
+    [Serializable] public class RotationData
+    {
+        public bool enabled,continuous;
+        public double amplitudeRadians=.35,periodSeconds=16,phase;
+        public double At(double time)=>!enabled||periodSeconds<=0?0:continuous?2*Math.PI*(time/periodSeconds+phase):amplitudeRadians*Math.Sin(2*Math.PI*(time/periodSeconds+phase));
     }
     [Serializable] public class PlatformData
     {
@@ -58,18 +65,23 @@ namespace Mektra
         public MotionData motion;
         public double crumbleSeconds;
         public string label;
+        public RotationData rotation;
+        public bool switchSupport;
+        public string openedBy;
     }
     [Serializable] public class BlackHoleData { public string id; public double x,y,radius=23,pullRadius=53; }
-    [Serializable] public class BounceRunData { public int entry,exit; public Point[] points; public double secondsPerLeg=.32; }
+    [Serializable] public class BounceRunData { public int entry,exit; public int minimumBounces=1; public double launchDistance; public bool livePreview; public Point[] points; public double secondsPerLeg=.32; }
     [Serializable] public class RouteLink { public int from,to; }
     [Serializable] public class StarData
     {
         public string id;
         public double x,y;
         public string parentPlatformId;
+        public int guideFrom=-1,guideTo=-1;public double guideFraction=.5;
     }
     [Serializable] public class LevelData
     {
+        public bool discovery,sparseRewards,streamingRain;
         public string id,name,source;
         public string worldName,stageName;
         public string instruction;
@@ -83,6 +95,8 @@ namespace Mektra
         public StarData[] stars,challengeStars;
         public BlackHoleData[] blackHoles;
         public BounceRunData[] bounceRuns;
+        public int[] checkpointPlatforms;
+        public string[] chapterTitles;
         public static LevelData Load()=>JsonUtility.FromJson<LevelData>(Resources.Load<TextAsset>("level01").text);
     }
     [Serializable] public class Character
@@ -99,13 +113,29 @@ namespace Mektra
     public static class GameConfig
     {
         public const double GuideHoldSeconds=20,GuideFadeSeconds=5,GuideEndSeconds=GuideHoldSeconds+GuideFadeSeconds;
-        public static float GuideOpacity(double time)=>(float)Math.Clamp((GuideEndSeconds-time)/GuideFadeSeconds,0,1);
+        public static float GuideOpacity(double time){
+#if MEKTRA_INVERT_PREVIEW
+            return 1;
+#else
+            return (float)Math.Clamp((GuideEndSeconds-time)/GuideFadeSeconds,0,1);
+#endif
+        }
+#if MEKTRA_INVERT_PREVIEW
+        public const double ContactRadius=3.375;
+#else
+        public const double ContactRadius=6.06436875;
+#endif
+        // Pickups touch the visible circle and solid dot core, excluding the glow halo.
+        public const double CollectibleRadius=2.2,PickupRadius=Radius+CollectibleRadius;
         // Hold the authored starting pose until both guides vanish, then ease the motion clock in.
         public static double GuidedMotionTime(double time)
         {
             double elapsed=Math.Max(0,time-GuideEndSeconds);
             return elapsed-1+Math.Exp(-elapsed);
         }
-        public const double Width=390,Radius=9.801,OrbitSpeed=69.7,JumpSpeed=734.4,Step=1.0/120,MaxDelta=.05,CollectionRadius=17.5,CameraAnchor=.7;
+        public static int StreakAward(bool close,ref int streak){streak=close?streak+1:0;return streak*5;}
+        public static int PrecisionPoints(double angleDegrees,double miss)=>angleDegrees<=4&&miss<=12?5:angleDegrees<=10&&miss<=20?3:angleDegrees<=18&&miss<=28?1:0;
+        public const float ViewZoom=1.08f;
+        public const double Width=390,Radius=8.085825,OrbitSpeed=69.7,JumpSpeed=734.4,Step=1.0/120,MaxDelta=.05,CollectionRadius=PickupRadius,CameraAnchor=.7;
     }
 }

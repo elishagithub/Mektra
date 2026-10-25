@@ -104,3 +104,21 @@ Unity/MemoryCaptures/
 *.jks
 *.key
 *.pem
+
+# Local Unity diagnostics, optional licensed packages and regenerated LUT previews.
+Unity/*.log
+Unity/*.txt
+Unity/ThemePreviews/
+Unity/Assets/AmplifyColor/
+Unity/Assets/AmplifyColor.meta
+Unity/Assets/Resources/ColorGrades/
+Unity/Assets/Resources/ColorGrades.meta
+Unity/Library
+*.crash
+
+# Local imported packages and Python caches
+Unity/Assets/Camera Play/
+Unity/Assets/Camera Play.meta
+__pycache__/
+*.pyc
+Unity/Library 2/

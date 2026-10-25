@@ -10,8 +10,8 @@ namespace Mektra
         public EnergyMeter()
         {
             pickingMode=PickingMode.Ignore;
-            style.width=156;style.height=32;style.marginTop=0;
-            style.backgroundColor=new Color(.015f,.035f,.065f,.35f);
+            style.width=116;style.height=32;style.marginTop=0;
+            style.backgroundColor=Color.clear;
             style.borderTopLeftRadius=16;style.borderTopRightRadius=16;
             style.borderBottomLeftRadius=16;style.borderBottomRightRadius=16;
             generateVisualContent+=Draw;
@@ -29,17 +29,16 @@ namespace Mektra
         void Draw(MeshGenerationContext ctx)
         {
             var p=ctx.painter2D;bool critical=amount<=20;
-            var bright=critical?new Color(1,.18f,.24f):new Color(.94f,.98f,1);
+            var bright=critical?new Color(1,.65f,.3f):new Color(.86f,1,.66f);
             float pulse=critical?.45f+.55f*(float)(.5+.5*Math.Sin(time*Math.PI*2)):1;
-            Cell(p,4,3,26,8,new Color(bright.r,bright.g,bright.b,.07f*pulse));
-            Cell(p,7,6,20,6,new Color(bright.r,bright.g,bright.b,.10f*pulse));
             Cell(p,10,9,14,4,new Color(bright.r,bright.g,bright.b,.22f*pulse));
-            p.BeginPath();p.MoveTo(new Vector2(18,11));p.LineTo(new Vector2(13,17));p.LineTo(new Vector2(17,17));p.LineTo(new Vector2(15,22));p.LineTo(new Vector2(22,15));p.LineTo(new Vector2(18,15));p.ClosePath();p.fillColor=new Color(bright.r,bright.g,bright.b,pulse);p.Fill();
+            VectorArt.Circle(p,new Vector2(17,17),3,new Color(bright.r,bright.g,bright.b,pulse));
+            VectorArt.Circle(p,new Vector2(13,12),2,new Color(bright.r,bright.g,bright.b,.3f));
+            VectorArt.Circle(p,new Vector2(21,12),2,new Color(bright.r,bright.g,bright.b,.3f));
             for(int i=0;i<10;i++)
             {
-                float x=38+i*11,y=11;float filled=(float)Math.Clamp(amount/10-i,0,1);
-                if(filled>0){Cell(p,x-3,y-3,15,5,new Color(bright.r,bright.g,bright.b,.04f*filled*pulse));Cell(p,x-1,y-1,11,3.5f,new Color(bright.r,bright.g,bright.b,.10f*filled*pulse));}
-                Cell(p,x,y,9,2.6f,new Color(bright.r,bright.g,bright.b,.12f+.88f*filled*pulse));
+                float x=32+i*8,y=12;float filled=(float)Math.Clamp(amount/10-i,0,1);
+                Cell(p,x,y,6,2,new Color(bright.r,bright.g,bright.b,.12f+.88f*filled*pulse));
             }
         }
     }

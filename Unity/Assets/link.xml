@@ -1,0 +1,6 @@
+<linker>
+  <!-- Quads are created dynamically for avatar halos and the forest backdrop. -->
+  <assembly fullname="UnityEngine.PhysicsModule">
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+  </assembly>
+</linker>

@@ -17,16 +17,17 @@ namespace Mektra.Editor
             var trees=new GameObject("Theme review forest").AddComponent<ParallaxForest>();
             typeof(ParallaxForest).GetMethod("Awake",BindingFlags.Instance|BindingFlags.NonPublic).Invoke(trees,null);
             trees.Refresh(0,816,0);
-            Directory.CreateDirectory("ThemePreviews");
+            Directory.CreateDirectory("/tmp/mektra-world-theme-previews");
             var target=new RenderTexture(390,816,24);camera.targetTexture=target;
-            for(int i=0;i<6;i++)
+            for(int i=0;i<ThemeJourney.Names.Length;i++)
             {
                 var p=ThemeJourney.Sample(i*180);
                 material.SetColor("_Top",p.top);material.SetColor("_Bottom",p.bottom);material.SetColor("_Light",p.light);
-                material.SetFloat("_Landscape",p.landscape);material.SetFloat("_Night",p.night);material.SetFloat("_Dunes",p.dunes);material.SetFloat("_Clock",12);
+                material.SetFloat("_Opening",1-p.landscape*.72f);material.SetFloat("_Travel",-i*180*.0015f);
+                material.SetFloat("_Landscape",p.landscape);material.SetFloat("_Plains",p.plains);material.SetFloat("_Night",p.night);material.SetFloat("_Dunes",p.dunes);material.SetFloat("_Clock",12);
                 trees.SetTheme(p.forest,p.accent);camera.Render();RenderTexture.active=target;
                 var image=new Texture2D(390,816,TextureFormat.RGB24,false);image.ReadPixels(new Rect(0,0,390,816),0,0);image.Apply();
-                File.WriteAllBytes("ThemePreviews/"+ThemeJourney.Names[i]+".png",image.EncodeToPNG());Object.DestroyImmediate(image);
+                File.WriteAllBytes("/tmp/mektra-world-theme-previews/"+ThemeJourney.Names[i]+".png",image.EncodeToPNG());Object.DestroyImmediate(image);
             }
             RenderTexture.active=null;camera.targetTexture=null;target.Release();Object.DestroyImmediate(target);
             Object.DestroyImmediate(cameraNode);Object.DestroyImmediate(sky);Object.DestroyImmediate(trees.gameObject);

@@ -45,7 +45,7 @@ namespace Mektra
             p.y-=offset;
             if(mirrored)p.x=390-p.x;
             var b=d.bounds;
-            double r=GameConfig.Radius;
+            double r=GameConfig.ContactRadius;
             if(p.x<b.minX-r||p.x>b.maxX+r||p.y<b.minY-r||p.y>b.maxY+r)return false;
             if(Inside(p,d.outline))return true;
             for(int i=0;i<d.outline.Length;i++)if(Segment(p,d.outline[i],d.outline[(i+1)%d.outline.Length]).distance<=r)return true;
@@ -54,7 +54,7 @@ namespace Mektra
         public static bool SweptTouches(Point before,Point after,PlatformData data,double offset)
         {
             before.y-=offset;after.y-=offset;
-            var bounds=data.bounds;double radius=GameConfig.Radius;
+            var bounds=data.bounds;double radius=GameConfig.ContactRadius;
             if(Math.Max(before.x,after.x)<bounds.minX-radius||Math.Min(before.x,after.x)>bounds.maxX+radius||Math.Max(before.y,after.y)<bounds.minY-radius||Math.Min(before.y,after.y)>bounds.maxY+radius)return false;
             if(Inside(before,data.outline)||Inside(after,data.outline))return true;
             var delta=after-before;

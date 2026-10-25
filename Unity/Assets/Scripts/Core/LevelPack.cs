@@ -4,7 +4,7 @@ namespace Mektra
 {
     [Serializable] public class AuthoredRoute
     {
-        public int from,to;public double distance,windowSeconds;public Point launch,landing;
+        public int from,to;public double distance,windowSeconds,clock;public Point launch,landing;
     }
     [Serializable] public class AuthoredCourse
     {
@@ -14,7 +14,24 @@ namespace Mektra
     {
         public AuthoredCourse[] levels;
         public bool challengeOpening,endless;
-        public static LevelPack Load()=>JsonUtility.FromJson<LevelPack>(Resources.Load<TextAsset>("endless-pack").text);
+        public static LevelPack Load()
+        {
+            var prototype=Resources.Load<TextAsset>("discovery-pack");
+            return JsonUtility.FromJson<LevelPack>((prototype??Resources.Load<TextAsset>("endless-pack")).text);
+        }
+        // Preserve the edited opening without limiting the rest of the journey.
+        public LevelData[] JourneyCourses()
+        {
+            var result=Courses();var opening=Resources.Load<TextAsset>("figma-four-test");
+            if(!endless||opening==null)return result;
+            var edited=JsonUtility.FromJson<LevelPack>(opening.text).Courses();
+            for(int i=0;i<Math.Min(4,Math.Min(edited.Length,result.Length));i++)
+            {
+                edited[i].segmentKind=result[i].segmentKind;edited[i].variant=result[i].variant;
+                result[i]=edited[i];
+            }
+            return result;
+        }
         public LevelData[] Courses()
         {
             var result=new LevelData[levels.Length];

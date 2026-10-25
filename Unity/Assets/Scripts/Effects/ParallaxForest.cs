@@ -23,7 +23,7 @@ namespace Mektra
                 for(int tile=0;tile<3;tile++)
                 {
                     var node=new GameObject("Forest depth "+layer+" tile "+tile);node.transform.SetParent(transform);
-                    node.AddComponent<MeshFilter>().sharedMesh=mesh;var renderer=node.AddComponent<MeshRenderer>();renderer.sharedMaterial=material;renderer.enabled=false;tiles[tile]=node.transform;
+                    node.AddComponent<MeshFilter>().sharedMesh=mesh;var renderer=node.AddComponent<MeshRenderer>();renderer.sharedMaterial=material;renderer.enabled=true;tiles[tile]=node.transform;
                 }
                 layers.Add(tiles);
             }
