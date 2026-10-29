@@ -26,9 +26,9 @@ Signing material lives in `release/signing/`, intentionally excluded from Git. K
 
 Builds, Unity import caches, node_modules, raw gameplay captures and signing secrets are excluded from version control. Local progress remains on the device. Optional global rankings use Unity Authentication and Leaderboards; joining publishes a nickname and best score. The project also includes the LevelPlay SDK. See the privacy policy and release setup notes for service configuration.
 
-Locally imported Amplify Color and Camera Play packages are excluded from this repository. Restore those dependencies from your licensed originals before compiling; the selected colour LUT resources are also local. Fonts include their license in `Unity/Assets/Resources/Fonts/`.
+Locally imported Amplify Color, Camera Play and Le Tai Translucent Image packages are excluded from this repository. Restore those dependencies from your licensed originals before compiling; the selected colour LUT resources are also local. Fonts include their license in `Unity/Assets/Resources/Fonts/`.
 
-Version 1.4.0 (6) was submitted to Google Play review on 25 October 2026 with the restored production leaderboard link, refreshed forest UI and updated listing artwork.
+Version 1.5.0 (7) was submitted to Google Play review on 29 October 2026 with glowing orb heroes, matching trails, faster movement and jumps, launch effects, refreshed character selection, four colour presets and updated store artwork.
 
 ## Sync changes
 

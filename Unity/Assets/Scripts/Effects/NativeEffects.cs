@@ -19,7 +19,6 @@ namespace Mektra
         public static Texture MenuBackdrop=>ThemeTexture(PlayerPrefs.GetInt("mektra.background.theme",0));
         public static Texture ThemeTexture(int index)=>menuThemes[Mathf.Clamp(index,0,2)];
         public static void RefreshMenuTheme(){}
-        Material frostMaterial;
         AmplifyColorEffect grading;int gradeVersion=-1;
         float impact;
         Color themeAccent;
@@ -34,20 +33,13 @@ namespace Mektra
             source.wrapMode=TextureWrapMode.Clamp;source.filterMode=FilterMode.Bilinear;
             const int width=384;int height=Mathf.RoundToInt(width*(float)source.height/source.width);
             var output=new RenderTexture(width,height,0,RenderTextureFormat.ARGB32){name=source.name+" frosted",filterMode=FilterMode.Bilinear,wrapMode=TextureWrapMode.Clamp};output.Create();
-            var temporary=RenderTexture.GetTemporary(width,height,0,RenderTextureFormat.ARGB32);
-            temporary.filterMode=FilterMode.Bilinear;temporary.wrapMode=TextureWrapMode.Clamp;
-            var previous=RenderTexture.active;
-            try{
-                frostMaterial.SetVector("_Direction",new Vector4(1f/width,0,0,0));Graphics.Blit(source,temporary,frostMaterial);
-                frostMaterial.SetVector("_Direction",new Vector4(0,1f/height,0,0));Graphics.Blit(temporary,output,frostMaterial);
-            }finally{RenderTexture.active=previous;RenderTexture.ReleaseTemporary(temporary);}
+            ForestGlass.Render(source,output);
             return output;
         }
         void OnDestroy()
         {
             if(frostedMoon!=null){frostedMoon.Release();Destroy(frostedMoon);}
             if(frostedEmerald!=null){frostedEmerald.Release();Destroy(frostedEmerald);}
-            if(frostMaterial!=null)Destroy(frostMaterial);
             for(int i=0;i<menuThemes.Length;i++)if(menuThemes[i]!=null){menuThemes[i].Release();Destroy(menuThemes[i]);menuThemes[i]=null;}
         }
         void Awake()
@@ -69,7 +61,8 @@ namespace Mektra
             glowMaterial.SetFloat("_Iridescence",.45f);
             starMaterial=new Material(glowMaterial);starMaterial.mainTexture=ParticleTexture(false);starMaterial.SetFloat("_Iridescence",.15f);
             pointShimmer=System("Holographic point halos",hologramMaterial,110,.35f,34,new Color(1,1,1,.16f));
-            playerShimmer=System("Holographic player motes",hologramMaterial,40,.35f,2.4f,new Color(.6f,.85f,1,.7f));
+            playerShimmer=System("Player motes",glowMaterial,40,.35f,2.4f,Color.white);
+            playerShimmer.GetComponent<ParticleSystemRenderer>().enabled=false;
             trail=System("White particle trail",glowMaterial,240,.78f,19.435f,new Color(1,1,1,.5f));
             trail.GetComponent<ParticleSystemRenderer>().enabled=false;
             var size=trail.sizeOverLifetime;size.enabled=true;size.size=new ParticleSystem.MinMaxCurve(1,new AnimationCurve(new Keyframe(0,1),new Keyframe(.3f,.7f),new Keyframe(1,0)));
@@ -98,7 +91,6 @@ namespace Mektra
             backdrop=GameObject.CreatePrimitive(PrimitiveType.Quad);backdrop.name="Forest atmosphere";Destroy(backdrop.GetComponent<Collider>());backdrop.transform.SetParent(transform);backdrop.transform.position=new Vector3(0,0,20);backdrop.GetComponent<MeshRenderer>().material=new Material(Resources.Load<Shader>("Shaders/Backdrop"));
             forest=gameObject.AddComponent<ParallaxForest>();
             skyMaterial=backdrop.GetComponent<MeshRenderer>().material;
-            frostMaterial=new Material(Resources.Load<Shader>("Shaders/FrostedForest"));
             frostedMoon=FrostForest(Resources.Load<Texture2D>("Art/FireflyForest/moonlit-forest"));
             frostedEmerald=FrostForest(Resources.Load<Texture2D>("Art/FireflyForest/emerald-forest"));
             var themeMaterial=new Material(Resources.Load<Shader>("Shaders/ForestTheme"));
@@ -210,7 +202,7 @@ namespace Mektra
                 // Emit along the traveled segment, so a fast jump cannot leave gaps.
                 for(int i=1;i<=count;i++)trail.Emit(new ParticleSystem.EmitParams{position=Position(previousTrail+(end-previousTrail)*(i/(double)count)),startColor=new Color(ColorPresetPreview.PlayerInk.r,ColorPresetPreview.PlayerInk.g,ColorPresetPreview.PlayerInk.b,.5f)},1);
                 sparkClock+=Time.unscaledDeltaTime;
-                if(sparkClock>=.04){sparkClock%=.04;var backward=(previousTrail-end).Normal;
+                if(sparkClock>=.24){sparkClock%=.24;var backward=(previousTrail-end).Normal;
                     land.Emit(new ParticleSystem.EmitParams{position=Position(end),velocity=new Vector3((float)backward.x*12+UnityEngine.Random.Range(-5f,5f),(float)-backward.y*12+UnityEngine.Random.Range(-5f,5f),0),startColor=Color.white,startSize=UnityEngine.Random.Range(.9f,1.6f),startLifetime=.38f},1);}
                 previousTrail=end;
             }
@@ -250,8 +242,7 @@ namespace Mektra
             }
             else if(name=="magnet"){Ring(origin,110,new Color(1,1,1,.7f));Burst(land,origin,16,85,ice);}
             else if(name=="star"){
-                // A short, expanding pulse marks actual contact only; never a pickup guide.
-                captureRing.Emit(new ParticleSystem.EmitParams{position=Position(origin),startSize=84,startColor=new Color(.65f,1,.8f,.8f)},1);
+                // Contact is celebrated with glowing fragments, without an expanding circle.
                 for(int i=0;i<12;i++)
                 {
                     float angle=i*Mathf.PI*2/12+UnityEngine.Random.Range(-.08f,.08f);
@@ -262,7 +253,7 @@ namespace Mektra
             }
             else if(name=="land"){Ring(sim.position,46,new Color(.4f,.85f,1,.4f));Burst(land,sim.position,12,65,ice);}
             else if(name=="jump"){
-                for(int i=0;i<10;i++){float angle=i*Mathf.PI*2/10;land.Emit(new ParticleSystem.EmitParams{position=Position(origin),velocity=new Vector3(Mathf.Cos(angle)*30,Mathf.Sin(angle)*30,0),startColor=Color.white,startSize=UnityEngine.Random.Range(1f,2f),startLifetime=.35f},1);}
+                for(int i=0;i<5;i++){float angle=i*Mathf.PI*2/5;land.Emit(new ParticleSystem.EmitParams{position=Position(origin),velocity=new Vector3(Mathf.Cos(angle)*30,Mathf.Sin(angle)*30,0),startColor=Color.white,startSize=UnityEngine.Random.Range(1f,2f),startLifetime=.35f},1);}
             }
             else if(name=="crash")
             {

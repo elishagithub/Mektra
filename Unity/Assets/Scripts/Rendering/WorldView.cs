@@ -10,6 +10,13 @@ namespace Mektra
         readonly bool showPlayer;
         struct TrailSample {public Point point;public double time;}
         readonly List<TrailSample> ribbon=new List<TrailSample>();
+        struct LaunchBurst {public Point origin,direction;public double born;}
+        readonly List<LaunchBurst> launches=new List<LaunchBurst>();
+        public void JumpEffect(Point origin)
+        {
+            launches.Add(new LaunchBurst{origin=origin,direction=sim.velocity.Normal,born=sim.RenderTime});
+            if(launches.Count>8)launches.RemoveAt(0);
+        }
         sealed class Ripple {public Point[] points;public Point center;public double born;public int tier;}
         readonly List<Ripple> ripples=new List<Ripple>();
         public static readonly Dictionary<string,float> OutlineVisibility=new Dictionary<string,float>();
@@ -93,8 +100,8 @@ return ColorPresetPreview.Apply(color);
         public void Refresh()
         {
             double trailTime=sim.RenderTime;
-            ribbon.RemoveAll(s=>trailTime-s.time>1.05);
-            if(sim.phase==Phase.Playing&&(ribbon.Count==0||(ribbon[ribbon.Count-1].point-sim.RenderPosition).Length>1.2))ribbon.Add(new TrailSample{point=sim.RenderPosition,time=trailTime});
+            ribbon.RemoveAll(s=>trailTime-s.time>.85);
+            if(sim.phase==Phase.Playing&&(ribbon.Count==0||(ribbon[ribbon.Count-1].point-sim.RenderPosition).Length>=2))ribbon.Add(new TrailSample{point=sim.RenderPosition,time=trailTime});
             if(ribbon.Count>300)ribbon.RemoveRange(0,ribbon.Count-300);
 
 #if MEKTRA_INVERT_PREVIEW
@@ -389,25 +396,57 @@ return ColorPresetPreview.Apply(color);
         }
         void DrawPlayerRibbon(MeshGenerationContext ctx)
         {
-            if(ribbon.Count<2)return;
-            var p=ctx.painter2D;var head=ScreenPoint(sim.RenderPosition);float radius=(float)(GameConfig.Radius*sim.BodyScale);
-            Vector2 NormalAt(int index){var before=ScreenPoint(ribbon[Math.Max(0,index-1)].point);var after=ScreenPoint(ribbon[Math.Min(ribbon.Count-1,index+1)].point);var tangent=(after-before).normalized;return new Vector2(-tangent.y,tangent.x);}
+            var p=ctx.painter2D;
+            if(sim.phase==Phase.Over)return;
+            var glow=RobotView.Tint(sim.character);
+            // Draw in the UI layer so the luminous wake stays visible over platforms.
+            p.lineCap=LineCap.Round;
+            for(int layer=3;layer>=0;layer--)for(int i=1;i<=ribbon.Count;i++){
+                var previous=ribbon[i-1];var point=i<ribbon.Count?ribbon[i].point:sim.RenderPosition;
+                float life=Mathf.Clamp01(1-(float)(sim.RenderTime-previous.time)/.85f);
+                if(life<=0)continue;
+                p.BeginPath();p.MoveTo(ScreenPoint(previous.point));p.LineTo(ScreenPoint(point));
+                p.lineWidth=(layer==0?4f:5f+layer*5f)*life;
+                p.strokeColor=new Color(glow.r,glow.g,glow.b,(layer==0?.75f:.055f)*life);p.Stroke();
+            }
             for(int i=1;i<ribbon.Count;i++){
-                var from=ScreenPoint(ribbon[i-1].point);var to=ScreenPoint(ribbon[i].point);
-                float d0=(from-head).magnitude,d1=(to-head).magnitude;
-                if(d0<radius&&d1<radius)continue;
-                if(d1<radius){var delta=to-from;var relative=from-head;float aa=Vector2.Dot(delta,delta),bb=2*Vector2.Dot(relative,delta),cc=Vector2.Dot(relative,relative)-radius*radius;float disc=bb*bb-4*aa*cc;if(aa>.0001f&&disc>=0)to=from+delta*Mathf.Clamp01((-bb-Mathf.Sqrt(disc))/(2*aa));else continue;}
-                if(d0<radius)continue;
-                float life0=Mathf.Clamp01(1-(float)(sim.RenderTime-ribbon[i-1].time)/1.05f),life1=Mathf.Clamp01(1-(float)(sim.RenderTime-ribbon[i].time)/1.05f);
-                float width0=i==1?0:1.25f*life0,width1=1.25f*life1;
-                var n0=NormalAt(i-1);var n1=NormalAt(i);
-                p.BeginPath();p.MoveTo(from+n0*width0);p.LineTo(to+n1*width1);p.LineTo(to-n1*width1);p.LineTo(from-n0*width0);p.ClosePath();
-                p.fillColor=ColorPresetPreview.Apply(new Color(.15f,.55f,1f,.85f*Mathf.Pow((life0+life1)*.5f,.85f)));p.Fill();
+                // Keep only occasional motes, independent of movement speed.
+                if(Math.Floor(ribbon[i].time/.24)==Math.Floor(ribbon[i-1].time/.24))continue;
+                var sample=ribbon[i];float age=(float)(sim.RenderTime-sample.time);
+                float life=Mathf.Clamp01(1-age/.85f);if(life<=0)continue;
+                float seed=(float)(sample.time*197.3);float angle=seed*2.4f;
+                var drift=new Vector2(Mathf.Sin(angle),Mathf.Cos(angle))*(4+age*20);
+                var at=ScreenPoint(sample.point)+drift;
+                float size=(1.4f+1.2f*Mathf.Sin(seed)*Mathf.Sin(seed))*life;
+                VectorArt.Circle(p,at,size*3,new Color(glow.r,glow.g,glow.b,.08f*life));
+                p.BeginPath();p.MoveTo(at+new Vector2(0,-size*2));p.LineTo(at+new Vector2(size*.45f,-size*.45f));
+                p.LineTo(at+new Vector2(size*2,0));p.LineTo(at+new Vector2(size*.45f,size*.45f));
+                p.LineTo(at+new Vector2(0,size*2));p.LineTo(at+new Vector2(-size*.45f,size*.45f));
+                p.LineTo(at+new Vector2(-size*2,0));p.LineTo(at+new Vector2(-size*.45f,-size*.45f));
+                p.ClosePath();p.fillColor=new Color(glow.r,glow.g,glow.b,life);p.Fill();
+            }
+        }
+
+        void DrawLaunches(Painter2D p)
+        {
+            launches.RemoveAll(b=>sim.RenderTime-b.born>.3);
+            var glow=RobotView.Tint(sim.character);
+            foreach(var burst in launches){
+                float t=Mathf.Clamp01((float)(sim.RenderTime-burst.born)/.3f),fade=1-t;
+                var center=ScreenPoint(burst.origin);float radius=6+24*t;
+                for(int layer=2;layer>=0;layer--){p.BeginPath();p.Arc(center,radius,0,360);p.lineWidth=layer==0?1.8f:5+layer*4;p.strokeColor=new Color(glow.r,glow.g,glow.b,fade*(layer==0?.8f:.06f));p.Stroke();}
+                VectorArt.Circle(p,center,9*fade,new Color(1,1,1,.65f*fade*fade));
+                float backward=(float)Math.Atan2(-burst.direction.y,-burst.direction.x);
+                for(int i=0;i<5;i++){
+                    float angle=backward+(i-2)*.45f;var direction=new Vector2(Mathf.Cos(angle),Mathf.Sin(angle));
+                    var tip=center+direction*(8+t*(28+(i%2)*12));
+                    p.BeginPath();p.MoveTo(tip-direction*(3+5*fade));p.LineTo(tip);p.lineCap=LineCap.Round;p.lineWidth=1.5f*fade;p.strokeColor=new Color(glow.r,glow.g,glow.b,fade);p.Stroke();
+                }
             }
         }
         void DrawEffects(MeshGenerationContext ctx)
         {
-            if(showPlayer)DrawPlayerRibbon(ctx);
+            if(showPlayer){DrawPlayerRibbon(ctx);DrawLaunches(ctx.painter2D);}
             var p=ctx.painter2D;
             DrawLava(p);
             DrawRipples(p);

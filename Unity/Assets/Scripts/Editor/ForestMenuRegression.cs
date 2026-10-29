@@ -17,6 +17,12 @@ namespace Mektra.Editor
                 RenderTexture.active=avatar.Texture;readback.ReadPixels(new Rect(0,0,128,128),0,0);readback.Apply();
                 if(readback.GetPixel(60,60).a<.8f||readback.GetPixel(0,0).a>.01f)throw new Exception("Avatar does not render against transparent background");
             }finally{RenderTexture.active=old;UnityEngine.Object.DestroyImmediate(readback);avatar.Dispose();}
+            foreach(var character in CharacterCatalog.Load())using(var bug=new AvatarRig(character,64)){
+                if(bug.LegCount!=AvatarRig.FootCount(character.id))throw new Exception("Incorrect bug leg count: "+character.id);
+                bug.Render(1,true,false,0,true);var walking=bug.FootPosition(0);bug.Render(1.2,true,false,0,true);
+                if((bug.FootPosition(0)-walking).magnitude<.02f)throw new Exception("Bug gait is not visible: "+character.id);
+                bug.Render(1.2,false,true,0,true);if(bug.FootPosition(0).y<walking.y)throw new Exception("Bug legs do not fold in flight: "+character.id);
+            }
             Debug.Log("MEKTRA_FOREST_MENUS_PASS: light fonts and shaders loaded; independent eyes blink/reopen, feet walk/tuck, 3D avatar renders with transparent background.");
         }
     }

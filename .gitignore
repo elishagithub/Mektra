@@ -122,3 +122,14 @@ Unity/Assets/Camera Play.meta
 __pycache__/
 *.pyc
 Unity/Library 2/
+
+# Generated Unity IDE files and locally restored vendor packages.
+Unity/.vscode/
+Unity/*.csproj
+Unity/*.slnx
+Unity/Assets/Le Tai's Asset/
+Unity/Assets/Le Tai's Asset.meta
+Unity/Assets/MobileDependencyResolver/
+Unity/Assets/MobileDependencyResolver.meta
+Unity/Assets/Resources/ColourLUTs/
+Unity/Assets/Resources/ColourLUTs.meta

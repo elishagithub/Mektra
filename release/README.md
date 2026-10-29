@@ -1,5 +1,15 @@
 # Mektra release assets
 
+## Latest submission: 1.5.0 (7)
+
+Submitted to Google Play production review on 29 October 2026. Play Console confirmed **Changes in review** for the new release, description, icon, five phone screenshots and feature graphic. Managed publishing is off. Publication is pending Google's checks and approval.
+
+Artifacts: `android/Mektra-1.5.0.aab` and `android/Mektra-1.5.0.apk`. Verification: `android/verification-1.5.0.txt`; submission record: `android/production-submission-1.5.0.txt`. New artwork: `store-assets/1.5.0/`; actual game captures: `screenshots/1.5.0/`; selected store images: `store-previews/1.5.0/`.
+
+Glowing orb heroes with matching trails, sparse sparkles, elliptical flight and a takeoff pulse; faster jumps and 5% faster movement; Setting Sun, Invert, Black & White and Blue Hue; refreshed character selection and readable preset buttons.
+
+## Previous submission
+
 Package: `com.arkcodesolutions.mektra`
 Submitted update: 1.4.0 (version code 6), sent to Google Play production review on 2026-10-25. Play Console confirmed Changes in review while automated checks run. Not yet live. Submission record: `android/production-submission-1.4.0.txt`.
 

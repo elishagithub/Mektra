@@ -28,9 +28,9 @@ namespace Mektra.Editor
             UnityEditor.Android.AndroidExternalToolsSettings.jdkRootPath="/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home";
             PlayerSettings.companyName="Ark Code Solutions";
             PlayerSettings.productName="Mektra";
-            PlayerSettings.bundleVersion="1.4.0";
+            PlayerSettings.bundleVersion="1.5.0";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android,"com.arkcodesolutions.mektra");
-            PlayerSettings.Android.bundleVersionCode=6;
+            PlayerSettings.Android.bundleVersionCode=7;
             PlayerSettings.Android.minSdkVersion=AndroidSdkVersions.AndroidApiLevel25;
             PlayerSettings.Android.targetSdkVersion=(AndroidSdkVersions)36;
             PlayerSettings.Android.targetArchitectures=AndroidArchitecture.ARM64;
@@ -55,7 +55,7 @@ namespace Mektra.Editor
                     EditorUserBuildSettings.buildAppBundle=bundle;
                     var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions {
                         scenes=new[]{"Assets/Scenes/Mektra.unity"},
-                        locationPathName=Path.Combine(output,bundle?"Mektra-1.4.0.aab":"Mektra-1.4.0.apk"),
+                        locationPathName=Path.Combine(output,bundle?"Mektra-1.5.0.aab":"Mektra-1.5.0.apk"),
                         target=BuildTarget.Android,options=BuildOptions.None,extraScriptingDefines=Array.Empty<string>()
                     });
                     if(report.summary.result!=BuildResult.Succeeded)throw new Exception("Android build failed: "+report.summary.result);

@@ -4,20 +4,17 @@ Default language: English (United States)
 Package: com.arkcodesolutions.mektra
 
 Short description:
-Jump between curved shapes, collect stars and climb through changing worlds.
+Leap through a misty forest, catch glowing fireflies and climb higher.
 
 Full description:
-Every jump is a choice. Ride a curved surface, wait for the right angle and launch yourself toward the next shape.
+Every jump is a choice. Ride a curved surface, wait for the right angle and launch your glowing orb toward the next shape.
 
-Mektra is a geometric arcade climbing game built around timing, precision and discovery. Travel through a changing journey of smooth curves, multi-lobed shapes, connected hexagons, moving platforms and narrow passages. Some sections give you room to breathe. Others reward a carefully timed long jump or a daring leap from an edge.
+Explore a continuous journey through a misty firefly forest. Smooth organic platforms, moving surfaces, rain-like streams, bouncing plates and narrow passages bring new timing challenges as you climb.
 
-Collect stars along the way to replenish your energy and unlock more characters. Watch your health: when it becomes critical, your player slows down. Your distance travelled is your score, so keep climbing and make every jump count.
+Catch drifting fireflies to unlock colourful orb heroes with matching luminous trails and subtle sparkles. Stretch into a glowing ellipse during flight and leave a pulse of light at takeoff.
 
-Discover new ways to move:
-• Orbit smooth curves and jump between different geometric shapes.
-• Time your way through flowing rows of moving capsules.
-• Bounce through narrow passages lined with stars.
-• Navigate wedges, zigzag routes and tight hexagonal spaces.
-• Stay clear of screen edges, rising lava and swirling black holes.
+Choose your look with Setting Sun, Invert, Black & White and Blue Hue colour presets, plus three forest backgrounds.
 
-Enjoy atmospheric worlds, glowing effects and music as you find your rhythm. When a run ends, begin again and use what you learned to climb farther.
+Your score records how high you climb. Keep your best distance on your device, or join the optional global leaderboard with a nickname.
+
+There is no health meter or energy drain. Focus on your timing, find your rhythm and make the next leap.

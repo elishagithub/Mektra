@@ -12,6 +12,8 @@ namespace Mektra.Editor
         [MenuItem("Mektra/Validate and build Mac game")] public static void Build()=>BuildChecked(null);
         // Local previews allow UI review while a known journey validation issue is repaired.
         public static void BuildPreview()=>BuildChecked(LevelPack.Load());
+        // Visual-only local review: retain core regressions while campaign route issues are repaired.
+        public static void BuildVisualPreview()=>BuildChecked(LevelPack.Load(),discoveryValidated:true);
         public static void BuildReleasePreview()=>BuildChecked(LevelPack.Load(),false,false,false,true);
         public static void BuildInvertPreview()=>BuildChecked(LevelPack.Load(),false,true,false,true);
         public static void BuildWorldThemePreview(){ThemePreview.Render();BuildOpeningThemePreview();}
@@ -174,7 +176,7 @@ namespace Mektra.Editor
             foreach(var platform in constant.platforms)
             {
                 constant.platform=platform;
-                Assert(constant.Pace==69.7,"Automatic speed increase remains");
+                Assert(constant.Pace==GameConfig.OrbitSpeed,"Automatic speed increase remains");
             }
             // Perpendicular launch must never be bent toward a target by aim assistance.
             var launchCheck=new Simulation(level,characters[0]);launchCheck.Start();

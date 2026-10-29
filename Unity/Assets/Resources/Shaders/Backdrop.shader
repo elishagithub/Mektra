@@ -180,7 +180,7 @@ Shader "Mektra/Backdrop"
             {
                 float climb=max(0,-_Travel);
                 float offset=.045+.23*(.5-.5*cos(climb*.27));
-                float2 uv=float2(.012+i.uv.x*.976+sin(_Clock*.025)*.002,i.uv.y*.67+offset);
+                float2 uv=float2(.012+i.uv.x*.976+sin(_Clock*.025)*.009,i.uv.y*.67+offset+.009*sin(_Clock*.018));
                 float blend=.5-.5*cos(climb*.8);
                 float3 woods=lerp(tex2D(_ForestA,uv).rgb,tex2D(_ForestB,uv+float2(0,.008*sin(_Clock*.035))).rgb,blend);
                 float mist=pow(saturate(1-abs(i.uv.x-.5)*1.8),3);

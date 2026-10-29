@@ -41,3 +41,12 @@ A GPU regression checks transparent avatar rendering, independent eye blink/reop
 
 ### Gameplay visibility
 The black body keeps a broader, brighter cyan rim and a restrained cyan bloom so its silhouette remains readable against the forest and black platforms. Eye width increases from .245 to .275 and height from .285 to .31 in rig space; blink normalization follows the new height. Player size, collider, jump physics and collectible contact remain unchanged.
+
+### Articulated forest bugs
+Orbit and Onyx have eight spider-like legs; the other characters have six. Each leg has independent upper/lower segments, a raised knee and alternating foot lift. Legs fold inward during jumps. Antennae sway and react to flight; Aurora, Frost, Bloom and Comet have gently moving wings; Ember and Volt have separate beetle shell plates. Soft pastel eye, body-rim and halo colours distinguish the bugs using the firefly palette. The visual rigs do not alter player collision or jump physics. Existing character IDs, ownership and prices are preserved.
+
+### Rounded crawling feet revision
+The thin leg segments are replaced by two rows of spherical feet (10 or 14 total). A rearward-travelling phase wave staggers their stance and lift. Gameplay samples the actual supporting platform outline, including its motion, rotation and mirroring, to place feet against the local curve. Feet are independent of the body breathing transform, lift briefly on the return stroke and tuck during flight. Character collision and reach are unchanged.
+
+### Glowing orb heroes (1.5.0)
+Gameplay, hero portraits and character selection now use filled glowing orbs with character-coloured halos and trails. The default hero is white; existing character IDs, prices and unlocks are retained. Flight stretches the orb along its velocity and returns it to a circle on landing. Sparse trail sparkles remain, with a brief takeoff pulse and five launch streaks. Movement speed is 73.185 world units per second (5% above 69.7); jump speed is 660. Settings expose Setting Sun, Invert, Black & White and Blue Hue as four readable buttons.

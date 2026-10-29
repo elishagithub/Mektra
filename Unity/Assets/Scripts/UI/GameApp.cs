@@ -127,11 +127,20 @@ namespace Mektra
             sim.Start();ShowOverlay();yield return new WaitForSecondsRealtime(.5f);
             ScreenCapture.CaptureScreenshot(System.IO.Path.Combine(folder,"02-landscape.png"),2);
             yield return new WaitForSecondsRealtime(.4f);
+            if(sim.phase==Phase.Paused){sim.Resume();ShowOverlay();}
+            sim.Jump();Debug.Log("MEKTRA_JUMP_PREVIEW speed="+sim.velocity.Length);
+            yield return new WaitForSecondsRealtime(.08f);
+            ScreenCapture.CaptureScreenshot(System.IO.Path.Combine(folder,"06-jump.png"),2);
+            yield return new WaitForSecondsRealtime(.25f);
             ColorPresetPreview.Step(1);yield return new WaitForSecondsRealtime(.5f);
             ScreenCapture.CaptureScreenshot(System.IO.Path.Combine(folder,"03-colour-preset.png"),2);
             yield return new WaitForSecondsRealtime(.4f);ColorPresetPreview.Step(-1);
             OpenPresetSettings();yield return new WaitForSecondsRealtime(.4f);
             ScreenCapture.CaptureScreenshot(System.IO.Path.Combine(folder,"04-settings.png"),2);
+            yield return new WaitForSecondsRealtime(.4f);
+            closeSettings?.Invoke();Reset(false);OpenShop();
+            yield return new WaitForSecondsRealtime(.4f);
+            ScreenCapture.CaptureScreenshot(System.IO.Path.Combine(folder,"05-characters.png"),2);
             yield return new WaitForSecondsRealtime(.4f);
             Debug.Log("MEKTRA_SCREENSHOTS_COMPLETE "+folder);
             Reset(false);
@@ -299,7 +308,7 @@ namespace Mektra
             }
             while(sim.events.Count>0)
             {
-                var gameEvent=sim.events.Dequeue();GameHaptics.Play(gameEvent.kind);gameAudio.Play(gameEvent.kind,sim.CourseAt(sim.platform.section).segmentKind==17,gameEvent.streak);effects.GameEvent(gameEvent.kind,sim,gameEvent.position);
+                var gameEvent=sim.events.Dequeue();if(gameEvent.kind=="jump")world.JumpEffect(gameEvent.position);GameHaptics.Play(gameEvent.kind);gameAudio.Play(gameEvent.kind,sim.CourseAt(sim.platform.section).segmentKind==17,gameEvent.streak);effects.GameEvent(gameEvent.kind,sim,gameEvent.position);
                 if(gameEvent.kind=="switch"){pickupFeedback.text="GATE OPEN";lastPickup=sim.time;gameAudio.Play("land");}
                 if(gameEvent.kind=="star"){pickupFeedback.text="+1 FIREFLY";lastPickup=sim.time;}
                 if(gameEvent.kind=="checkpoint"){pickupFeedback.text="CHECKPOINT "+(sim.Chapter+1)+" / "+sim.level.checkpointPlatforms.Length;lastPickup=sim.time;gameAudio.Play("land");}

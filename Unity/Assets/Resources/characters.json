@@ -6,7 +6,7 @@
       "tagline": "The original explorer",
       "cost": 0,
       "color": "#FFFFFF",
-      "eyeColor": "#2585FF",
+      "eyeColor": "#00C7FF",
       "faceColor": "#152236",
       "shellStroke": "#8DA0B8",
       "shape": "circle",
@@ -76,7 +76,7 @@
       "name": "Tide",
       "tagline": "A softer kind of motion",
       "cost": 25,
-      "color": "#FFFFFF",
+      "color": "#CBFFF5",
       "eyeColor": "#165CDF",
       "faceColor": "#16343D",
       "shellStroke": "#3B9E94",
@@ -161,7 +161,7 @@
       "name": "Ember",
       "tagline": "A little spark of courage",
       "cost": 75,
-      "color": "#FFFFFF",
+      "color": "#FFE1BA",
       "eyeColor": "#FFD9A8",
       "faceColor": "#3E2730",
       "shellStroke": "#B96346",
@@ -252,7 +252,7 @@
       "name": "Volt",
       "tagline": "Bright ideas. Sharp steps.",
       "cost": 125,
-      "color": "#FFFFFF",
+      "color": "#FFF3B7",
       "eyeColor": "#6EEBFF",
       "faceColor": "#283342",
       "shellStroke": "#B18C39",
@@ -314,14 +314,14 @@
       "name": "Nova",
       "tagline": "Made for distant orbits",
       "cost": 180,
-      "color": "#FFFFFF",
+      "color": "#E4D9FF",
       "eyeColor": "#E1C7FF",
       "faceColor": "#302B4D",
       "shellStroke": "#8570B5",
       "shape": "roundedSquare",
       "eyeStyle": "round",
       "legCount": 12,
-      "legStyle": "triangle",
+      "legStyle": "diamond",
       "shellPath": [
         {
           "op": "M",
@@ -405,14 +405,14 @@
       "name": "Frost",
       "tagline": "Cool, calm, collected",
       "cost": 250,
-      "color": "#FFFFFF",
+      "color": "#D3F1FF",
       "eyeColor": "#2585FF",
       "faceColor": "#173447",
       "shellStroke": "#609CBF",
       "shape": "hexagon",
       "eyeStyle": "visor",
       "legCount": 20,
-      "legStyle": "paddle",
+      "legStyle": "fork",
       "shellPath": [
         {
           "op": "M",
@@ -467,14 +467,14 @@
       "name": "Bloom",
       "tagline": "A bright little daydream",
       "cost": 350,
-      "color": "#FFFFFF",
+      "color": "#FFDBF2",
       "eyeColor": "#FF94D5",
       "faceColor": "#392A41",
       "shellStroke": "#B9789A",
       "shape": "circle",
       "eyeStyle": "pill",
       "legCount": 24,
-      "legStyle": "needle",
+      "legStyle": "petal",
       "shellPath": [
         {
           "op": "M",
@@ -538,14 +538,14 @@
       "name": "Onyx",
       "tagline": "Quietly unstoppable",
       "cost": 500,
-      "color": "#FFFFFF",
+      "color": "#BACBE4",
       "eyeColor": "#78F5DA",
       "faceColor": "#111E30",
       "shellStroke": "#7B89A3",
       "shape": "diamond",
       "eyeStyle": "mono",
       "legCount": 16,
-      "legStyle": "blade",
+      "legStyle": "hook",
       "shellPath": [
         {
           "op": "M",
@@ -652,6 +652,180 @@
             -14,
             0,
             -14
+          ]
+        },
+        {
+          "op": "Z",
+          "v": []
+        }
+      ]
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "tagline": "A glow beyond the horizon",
+      "cost": 650,
+      "color": "#BEFFDF",
+      "eyeColor": "#56FFD5",
+      "faceColor": "#152236",
+      "shellStroke": "#56FFD5",
+      "shape": "roundedTriangle",
+      "eyeStyle": "pill",
+      "legCount": 12,
+      "legStyle": "fin",
+      "shellPath": [
+        {
+          "op": "M",
+          "v": [
+            0,
+            -14
+          ]
+        },
+        {
+          "op": "Q",
+          "v": [
+            3,
+            -14,
+            5,
+            -9
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            12,
+            8
+          ]
+        },
+        {
+          "op": "Q",
+          "v": [
+            14,
+            13,
+            8,
+            13
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            -8,
+            13
+          ]
+        },
+        {
+          "op": "Q",
+          "v": [
+            -14,
+            13,
+            -12,
+            8
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            -5,
+            -9
+          ]
+        },
+        {
+          "op": "Q",
+          "v": [
+            -3,
+            -14,
+            0,
+            -14
+          ]
+        },
+        {
+          "op": "Z",
+          "v": []
+        }
+      ]
+    },
+    {
+      "id": "comet",
+      "name": "Comet",
+      "tagline": "Born to chase the stars",
+      "cost": 800,
+      "color": "#FFDCB4",
+      "eyeColor": "#FFB74D",
+      "faceColor": "#152236",
+      "shellStroke": "#FFB74D",
+      "shape": "decagon",
+      "eyeStyle": "visor",
+      "legCount": 18,
+      "legStyle": "block",
+      "shellPath": [
+        {
+          "op": "M",
+          "v": [
+            8.572527594031472e-16,
+            -14.0
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            8.228993532094623,
+            -11.326237921249264
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            13.31479122813215,
+            -4.326237921249263
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            13.31479122813215,
+            4.326237921249263
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            8.228993532094623,
+            11.326237921249264
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            8.572527594031472e-16,
+            14.0
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            -8.228993532094622,
+            11.326237921249264
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            -13.31479122813215,
+            4.326237921249265
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            -13.314791228132151,
+            -4.326237921249262
+          ]
+        },
+        {
+          "op": "L",
+          "v": [
+            -8.228993532094625,
+            -11.326237921249263
           ]
         },
         {

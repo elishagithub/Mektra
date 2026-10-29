@@ -4,8 +4,8 @@ namespace Mektra
     // Shared colour grading for camera effects and UI Toolkit gameplay artwork.
     public static class ColorPresetPreview
     {
-        static readonly string[] Names={"Vibrance","Setting Sun","Invert","Black & White"};
-        const int DefaultIndex=1;
+        static readonly string[] Names={"Setting Sun","Invert","Black & White","Blue Hue"};
+        const int DefaultIndex=0;
         static int index=DefaultIndex;public static int CurrentIndex=>index;
         public static bool Automatic=>PlayerPrefs.GetInt("mektra.preset.auto",0)==1;
         public static string Selection=>Automatic?"Change each replay":Names[index];
@@ -14,7 +14,7 @@ namespace Mektra
         public static void Select(int choice){index=Mathf.Clamp(choice,0,Names.Length-1);PlayerPrefs.SetInt("mektra.preset.auto",0);PlayerPrefs.SetInt("mektra.preset.choice",index);PlayerPrefs.SetString("mektra.preset.name",Names[index]);PlayerPrefs.Save();Load();}
         public static void Replay(){if(Automatic)Step(1);}
 
-        public static Color GradientTop=>index==6?Color.white:index==1?new Color(.66f,.75f,.82f):index==2?new Color(.77f,.70f,.82f):index==3?new Color(.85f,.75f,.68f):index==4?new Color(.71f,.81f,.77f):new Color(207f/255f,207f/255f,207f/255f);
+        public static Color GradientTop=>IsInvert?new Color(.77f,.70f,.82f):IsMonochrome?new Color(.85f,.75f,.68f):new Color(.66f,.75f,.82f);
         public static Color HudInk=>IsInvert?new Color(.04f,.03f,0):new Color(.96f,.97f,1f);
         public static Color PlayerInk=>IsInvert?Color.black:Color.white;
         public static Color PlatformInk=>Color.black;
@@ -22,18 +22,13 @@ namespace Mektra
         public static bool IsInvert=>Names[index]=="Invert";
         public static bool IsMonochrome=>Names[index]=="Black & White";
         public static Color ShapeFill=>Apply(IsInvert?Color.white:VectorArt.ColorOf("#03060B"));
-        public static Color Backlight=>index==1?VectorArt.ColorOf("#BA8AFF"):index==2?VectorArt.ColorOf("#68D9CA"):index==3?VectorArt.ColorOf("#EBA16F"):VectorArt.ColorOf("#719DD8");
+        public static Color Backlight=>IsMonochrome?VectorArt.ColorOf("#EBA16F"):IsInvert?VectorArt.ColorOf("#68D9CA"):Names[index]=="Blue Hue"?VectorArt.ColorOf("#719DD8"):VectorArt.ColorOf("#BA8AFF");
         public static ThemeJourney.Palette Background
         {
             get
             {
-                switch(index-3){
-                case 1:return new ThemeJourney.Palette("#2E1649","#0B1532","#86568F","#BE9DE8",0,.3f,1,0,0,0);
-                case 2:return new ThemeJourney.Palette("#113943","#071B2C","#4D9E98","#7CDECD",0,.5f,1,0,0,0);
-                case 3:return new ThemeJourney.Palette("#422339","#101C35","#AA6553","#E0AC82",0,1,1,1,0,0);
-                case 4:return new ThemeJourney.Palette("#243B56","#07182D","#7797B6","#A0C3EA",0,1,1,0,0,0);
-                default:return new ThemeJourney.Palette("#191632","#03162F","#3A729C","#699BDC",0,.25f,1,.5f,0,0);
-                }
+                return new ThemeJourney.Palette("#191632","#03162F","#3A729C","#699BDC",0,.25f,1,.5f,0,0);
+
             }
         }
         public static int Version {get;private set;}

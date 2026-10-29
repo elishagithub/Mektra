@@ -15,15 +15,21 @@ namespace Mektra
             var toggle=new Button();toggle.text="";toggle.style.backgroundColor=Color.clear;toggle.style.paddingLeft=0;toggle.style.paddingRight=0;toggle.style.paddingTop=0;toggle.style.paddingBottom=0;toggle.style.marginTop=0;toggle.style.marginBottom=0;UiStyles.Border(toggle,Color.clear,0);ForestUi.At(toggle,72,20,15,60);haptic.Add(toggle);var status=ForestUi.Text("",10,2);ForestUi.At(status,89,20,10,60);haptic.Add(status);
             toggle.generateVisualContent+=ctx=>{var p=ctx.painter2D;float w=toggle.contentRect.width,h=toggle.contentRect.height;bool on=GameHaptics.Enabled;VectorArt.RoundRect(p,0,h*.2f,w,h*.6f,h*.3f,new Color(.03f,.5f,.65f,.6f));VectorArt.Circle(p,new Vector2(on?w-h*.3f:h*.3f,h/2),h*.3f,ForestUi.White);};Action update=()=>{status.text=GameHaptics.Enabled?"ON":"OFF";toggle.MarkDirtyRepaint();};toggle.clicked+=()=>{GameHaptics.Enabled=!GameHaptics.Enabled;update();};update();
             var themes=ForestUi.Text("BACKGROUND THEME",12,3);themes.style.unityTextAlign=TextAnchor.MiddleLeft;ForestUi.At(themes,7,49.7f,88,3.2f);Add(themes);
-            for(int i=0;i<3;i++){int theme=i;var b=new Button(()=>{PlayerPrefs.SetInt("mektra.background.theme",theme);PlayerPrefs.Save();NativeEffects.RefreshMenuTheme();RepaintThemes();});b.text="";b.style.backgroundColor=Color.clear;b.style.overflow=Overflow.Hidden;UiStyles.Round(b,16);UiStyles.Border(b,ForestUi.Cyan,PlayerPrefs.GetInt("mektra.background.theme",0)==i?2:0.7f);ForestUi.At(b,6+i*30.1f,53.3f,28,20.9f);
+            for(int i=0;i<3;i++){int theme=i;var b=new Button(()=>{PlayerPrefs.SetInt("mektra.background.theme",theme);PlayerPrefs.Save();NativeEffects.RefreshMenuTheme();RepaintThemes();});b.text="";b.style.backgroundColor=Color.clear;b.style.overflow=Overflow.Hidden;UiStyles.Round(b,16);UiStyles.Border(b,ForestUi.Cyan,PlayerPrefs.GetInt("mektra.background.theme",0)==i?2:0.7f);ForestUi.At(b,6+i*30.1f,53.3f,28,16.5f);
                 var image=new Image{image=NativeEffects.ThemeTexture(i),scaleMode=ScaleMode.ScaleAndCrop,pickingMode=PickingMode.Ignore};UiStyles.Absolute(image);b.Add(image);b.userData=i;themeButtons.Add(b);Add(b);
-                var name=ForestUi.Text(new[]{"MOONLIT JUNGLE","SUNSET","AURORA"}[i],8,1.5f);ForestUi.At(name,4.5f+i*30.1f,75.2f,31,2.8f);Add(name);}
-            var presetGlass=ForestUi.Glass();ForestUi.At(presetGlass,19,78.6f,62,3.6f);Add(presetGlass);
-            var preset=new PopupField<string>(new List<string>(ColorPresetPreview.Options),ColorPresetPreview.CurrentIndex);ForestUi.At(preset,3,3,94,94);presetGlass.Add(preset);
-            foreach(var element in preset.Query<VisualElement>().ToList()){element.style.backgroundColor=Color.clear;element.style.color=ForestUi.White;element.style.unityBackgroundImageTintColor=ForestUi.White;UiStyles.Border(element,Color.clear,0);if(element is TextElement text){text.style.fontSize=12;text.style.color=ForestUi.White;}}
-            preset.style.backgroundColor=Color.clear;preset.style.color=ForestUi.White;preset.RegisterValueChangedCallback(e=>ColorPresetPreview.Select(Array.IndexOf(ColorPresetPreview.Options,e.newValue)));
-            var done=ForestUi.Button("DONE",close,true);ForestUi.At(done,19,83,62,7);Add(done);
+                var name=ForestUi.Text(new[]{"MOONLIT JUNGLE","SUNSET","AURORA"}[i],8,1.5f);ForestUi.At(name,4.5f+i*30.1f,70.5f,31,2.8f);Add(name);}
+            var presets=ForestUi.Text("COLOUR PRESET",12,3);presets.style.unityTextAlign=TextAnchor.MiddleLeft;ForestUi.At(presets,7,74.3f,88,2.8f);Add(presets);
+            for(int i=0;i<ColorPresetPreview.Options.Length;i++){
+                int choice=i;var button=ForestUi.Button(ColorPresetPreview.Options[i],()=>{ColorPresetPreview.Select(choice);RepaintPresets();});
+                ForestUi.At(button,6+(i%2)*45,78+(i/2)*5,43,4.2f);
+                foreach(var text in button.Query<TextElement>().ToList()){text.style.fontSize=11;text.style.letterSpacing=1;}
+                presetButtons.Add(button);Add(button);
+            }
+            RepaintPresets();
+            var done=ForestUi.Button("DONE",close,true);ForestUi.At(done,19,90,62,6.8f);Add(done);
         }
+        readonly List<Button> presetButtons=new List<Button>();
+        void RepaintPresets(){for(int i=0;i<presetButtons.Count;i++){bool active=i==ColorPresetPreview.CurrentIndex;UiStyles.Border(presetButtons[i],active?ForestUi.Cyan:new Color(.2f,.5f,.6f,.5f),active?2:1);presetButtons[i].style.backgroundColor=active?new Color(.08f,.32f,.42f,.85f):new Color(.02f,.12f,.2f,.65f);}}
         readonly List<Button> themeButtons=new List<Button>();
         void RepaintThemes(){foreach(var b in themeButtons)UiStyles.Border(b,ForestUi.Cyan,(int)b.userData==PlayerPrefs.GetInt("mektra.background.theme",0)?2:0.7f);}
         void AudioRow(string name,string kind,float initial,Action<float> change,float y)

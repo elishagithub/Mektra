@@ -136,6 +136,6 @@ namespace Mektra
         public static int StreakAward(bool close,ref int streak){streak=close?streak+1:0;return streak*5;}
         public static int PrecisionPoints(double angleDegrees,double miss)=>angleDegrees<=4&&miss<=12?5:angleDegrees<=10&&miss<=20?3:angleDegrees<=18&&miss<=28?1:0;
         public const float ViewZoom=1.08f;
-        public const double Width=390,Radius=8.085825,OrbitSpeed=69.7,JumpSpeed=734.4,Step=1.0/120,MaxDelta=.05,CollectionRadius=PickupRadius,CameraAnchor=.7;
+        public const double Width=390,Radius=8.085825,OrbitSpeed=73.185,JumpSpeed=660,Step=1.0/120,MaxDelta=.05,CollectionRadius=PickupRadius,CameraAnchor=.7;
     }
 }

@@ -77,7 +77,9 @@ namespace Mektra
     }
     public sealed class AvatarView:VisualElement
     {
-        AvatarRig rig;readonly Character character;readonly int resolution;public bool Walking;public bool Flying;public float Happy;public float Look;public bool Animated=true;
-        public AvatarView(Character c,int resolution=384){character=c;this.resolution=resolution;pickingMode=PickingMode.Ignore;RegisterCallback<AttachToPanelEvent>(_=>{if(rig!=null)return;rig=new AvatarRig(character,this.resolution);var image=new Image{image=rig.Texture,scaleMode=ScaleMode.ScaleToFit,pickingMode=PickingMode.Ignore};UiStyles.Absolute(image);Add(image);});RegisterCallback<DetachFromPanelEvent>(_=>{rig?.Dispose();rig=null;Clear();});schedule.Execute(()=>{if(Animated)rig?.Render(Time.unscaledTimeAsDouble,Walking,Flying,Happy,false,Look);}).Every(33);}
+        AvatarRig rig;readonly Character character;readonly int resolution;public Vector3[] GroundFeet;public bool Walking;public bool Flying;public float Happy;public float Look;public bool Animated=true;
+        public AvatarView(Character c,int resolution=384,bool glowingHero=false){
+            if(glowingHero){pickingMode=PickingMode.Ignore;generateVisualContent+=ctx=>RobotView.DrawBulb(ctx.painter2D,new Vector2(contentRect.width*.5f,contentRect.height*.5f),Mathf.Min(contentRect.width,contentRect.height)*.23f,RobotView.Tint(c));return;}
+            character=c;this.resolution=resolution;pickingMode=PickingMode.Ignore;RegisterCallback<AttachToPanelEvent>(_=>{if(rig!=null)return;rig=new AvatarRig(character,this.resolution);var image=new Image{image=rig.Texture,scaleMode=ScaleMode.ScaleToFit,pickingMode=PickingMode.Ignore};UiStyles.Absolute(image);Add(image);});RegisterCallback<DetachFromPanelEvent>(_=>{rig?.Dispose();rig=null;Clear();});schedule.Execute(()=>{if(Animated&&rig!=null){rig.GroundFeet=GroundFeet;rig.Render(Time.unscaledTimeAsDouble,Walking,Flying,Happy,false,Look);}}).Every(33);}
     }
 }

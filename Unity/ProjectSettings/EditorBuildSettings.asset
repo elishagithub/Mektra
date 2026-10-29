@@ -4,9 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Mektra.unity
-    guid: 60d8472c8242d417e94d6afeb519bc6a
+  m_Scenes: []
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
